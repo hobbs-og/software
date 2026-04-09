@@ -25,7 +25,7 @@ import path         from 'path'
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 
-const FIGMA_TOKEN = process.env.FIGMA_TOKEN
+const FIGMA_TOKEN = process.env.FIGMA_TOKEN?.trim()
 if (!FIGMA_TOKEN) {
   console.error('❌  FIGMA_TOKEN env var is required.')
   console.error('   Generate one at: figma.com/settings → Personal access tokens')
