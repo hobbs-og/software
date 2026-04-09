@@ -1,0 +1,42 @@
+name: Sync Figma Tokens
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-and-build:
+    name: Figma to token JSON to CSS
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Sync Figma variables
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: node scripts/figma-sync.mjs
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build tokens
+        run: npm run build:tokens
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(tokens): sync from Figma and rebuild CSS'
+          file_pattern: 'tokens/** dist/**'
+          commit_user_name: 'Figma Sync Bot'
+          commit_user_email: 'actions@github.com'

@@ -1,0 +1,46 @@
+name: Build Design Tokens
+
+on:
+  # Auto-trigger when token files change on main
+  push:
+    branches: [main]
+    paths:
+      - 'tokens/**'
+      - 'style-dictionary.config.mjs'
+
+  # Allow manual trigger from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-tokens:
+    name: Transform tokens → CSS + JS
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to auto-commit the built dist/ files
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build tokens
+        run: npm run build:tokens
+
+      # Commit the regenerated dist/ back to the branch
+      - name: Commit built tokens
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(tokens): rebuild CSS + JS from source [skip ci]'
+          file_pattern: 'dist/**'
+          commit_user_name: 'GitHub Actions'
+          commit_user_email: 'actions@github.com'
