@@ -1,0 +1,97 @@
+{
+  "button": {
+    "color": {
+      "background": {
+        "default":  { "$value": "{color.brand.primary.500}", "$type": "color" },
+        "hover":    { "$value": "{color.brand.primary.600}", "$type": "color" },
+        "active":   { "$value": "{color.brand.primary.700}", "$type": "color" },
+        "disabled": { "$value": "{color.background.subtle}", "$type": "color" }
+      },
+      "text": {
+        "default":  { "$value": "{color.content.knockout}", "$type": "color" },
+        "disabled": { "$value": "{color.content.disabled}", "$type": "color" }
+      },
+      "border": {
+        "default":  { "$value": "{color.brand.primary.500}", "$type": "color" },
+        "hover":    { "$value": "{color.brand.primary.600}", "$type": "color" },
+        "disabled": { "$value": "{color.border.default}",    "$type": "color" }
+      },
+      "secondary": {
+        "background": {
+          "default":  { "$value": "transparent",               "$type": "color" },
+          "hover":    { "$value": "{color.brand.primary.50}",  "$type": "color" },
+          "active":   { "$value": "{color.brand.primary.100}", "$type": "color" }
+        },
+        "text": {
+          "default":  { "$value": "{color.brand.primary.500}", "$type": "color" },
+          "hover":    { "$value": "{color.brand.primary.600}", "$type": "color" }
+        },
+        "border": {
+          "default":  { "$value": "{color.brand.primary.500}", "$type": "color" },
+          "hover":    { "$value": "{color.brand.primary.600}", "$type": "color" }
+        }
+      },
+      "knockout": {
+        "background": {
+          "default":  { "$value": "{color.content.knockout}",  "$type": "color" },
+          "hover":    { "$value": "#e8e9ea",                   "$type": "color" }
+        },
+        "text": {
+          "default":  { "$value": "{color.brand.primary.500}", "$type": "color" }
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "sm":   { "$value": "{border-radius.sm}",   "$type": "dimension" },
+        "md":   { "$value": "{border-radius.md}",   "$type": "dimension" },
+        "lg":   { "$value": "{border-radius.lg}",   "$type": "dimension" },
+        "xlg":  { "$value": "{border-radius.xlg}",  "$type": "dimension" },
+        "round":{ "$value": "{border-radius.round}", "$type": "dimension" }
+      },
+      "width": { "$value": "1.5", "$type": "dimension" }
+    },
+    "spacing": {
+      "sm": {
+        "padding-x": { "$value": "12", "$type": "dimension" },
+        "padding-y": { "$value": "6",  "$type": "dimension" }
+      },
+      "md": {
+        "padding-x": { "$value": "16", "$type": "dimension" },
+        "padding-y": { "$value": "10", "$type": "dimension" }
+      },
+      "lg": {
+        "padding-x": { "$value": "24", "$type": "dimension" },
+        "padding-y": { "$value": "14", "$type": "dimension" }
+      },
+      "icon-only": {
+        "sm":  { "$value": "32", "$type": "dimension" },
+        "md":  { "$value": "40", "$type": "dimension" },
+        "lg":  { "$value": "48", "$type": "dimension" }
+      },
+      "gap": { "$value": "8", "$type": "dimension" }
+    },
+    "typography": {
+      "sm": {
+        "font-size":    { "$value": "{typography.font-size.14}", "$type": "dimension" },
+        "font-weight":  { "$value": "{typography.font-weight.semi}", "$type": "fontWeight" },
+        "line-height":  { "$value": "{typography.line-height.20}", "$type": "dimension" }
+      },
+      "md": {
+        "font-size":    { "$value": "{typography.font-size.16}", "$type": "dimension" },
+        "font-weight":  { "$value": "{typography.font-weight.semi}", "$type": "fontWeight" },
+        "line-height":  { "$value": "{typography.line-height.24}", "$type": "dimension" }
+      },
+      "lg": {
+        "font-size":    { "$value": "{typography.font-size.20}", "$type": "dimension" },
+        "font-weight":  { "$value": "{typography.font-weight.semi}", "$type": "fontWeight" },
+        "line-height":  { "$value": "{typography.line-height.28}", "$type": "dimension" }
+      }
+    },
+    "focus-ring": {
+      "color":  { "$value": "{color.border.focus}", "$type": "color" },
+      "width":  { "$value": "2", "$type": "dimension" },
+      "offset": { "$value": "2", "$type": "dimension" }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[data-theme="dark"] {
+  --semantic-dark-color-text-primary: #f3f4f4;
+  --semantic-dark-color-text-secondary: #c9ccd1;
+  --semantic-dark-color-text-subtle: #9ca3af;
+  --semantic-dark-color-text-disabled: #6b7280;
+  --semantic-dark-color-text-inverse: #0d0f16;
+  --semantic-dark-color-text-link: #93c5fd;
+  --semantic-dark-color-text-link-hover: #bfdbfe;
+  --semantic-dark-color-surface-default: #0f1117;
+  --semantic-dark-color-surface-subtle: #1a1d26;
+  --semantic-dark-color-surface-inverse: #ffffff;
+  --semantic-dark-color-surface-brand: #b91031;
+  --semantic-dark-color-surface-overlay: #00000099;
+  --semantic-dark-color-border-default: #2d3148;
+  --semantic-dark-color-border-strong: #3d4260;
+  --semantic-dark-color-border-focus: #60a5fa;
+  --semantic-dark-color-border-brand: #fb7185;
+}
