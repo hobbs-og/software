@@ -81,29 +81,110 @@ public enum SoftwareTokens {
         /// button/color/knockout-solid/background/default
         public static let colorKnockoutSolidBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
+        /// button/color/knockout-solid/background/disabled
+        public static let colorKnockoutSolidBackgroundDisabled = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0x161925FF)
+
+        /// button/color/knockout-solid/background/focus
+        public static let colorKnockoutSolidBackgroundFocus = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
+
+        /// button/color/knockout-solid/background/hover
+        public static let colorKnockoutSolidBackgroundHover = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
+
         /// button/color/knockout-solid/border/default
         public static let colorKnockoutSolidBorderDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// button/color/knockout-solid/border/disabled
+        public static let colorKnockoutSolidBorderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
+
+        /// button/color/knockout-solid/border/focus
+        public static let colorKnockoutSolidBorderFocus = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
+
+        /// button/color/knockout-solid/border/hover
+        public static let colorKnockoutSolidBorderHover = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
 
         /// button/color/knockout-solid/content/default
         public static let colorKnockoutSolidContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
 
+        /// button/color/knockout-solid/content/disabled
+        public static let colorKnockoutSolidContentDisabled = SwiftUI.Color(light: 0x61646BFF, dark: 0x61646BFF)
+
+        /// button/color/knockout-solid/content/focus
+        public static let colorKnockoutSolidContentFocus = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// button/color/knockout-solid/content/hover
+        public static let colorKnockoutSolidContentHover = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
         /// button/color/knockout/background/default
         public static let colorKnockoutBackgroundDefault = SwiftUI.Color(light: 0x000000CC, dark: 0x000000CC)
+
+        /// button/color/knockout/background/disabled
+        public static let colorKnockoutBackgroundDisabled = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0x161925FF)
+
+        /// button/color/knockout/background/focus
+        public static let colorKnockoutBackgroundFocus = SwiftUI.Color(light: 0x000000FF, dark: 0x000000FF)
+
+        /// button/color/knockout/background/hover
+        public static let colorKnockoutBackgroundHover = SwiftUI.Color(light: 0x000000FF, dark: 0x000000FF)
 
         /// button/color/knockout/border/default
         public static let colorKnockoutBorderDefault = SwiftUI.Color(light: 0xFFFFFFCC, dark: 0xFFFFFFCC)
 
+        /// button/color/knockout/border/disabled
+        public static let colorKnockoutBorderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
+
+        /// button/color/knockout/border/focus
+        public static let colorKnockoutBorderFocus = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0xFFFFFFFF)
+
+        /// button/color/knockout/border/hover
+        public static let colorKnockoutBorderHover = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0xFFFFFFFF)
+
         /// button/color/knockout/content/default
         public static let colorKnockoutContentDefault = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
+
+        /// button/color/knockout/content/disabled
+        public static let colorKnockoutContentDisabled = SwiftUI.Color(light: 0x61646BFF, dark: 0x61646BFF)
+
+        /// button/color/knockout/content/focus
+        public static let colorKnockoutContentFocus = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
+
+        /// button/color/knockout/content/hover
+        public static let colorKnockoutContentHover = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
 
         /// button/color/outline/background/default
         public static let colorOutlineBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
+        /// button/color/outline/background/disabled
+        public static let colorOutlineBackgroundDisabled = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0x161925FF)
+
+        /// button/color/outline/background/focus
+        public static let colorOutlineBackgroundFocus = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
+
+        /// button/color/outline/background/hover
+        public static let colorOutlineBackgroundHover = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
+
         /// button/color/outline/border/default
         public static let colorOutlineBorderDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
+        /// button/color/outline/border/disabled
+        public static let colorOutlineBorderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
+
+        /// button/color/outline/border/focus
+        public static let colorOutlineBorderFocus = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
+
+        /// button/color/outline/border/hover
+        public static let colorOutlineBorderHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
+
         /// button/color/outline/content/default
         public static let colorOutlineContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// button/color/outline/content/disabled
+        public static let colorOutlineContentDisabled = SwiftUI.Color(light: 0x61646BFF, dark: 0x61646BFF)
+
+        /// button/color/outline/content/focus
+        public static let colorOutlineContentFocus = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
+
+        /// button/color/outline/content/hover
+        public static let colorOutlineContentHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// button/color/primary/background/default
         public static let colorPrimaryBackgroundDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x254EDBFF)
@@ -112,10 +193,10 @@ public enum SoftwareTokens {
         public static let colorPrimaryBackgroundDisabled = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0x161925FF)
 
         /// button/color/primary/background/focus
-        public static let colorPrimaryBackgroundFocus = SwiftUI.Color(light: 0x1939B7FF, dark: 0x1939B7FF)
+        public static let colorPrimaryBackgroundFocus = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x2B59EBFF)
 
         /// button/color/primary/background/hover
-        public static let colorPrimaryBackgroundHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x1939B7FF)
+        public static let colorPrimaryBackgroundHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x2B59EBFF)
 
         /// button/color/primary/border/default
         public static let colorPrimaryBorderDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
@@ -124,10 +205,10 @@ public enum SoftwareTokens {
         public static let colorPrimaryBorderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
 
         /// button/color/primary/border/focus
-        public static let colorPrimaryBorderFocus = SwiftUI.Color(light: 0x1939B7FF, dark: 0x84A9FFFF)
+        public static let colorPrimaryBorderFocus = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// button/color/primary/border/hover
-        public static let colorPrimaryBorderHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x84A9FFFF)
+        public static let colorPrimaryBorderHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// button/color/primary/content/default
         public static let colorPrimaryContentDefault = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
@@ -160,7 +241,7 @@ public enum SoftwareTokens {
         public static let focusRingDefaultOuterShadowBlur: CGFloat = 0
 
         /// button/focus-ring/default/outer-shadow/outer-shadow
-        public static let focusRingDefaultOuterShadowOuterShadow = SwiftUI.Color(light: 0x1939B7FF, dark: 0x1939B7FF)
+        public static let focusRingDefaultOuterShadowOuterShadow = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x2B59EBFF)
 
         /// button/focus-ring/default/outer-shadow/spread
         public static let focusRingDefaultOuterShadowSpread: CGFloat = 4
@@ -243,7 +324,7 @@ public enum SoftwareTokens {
         public static let backgroundBrand = SwiftUI.Color(light: 0x254EDBFF, dark: 0x254EDBFF)
 
         /// color/background/brand-hover
-        public static let backgroundBrandHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x1939B7FF)
+        public static let backgroundBrandHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x2B59EBFF)
 
         /// color/background/default
         public static let backgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
@@ -291,7 +372,7 @@ public enum SoftwareTokens {
         public static let borderBrand = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// color/border/brand-hover
-        public static let borderBrandHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x84A9FFFF)
+        public static let borderBrandHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// color/border/default
         public static let borderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
@@ -327,7 +408,7 @@ public enum SoftwareTokens {
         public static let contentBrand = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// color/content/brand-hover
-        public static let contentBrandHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x84A9FFFF)
+        public static let contentBrandHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// color/content/brand-knockout
         public static let contentBrandKnockout = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
@@ -363,7 +444,7 @@ public enum SoftwareTokens {
         public static let contentLink = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// color/content/link-hover
-        public static let contentLinkHover = SwiftUI.Color(light: 0x1939B7FF, dark: 0x84A9FFFF)
+        public static let contentLinkHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
 
         /// color/content/subtitle
         public static let contentSubtitle = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
@@ -641,6 +722,23 @@ public enum SoftwareTokens {
 
         /// inputs/typography/text-transform
         public static let typographyTextTransform = "none"
+    }
+
+    public enum Navbar {
+        /// navbar/typography/font-size
+        public static let typographyFontSize: CGFloat = 14
+
+        /// navbar/typography/font-weight
+        public static let typographyFontWeight = SwiftUI.Font.Weight.regular
+
+        /// navbar/typography/letter-spacing
+        public static let typographyLetterSpacing: CGFloat = 0.5
+
+        /// navbar/typography/line-height
+        public static let typographyLineHeight: CGFloat = 16
+
+        /// navbar/typography/text-transform
+        public static let typographyTextTransform = "uppercase"
     }
 
     public enum Spacing {
@@ -923,7 +1021,7 @@ public enum SoftwareTokens {
         public static let fontWeightBold = "Bold"
 
         /// typography/font-weight/extrabold
-        public static let fontWeightExtrabold = "Extrabold"
+        public static let fontWeightExtrabold = "Extra Bold"
 
         /// typography/font-weight/medium
         public static let fontWeightMedium = "Medium"
@@ -932,7 +1030,7 @@ public enum SoftwareTokens {
         public static let fontWeightRegular = "Regular"
 
         /// typography/font-weight/semi
-        public static let fontWeightSemi = "Semibold"
+        public static let fontWeightSemi = "Semi Bold"
 
         /// typography/headline-default-mobile/font-size
         public static let headlineDefaultMobileFontSize: CGFloat = 32
