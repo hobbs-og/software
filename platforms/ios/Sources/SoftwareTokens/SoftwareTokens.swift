@@ -495,7 +495,7 @@ public enum SoftwareTokens {
         public static let contentUtilityWarningKnockout = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
 
         /// color/elevation/shadow
-        public static let elevationShadow = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let elevationShadow = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
     }
 
     public enum Elevation {
@@ -503,7 +503,7 @@ public enum SoftwareTokens {
         public static let lgBlur: CGFloat = 48
 
         /// elevation/lg/color
-        public static let lgColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let lgColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/lg/spread
         public static let lgSpread: CGFloat = 0
@@ -518,7 +518,7 @@ public enum SoftwareTokens {
         public static let mdBlur: CGFloat = 32
 
         /// elevation/md/color
-        public static let mdColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let mdColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/md/spread
         public static let mdSpread: CGFloat = 0
@@ -533,7 +533,7 @@ public enum SoftwareTokens {
         public static let smBlur: CGFloat = 16
 
         /// elevation/sm/color
-        public static let smColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let smColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/sm/spread
         public static let smSpread: CGFloat = 0
@@ -548,7 +548,7 @@ public enum SoftwareTokens {
         public static let surfaceBlur: CGFloat = 2
 
         /// elevation/surface/color
-        public static let surfaceColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let surfaceColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/surface/spread
         public static let surfaceSpread: CGFloat = 0
@@ -563,7 +563,7 @@ public enum SoftwareTokens {
         public static let xlgBlur: CGFloat = 96
 
         /// elevation/xlg/color
-        public static let xlgColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let xlgColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/xlg/spread
         public static let xlgSpread: CGFloat = 0
@@ -578,7 +578,7 @@ public enum SoftwareTokens {
         public static let xsmBlur: CGFloat = 8
 
         /// elevation/xsm/color
-        public static let xsmColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let xsmColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/xsm/spread
         public static let xsmSpread: CGFloat = 0
@@ -593,7 +593,7 @@ public enum SoftwareTokens {
         public static let xxsmBlur: CGFloat = 4
 
         /// elevation/xxsm/color
-        public static let xxsmColor = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
+        public static let xxsmColor = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
 
         /// elevation/xxsm/spread
         public static let xxsmSpread: CGFloat = 0
