@@ -802,7 +802,7 @@
     "elevation": {
       "shadow": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.transparency.black.80}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:7",
