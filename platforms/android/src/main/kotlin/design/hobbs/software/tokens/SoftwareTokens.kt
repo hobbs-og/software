@@ -638,7 +638,9 @@ object SoftwareTokens {
         val contentUtilityWarningKnockout = ComposeColor(0xFFF3F4F4)
 
         /** color/elevation/shadow */
-        val elevationShadow = ComposeColor(0x66000000)
+        val elevationShadow: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
     }
 
     object Elevation {
@@ -646,7 +648,9 @@ object SoftwareTokens {
         val lgBlur = 48.dp
 
         /** elevation/lg/color */
-        val lgColor = ComposeColor(0x66000000)
+        val lgColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/lg/spread */
         val lgSpread = 0.dp
@@ -661,7 +665,9 @@ object SoftwareTokens {
         val mdBlur = 32.dp
 
         /** elevation/md/color */
-        val mdColor = ComposeColor(0x66000000)
+        val mdColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/md/spread */
         val mdSpread = 0.dp
@@ -676,7 +682,9 @@ object SoftwareTokens {
         val smBlur = 16.dp
 
         /** elevation/sm/color */
-        val smColor = ComposeColor(0x66000000)
+        val smColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/sm/spread */
         val smSpread = 0.dp
@@ -691,7 +699,9 @@ object SoftwareTokens {
         val surfaceBlur = 2.dp
 
         /** elevation/surface/color */
-        val surfaceColor = ComposeColor(0x66000000)
+        val surfaceColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/surface/spread */
         val surfaceSpread = 0.dp
@@ -706,7 +716,9 @@ object SoftwareTokens {
         val xlgBlur = 96.dp
 
         /** elevation/xlg/color */
-        val xlgColor = ComposeColor(0x66000000)
+        val xlgColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/xlg/spread */
         val xlgSpread = 0.dp
@@ -721,7 +733,9 @@ object SoftwareTokens {
         val xsmBlur = 8.dp
 
         /** elevation/xsm/color */
-        val xsmColor = ComposeColor(0x66000000)
+        val xsmColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/xsm/spread */
         val xsmSpread = 0.dp
@@ -736,7 +750,9 @@ object SoftwareTokens {
         val xxsmBlur = 4.dp
 
         /** elevation/xxsm/color */
-        val xxsmColor = ComposeColor(0x66000000)
+        val xxsmColor: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
 
         /** elevation/xxsm/spread */
         val xxsmSpread = 0.dp

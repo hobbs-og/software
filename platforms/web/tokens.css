@@ -558,6 +558,7 @@
     --color-content-utility-info: #abb3f0;
     --color-content-utility-success: #5dc9af;
     --color-content-utility-warning: #efd242;
+    --color-elevation-shadow: #000000cc;
   }
 }
 
@@ -597,6 +598,7 @@
   --color-content-utility-info: #abb3f0;
   --color-content-utility-success: #5dc9af;
   --color-content-utility-warning: #efd242;
+  --color-elevation-shadow: #000000cc;
 }
 
 [data-theme="light"] {
