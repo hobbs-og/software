@@ -14,6 +14,7 @@ on:
       - 'tokens/**'
       - 'scripts/**'
       - 'checks/**'
+      - '.github/workflows/tokens.yml'
   workflow_dispatch:
 
 concurrency:
@@ -22,7 +23,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build platforms and check contrast
+    name: Build platform outputs
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -51,9 +52,19 @@ jobs:
             git push
           fi
 
-      # Runs after the commit so a failing check still leaves the generated diff on the PR for review.
-      - name: WCAG contrast check
-        run: node scripts/check-contrast.mjs
+  # Contrast and Swift run independently after the build, so one failing never hides the other.
+  contrast:
+    name: WCAG contrast check
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/check-contrast.mjs
 
   swift:
     name: Compile Swift package for iOS

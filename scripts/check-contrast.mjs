@@ -14,8 +14,16 @@ const rows = [];
 for (const theme of model.semanticModes) {
   const ctx = { semantic: theme, layout: model.layoutModes[0] };
   for (const { fg, bg, min, note } of pairs) {
-    const f = resolve(model, fg, ctx);
-    const b = resolve(model, bg, ctx);
+    let f, b;
+    try {
+      f = resolve(model, fg, ctx);
+      b = resolve(model, bg, ctx);
+    } catch (err) {
+      const line = `  FAIL  ${theme.padEnd(6)} ${fg} on ${bg}: ${err.message}. Export from Figma, or fix the pair in checks/contrast.json`;
+      rows.push(line);
+      failures.push(line);
+      continue;
+    }
     if (f.type !== 'color' || b.type !== 'color') throw new Error(`${fg} / ${bg} must both be colours`);
     const back = rgba(b.value);
     if (back.a < 1) {
