@@ -30,10 +30,10 @@ function loadFile(file) {
   return map;
 }
 
-// Returns { primitives, component, semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
+// Returns { primitives, typography, component, semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
 export function loadTokens() {
   const manifest = readJson('tokens/manifest.json');
-  const model = { primitives: new Map(), component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
+  const model = { primitives: new Map(), typography: new Map(), component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
   const seenFiles = new Set();
 
   for (const c of manifest.collections) {
@@ -43,6 +43,9 @@ export function loadTokens() {
       const tokens = loadFile(mode.file);
       if (c.tier === 'primitive') {
         for (const [k, t] of tokens) model.primitives.set(k, t);
+      } else if (c.tier === 'typography') {
+        // Semantic typography has no theme modes: it is the same in light and dark.
+        for (const [k, t] of tokens) model.typography.set(k, t);
       } else if (c.tier === 'component') {
         for (const [k, t] of tokens) model.component.set(k, t);
       } else if (c.tier === 'semantic') {
@@ -70,6 +73,7 @@ export function loadTokens() {
     }
   };
   claim('primitives', model.primitives);
+  claim('typography', model.typography);
   claim('component', model.component);
   for (const m of model.semanticModes) claim('semantic', model.semantic[m]);
   for (const m of model.layoutModes) claim('layout', model.layout[m]);
@@ -97,6 +101,7 @@ export function isPrivate(model, key) {
 export function lookup(model, key, ctx) {
   switch (model.tierOf(key)) {
     case 'primitives': return model.primitives.get(key);
+    case 'typography': return model.typography.get(key);
     case 'component': return model.component.get(key);
     case 'semantic': return model.semantic[ctx.semantic].get(key);
     case 'layout': return model.layout[ctx.layout].get(key);
@@ -121,6 +126,7 @@ export function publicKeys(model) {
   const keys = new Set();
   for (const k of model.primitives.keys()) if (!isPrivate(model, k)) keys.add(k);
   for (const m of model.semanticModes) for (const k of model.semantic[m].keys()) keys.add(k);
+  for (const k of model.typography.keys()) keys.add(k);
   for (const k of model.component.keys()) keys.add(k);
   return [...keys].sort();
 }

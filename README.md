@@ -15,11 +15,12 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 | Tier | Figma collection | File | Themed by |
 |---|---|---|---|
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
-| Semantic | Tier 2 · semantic tokens | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
+| Semantic colour | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
+| Semantic typography | Tier 2 · semantic typography | `tokens/typography.json` | nothing |
 | Component | Tier 3 · component specific | `tokens/component.json` | inherits from semantic |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
-**Only the semantic tier changes with the theme.** Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
+**Only semantic colour changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
 
 **Primitive colours are private.** In Figma they are hidden from every property picker. The build treats a primitive with no scopes the same way: platforms get its resolved value, never the token. Designers and developers both reach for `color/content/default`, never `color/gray-charcoal/400`.
 

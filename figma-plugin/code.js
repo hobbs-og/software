@@ -11,6 +11,7 @@ const EXPORTER_VERSION = 1;
 const COLLECTION_FILES = [
   { match: /^tier 1\b/i, file: 'primitives', tier: 'primitive' },
   { match: /^core$/i, file: 'primitives', tier: 'primitive' },
+  { match: /^tier 2\b.*typography/i, file: 'typography', tier: 'typography' },
   { match: /^tier 2\b/i, file: 'semantic', tier: 'semantic' },
   { match: /^tier 3\b/i, file: 'component', tier: 'component' },
   { match: /^grid$/i, file: 'grid', tier: 'layout' },
