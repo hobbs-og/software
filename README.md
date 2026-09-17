@@ -63,7 +63,13 @@ The plugin refuses to export, and lists why, if a variable points to another lib
 
 ### Web
 
+```html
+<!-- Preload the one font file almost every page needs. -->
+<link rel="preload" href="/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+```
+
 ```css
+@import "@hobbs-og/software/fonts.css"; /* serve platforms/web/fonts/ beside it */
 @import "@hobbs-og/software/tokens.css";
 
 .card {
@@ -84,6 +90,8 @@ Inter comes from Google Fonts (SIL Open Font License) and is **self-hosted**. Me
 - Google serves Inter as a variable font: one 73,016-byte woff2 covers every weight (100–900) for Latin. Inter's own `InterVariable.woff2` is 352,240 bytes because it isn't subset.
 - Loading from the CDN adds two extra origins (fonts.googleapis.com, fonts.gstatic.com), ~55–67ms each for DNS + TCP + TLS on a fast connection, plus a render-blocking stylesheet. Browsers partition their cache by site, so there is no shared-cache benefit.
 - Self-hosting the same Google files removes both connections and lets the Latin file be preloaded.
+
+`platforms/web/fonts/` holds 14 variable woff2 files (upright and italic × Latin, Latin Extended, Cyrillic, Cyrillic Extended, Greek, Greek Extended, Vietnamese) and `OFL.txt`. `fonts.css` gives each file a `unicode-range`, so an English page downloads only `inter-normal-latin.woff2` (verified in Chrome: one 73 KB request serving weights 400–900). To update Inter, run `npm run fonts`.
 
 On iOS and Android the system font is the fallback automatically.
 

@@ -6,6 +6,8 @@
   "private": true,
   "exports": {
     "./tokens.css": "./platforms/web/tokens.css",
+    "./fonts.css": "./platforms/web/fonts.css",
+    "./fonts/*": "./platforms/web/fonts/*",
     "./tokens/*": "./tokens/*"
   },
   "files": [
@@ -14,7 +16,8 @@
   ],
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/check-contrast.mjs"
+    "test": "node scripts/check-contrast.mjs",
+    "fonts": "node scripts/fonts.mjs"
   },
   "engines": {
     "node": ">=20"
