@@ -338,6 +338,12 @@ public enum SoftwareTokens {
         /// color/background/knockout-hover
         public static let backgroundKnockoutHover = SwiftUI.Color(light: 0x000000FF, dark: 0x000000FF)
 
+        /// color/background/knockout-translucent
+        public static let backgroundKnockoutTranslucent = SwiftUI.Color(light: 0x000000CC, dark: 0x000000CC)
+
+        /// color/background/selected
+        public static let backgroundSelected = SwiftUI.Color(light: 0xAAD6EBFF, dark: 0x13293DFF)
+
         /// color/background/subtle
         public static let backgroundSubtle = SwiftUI.Color(light: 0xF7F7F7FF, dark: 0x161925FF)
 
@@ -380,11 +386,20 @@ public enum SoftwareTokens {
         /// color/border/disabled
         public static let borderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
 
+        /// color/border/focus
+        public static let borderFocus = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
+
+        /// color/border/hover
+        public static let borderHover = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
+
         /// color/border/knockout
         public static let borderKnockout = SwiftUI.Color(light: 0xFFFFFFCC, dark: 0xFFFFFFCC)
 
         /// color/border/knockout-hover
         public static let borderKnockoutHover = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0xFFFFFFFF)
+
+        /// color/border/selected
+        public static let borderSelected = SwiftUI.Color(light: 0x13293DFF, dark: 0x73A6C4FF)
 
         /// color/border/subtle
         public static let borderSubtle = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
@@ -478,6 +493,9 @@ public enum SoftwareTokens {
 
         /// color/content/utility/warning-knockout
         public static let contentUtilityWarningKnockout = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
+
+        /// color/elevation/shadow
+        public static let elevationShadow = SwiftUI.Color(light: 0x00000066, dark: 0x00000066)
     }
 
     public enum Elevation {
@@ -616,7 +634,7 @@ public enum SoftwareTokens {
         public static let colorBackgroundHover = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
         /// inputs/color/background/selected
-        public static let colorBackgroundSelected = SwiftUI.Color(light: 0xAAD6EBFF, dark: 0xAAD6EBFF)
+        public static let colorBackgroundSelected = SwiftUI.Color(light: 0xAAD6EBFF, dark: 0x13293DFF)
 
         /// inputs/color/border/default
         public static let colorBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
@@ -631,7 +649,7 @@ public enum SoftwareTokens {
         public static let colorBorderHover = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
 
         /// inputs/color/border/selected
-        public static let colorBorderSelected = SwiftUI.Color(light: 0x13293DFF, dark: 0x13293DFF)
+        public static let colorBorderSelected = SwiftUI.Color(light: 0x13293DFF, dark: 0x73A6C4FF)
 
         /// inputs/color/content/default
         public static let colorContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)

@@ -417,6 +417,14 @@ object SoftwareTokens {
         /** color/background/knockout-hover */
         val backgroundKnockoutHover = ComposeColor(0xFF000000)
 
+        /** color/background/knockout-translucent */
+        val backgroundKnockoutTranslucent = ComposeColor(0xCC000000)
+
+        /** color/background/selected */
+        val backgroundSelected: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF13293D) else ComposeColor(0xFFAAD6EB)
+
         /** color/background/subtle */
         val backgroundSubtle: ComposeColor
             @Composable @ReadOnlyComposable
@@ -477,11 +485,22 @@ object SoftwareTokens {
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
 
+        /** color/border/focus */
+        val borderFocus = ComposeColor(0xFF436C8A)
+
+        /** color/border/hover */
+        val borderHover = ComposeColor(0xFF436C8A)
+
         /** color/border/knockout */
         val borderKnockout = ComposeColor(0xCCFFFFFF)
 
         /** color/border/knockout-hover */
         val borderKnockoutHover = ComposeColor(0xFFFFFFFF)
+
+        /** color/border/selected */
+        val borderSelected: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF73A6C4) else ComposeColor(0xFF13293D)
 
         /** color/border/subtle */
         val borderSubtle: ComposeColor
@@ -617,6 +636,9 @@ object SoftwareTokens {
 
         /** color/content/utility/warning-knockout */
         val contentUtilityWarningKnockout = ComposeColor(0xFFF3F4F4)
+
+        /** color/elevation/shadow */
+        val elevationShadow = ComposeColor(0x66000000)
     }
 
     object Elevation {
@@ -765,7 +787,9 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
         /** inputs/color/background/selected */
-        val colorBackgroundSelected = ComposeColor(0xFFAAD6EB)
+        val colorBackgroundSelected: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF13293D) else ComposeColor(0xFFAAD6EB)
 
         /** inputs/color/border/default */
         val colorBorderDefault = ComposeColor(0xFF6F7078)
@@ -782,7 +806,9 @@ object SoftwareTokens {
         val colorBorderHover = ComposeColor(0xFF436C8A)
 
         /** inputs/color/border/selected */
-        val colorBorderSelected = ComposeColor(0xFF13293D)
+        val colorBorderSelected: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF73A6C4) else ComposeColor(0xFF13293D)
 
         /** inputs/color/content/default */
         val colorContentDefault: ComposeColor
