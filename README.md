@@ -17,7 +17,7 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
 | Semantic colour | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
 | Semantic typography | Tier 2 · semantic typography | `tokens/typography.json` | nothing |
-| Component | Tier 3 · component specific | `tokens/component.json` | inherits from semantic |
+| Component | a product's own Figma file, linked to this library | that product's repository | inherits from semantic |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
 **Only semantic colour changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.

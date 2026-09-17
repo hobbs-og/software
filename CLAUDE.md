@@ -11,6 +11,7 @@ Read `README.md` first. This file holds the rules that aren't obvious from the c
 ## Structure rules the build enforces
 
 - Collection → tier mapping lives in `COLLECTION_FILES` in `figma-plugin/code.js`. A new collection needs an entry there.
+- This repository holds the shared tiers only. Component tokens (button, inputs, …) live in the Figma file of the product that owns them and export to that product's repository; their contrast pairs go with them. The plugin allows links into the libraries in `ALLOWED_LIBRARIES`.
 - A token name belongs to exactly one tier, and a path can't be both a token and a group.
 - Primitive tokens with empty Figma scopes are private: resolved into outputs, never emitted.
 - Tier 2 is two collections: `Tier 2  |  semantic color` (modes Light, Dark → tier `semantic`) and `Tier 2  |  semantic typography` (one mode → tier `typography`, unthemed). Only semantic colour has theme modes.

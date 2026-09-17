@@ -5,7 +5,12 @@
 // Everything that turns Figma variables into token files lives in exportTokens(),
 // so the plugin and any scripted export produce byte-identical output.
 
-const EXPORTER_VERSION = 1;
+const EXPORTER_VERSION = 2;
+
+// A component file may point at these published libraries; the build resolves those
+// references against the same token names. A link to any other library is an error,
+// because nothing would resolve it.
+const ALLOWED_LIBRARIES = ['software-subatomic'];
 
 // Figma collection name → token file. Order matters: first match wins.
 const COLLECTION_FILES = [
@@ -41,9 +46,24 @@ function stringType(path) {
   return path.includes('font-family') ? 'fontFamily' : 'string';
 }
 
+// Keys of every variable published by an allowed library, so a remote link can be checked.
+async function allowedLibraryVariableKeys() {
+  const keys = new Set();
+  try {
+    for (const c of await figma.teamLibrary.getAvailableLibraryVariableCollectionsAsync()) {
+      if (!ALLOWED_LIBRARIES.includes(c.libraryName)) continue;
+      for (const v of await figma.teamLibrary.getVariablesInLibraryCollectionAsync(c.key)) keys.add(v.key);
+    }
+  } catch (err) {
+    // No library access (or none enabled): every remote link is then reported below.
+  }
+  return keys;
+}
+
 async function exportTokens() {
   const errors = [];
   const warnings = [];
+  const allowedKeys = await allowedLibraryVariableKeys();
   const collections = await figma.variables.getLocalVariableCollectionsAsync();
   const trees = {}; // file path → token tree
   const manifest = { exporterVersion: EXPORTER_VERSION, collections: [] };
@@ -95,8 +115,8 @@ async function exportTokens() {
             errors.push(`${label}: points to a variable that no longer exists`);
             continue;
           }
-          if (target.remote) {
-            errors.push(`${label}: points to "${target.name}" in another library; point it at a local variable`);
+          if (target.remote && !allowedKeys.has(target.key)) {
+            errors.push(`${label}: points to "${target.name}" in a library this system does not read (allowed: ${ALLOWED_LIBRARIES.join(', ')})`);
             continue;
           }
           token.$type = v.resolvedType === 'COLOR' ? 'color'
