@@ -1,0 +1,126 @@
+{
+  "columns": {
+    "$type": "number",
+    "$value": 12,
+    "$extensions": {
+      "com.figma": {
+        "variableId": "VariableID:13817:5616",
+        "collection": "grid",
+        "scopes": [
+          "GAP",
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "container": {
+    "gutter": {
+      "$type": "dimension",
+      "$value": "{spacing.gap.lg}",
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:14321:40",
+          "collection": "grid",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    }
+  },
+  "default-width": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1200,
+      "unit": "px"
+    },
+    "$extensions": {
+      "com.figma": {
+        "variableId": "VariableID:407:2511",
+        "collection": "grid",
+        "scopes": [
+          "GAP",
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "max-width": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1600,
+      "unit": "px"
+    },
+    "$extensions": {
+      "com.figma": {
+        "variableId": "VariableID:402:2500",
+        "collection": "grid",
+        "scopes": [
+          "GAP",
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "min-width": {
+    "$type": "dimension",
+    "$value": {
+      "value": 960,
+      "unit": "px"
+    },
+    "$extensions": {
+      "com.figma": {
+        "variableId": "VariableID:402:2499",
+        "collection": "grid",
+        "scopes": [
+          "GAP",
+          "WIDTH_HEIGHT"
+        ]
+      }
+    }
+  },
+  "section": {
+    "gap": {
+      "$type": "dimension",
+      "$value": "{spacing.gap.xlg}",
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:14548:915",
+          "collection": "grid",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "padding": {
+      "$type": "dimension",
+      "$value": "{spacing.48}",
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:14321:39",
+          "collection": "grid",
+          "scopes": [
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    }
+  },
+  "viewport": {
+    "$type": "string",
+    "$value": "large",
+    "$extensions": {
+      "com.figma": {
+        "variableId": "VariableID:404:2503",
+        "collection": "grid",
+        "scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    }
+  }
+}

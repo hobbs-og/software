@@ -1,46 +1,67 @@
-name: Build Design Tokens
+name: Tokens
 
 on:
-  # Auto-trigger when token files change on main
+  pull_request:
+    paths:
+      - 'tokens/**'
+      - 'scripts/**'
+      - 'checks/**'
+      - 'figma-plugin/**'
+      - '.github/workflows/tokens.yml'
   push:
     branches: [main]
     paths:
       - 'tokens/**'
-      - 'style-dictionary.config.mjs'
-
-  # Allow manual trigger from the GitHub Actions tab
+      - 'scripts/**'
+      - 'checks/**'
   workflow_dispatch:
 
+concurrency:
+  group: tokens-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build-tokens:
-    name: Transform tokens → CSS + JS
+  build:
+    name: Build platforms and check contrast
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # needed to auto-commit the built dist/ files
-
+      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # On a pull request, check out the branch itself so generated files can be committed to it.
+          ref: ${{ github.head_ref || github.ref_name }}
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: '22'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Build web, iOS and Android outputs
+        run: node scripts/build.mjs
 
-      - name: Build tokens
-        run: npm run build:tokens
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add platforms
+          if git diff --cached --quiet; then
+            echo "Generated files already up to date."
+          else
+            git commit -m "Build: regenerate platform tokens"
+            git push
+          fi
 
-      # Commit the regenerated dist/ back to the branch
-      - name: Commit built tokens
-        uses: stefanzweifel/git-auto-commit-action@v5
+      # Runs after the commit so a failing check still leaves the generated diff on the PR for review.
+      - name: WCAG contrast check
+        run: node scripts/check-contrast.mjs
+
+  swift:
+    name: Compile Swift package for iOS
+    needs: build
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
         with:
-          commit_message: 'chore(tokens): rebuild CSS + JS from source [skip ci]'
-          file_pattern: 'dist/**'
-          commit_user_name: 'GitHub Actions'
-          commit_user_email: 'actions@github.com'
+          ref: ${{ github.head_ref || github.ref_name }}
+      - name: Build for iOS Simulator
+        run: xcodebuild build -scheme SoftwareTokens -destination 'generic/platform=iOS Simulator' -quiet

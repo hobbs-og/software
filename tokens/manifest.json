@@ -1,0 +1,67 @@
+{
+  "exporterVersion": 1,
+  "collections": [
+    {
+      "name": "Tier 2  |  semantic tokens",
+      "tier": "semantic",
+      "modes": [
+        {
+          "name": "light",
+          "file": "tokens/semantic.light.json"
+        },
+        {
+          "name": "dark",
+          "file": "tokens/semantic.dark.json"
+        }
+      ]
+    },
+    {
+      "name": "grid",
+      "tier": "layout",
+      "modes": [
+        {
+          "name": "large",
+          "file": "tokens/grid.large.json"
+        },
+        {
+          "name": "medium",
+          "file": "tokens/grid.medium.json"
+        },
+        {
+          "name": "small",
+          "file": "tokens/grid.small.json"
+        }
+      ]
+    },
+    {
+      "name": "Tier 3  |  component specific",
+      "tier": "component",
+      "modes": [
+        {
+          "name": "baseline",
+          "file": "tokens/component.json"
+        }
+      ]
+    },
+    {
+      "name": "Tier 1  |  base values",
+      "tier": "primitive",
+      "modes": [
+        {
+          "name": "mode-1",
+          "file": "tokens/primitives.json"
+        }
+      ]
+    },
+    {
+      "name": "core",
+      "tier": "primitive",
+      "modes": [
+        {
+          "name": "mode-1",
+          "file": "tokens/primitives.json"
+        }
+      ]
+    }
+  ]
+}

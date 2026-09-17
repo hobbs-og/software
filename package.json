@@ -1,22 +1,22 @@
 {
-  "name": "@hobbs-og/design-system",
+  "name": "@hobbs-og/software",
   "version": "0.1.0",
-  "description": "Hobbs Design System – white-label token & component system",
+  "description": "Cross-platform design tokens for web, iOS and Android, controlled by the software-subatomic Figma file.",
   "type": "module",
+  "private": true,
+  "exports": {
+    "./tokens.css": "./platforms/web/tokens.css",
+    "./tokens/*": "./tokens/*"
+  },
+  "files": [
+    "platforms/web",
+    "tokens"
+  ],
   "scripts": {
-    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
-    "watch:tokens": "style-dictionary build --config style-dictionary.config.mjs --watch",
-    "build": "npm run build:tokens",
-    "typecheck": "tsc --noEmit"
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/check-contrast.mjs"
   },
-  "devDependencies": {
-    "style-dictionary": "^4.3.0",
-    "typescript": "^5.4.0",
-    "@types/react": "^18.3.0",
-    "@types/react-dom": "^18.3.0"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+  "engines": {
+    "node": ">=20"
   }
 }
