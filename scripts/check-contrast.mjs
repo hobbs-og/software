@@ -45,7 +45,20 @@ console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes: ${
 // Theme coverage: every colour a designer or developer can use must reach the semantic
 // colour tier, or it cannot change between light and dark.
 const themeCtx = { semantic: model.semanticModes[0], layout: model.layoutModes[0] };
-const usable = [...model.component.keys(), ...[...model.primitives.keys()].filter((k) => !isPrivate(model, k))];
+
+// Primitives the semantic tier itself points at (the brand override tokens) sit upstream of
+// theming, not around it: a theme is built from them. Everything else must reach semantic.
+const upstream = new Set();
+for (const mode of model.semanticModes) {
+  for (const token of model.semantic[mode].values()) {
+    let target = aliasKey(token.value);
+    while (target && model.tierOf(target) === 'primitives') {
+      upstream.add(target);
+      target = aliasKey(model.primitives.get(target).value);
+    }
+  }
+}
+const usable = [...model.component.keys(), ...[...model.primitives.keys()].filter((k) => !isPrivate(model, k) && !upstream.has(k))];
 const unthemed = [];
 for (const key of usable) {
   if (lookup(model, key, themeCtx).type !== 'color') continue;
