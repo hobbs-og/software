@@ -14,7 +14,7 @@ Read `README.md` first. This file holds the rules that aren't obvious from the c
 - A token name belongs to exactly one tier, and a path can't be both a token and a group.
 - Primitive tokens with empty Figma scopes are private: resolved into outputs, never emitted.
 - Tier 2 is two collections: `Tier 2  |  semantic color` (modes Light, Dark → tier `semantic`) and `Tier 2  |  semantic typography` (one mode → tier `typography`, unthemed). Only semantic colour has theme modes.
-- Component colours must alias semantic colours, never primitives, or they won't follow dark mode. Known exceptions still to fix: `inputs/color/background/selected`, `inputs/color/border/{hover,focus,selected}`, `button/color/knockout/background/default`.
+- Every usable colour (component tokens, and primitives visible in pickers such as `elevation/*/color`) must alias a semantic colour, never a raw primitive, or it won't follow dark mode. `npm test` fails if one doesn't. If a component needs a colour that has no semantic token, add one to `Tier 2 | semantic color` with Light and Dark values first.
 - The Plugin API cannot move variables between collections; moving means recreate + rebind every layer (see git history for 2026-09-17).
 - Component tokens reference semantic tokens so they theme for free. Web output keeps those references as `var()`.
 - The grid collection needs a `min-width` token in every mode; modes are ordered by it.

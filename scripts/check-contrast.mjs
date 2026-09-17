@@ -4,7 +4,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadTokens, resolve, rgba, contrast, over, hex8 } from './lib/tokens.mjs';
+import { ROOT, loadTokens, resolve, lookup, aliasKey, isPrivate, rgba, contrast, over, hex8 } from './lib/tokens.mjs';
 
 const model = loadTokens();
 const { pairs } = JSON.parse(fs.readFileSync(path.join(ROOT, 'checks/contrast.json'), 'utf8'));
@@ -41,6 +41,25 @@ for (const theme of model.semanticModes) {
 
 console.log(rows.join('\n'));
 console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
+
+// Theme coverage: every colour a designer or developer can use must reach the semantic
+// colour tier, or it cannot change between light and dark.
+const themeCtx = { semantic: model.semanticModes[0], layout: model.layoutModes[0] };
+const usable = [...model.component.keys(), ...[...model.primitives.keys()].filter((k) => !isPrivate(model, k))];
+const unthemed = [];
+for (const key of usable) {
+  if (lookup(model, key, themeCtx).type !== 'color') continue;
+  let cur = key, themed = false;
+  for (let target; (target = aliasKey(lookup(model, cur, themeCtx).value)); cur = target) {
+    if (model.tierOf(target) === 'semantic') { themed = true; break; }
+  }
+  if (!themed) unthemed.push(`  FAIL  ${key} never reaches Tier 2 semantic color, so it cannot follow dark mode`);
+}
+console.log(`\nTheme coverage: ${unthemed.length ? unthemed.length + ' colour tokens bypass semantic colour' : 'every usable colour follows the theme'}`);
+if (unthemed.length) {
+  console.log(unthemed.join('\n'));
+  failures.push(...unthemed);
+}
 if (failures.length) {
   console.log('\nFailing:\n' + failures.join('\n'));
   process.exit(1);

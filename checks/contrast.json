@@ -50,7 +50,11 @@
     { "fg": "inputs.color.content.label", "bg": "color.background.default", "min": 4.5 },
     { "fg": "inputs.color.content.error", "bg": "inputs.color.background.default", "min": 4.5 },
     { "fg": "inputs.color.border.default", "bg": "inputs.color.background.default", "min": 3 },
+    { "fg": "inputs.color.border.hover", "bg": "inputs.color.background.default", "min": 3 },
     { "fg": "inputs.color.border.focus", "bg": "inputs.color.background.default", "min": 3 },
+    { "fg": "inputs.color.content.selected", "bg": "inputs.color.background.selected", "min": 4.5 },
+    { "fg": "inputs.color.border.selected", "bg": "inputs.color.background.default", "min": 3 },
+    { "fg": "inputs.color.border.selected", "bg": "inputs.color.background.selected", "min": 3 },
     { "fg": "inputs.focus-ring.outer-shadow.outer-shadow", "bg": "color.background.default", "min": 3, "note": "Focus ring against the page" }
   ]
 }

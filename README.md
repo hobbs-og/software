@@ -148,6 +148,8 @@ Android uses the device's default system font (no `fontFamily` set); `sp` sizes 
 
 `checks/contrast.json` lists every foreground/background pair a component uses. `npm test` measures each pair in every theme against WCAG 2.1 AA (4.5:1 for text, 3:1 for boundaries and focus indicators) and fails the pull request if one falls short. Add a pair whenever a component puts two colours together.
 
+The same command checks **theme coverage**: every colour a designer can pick must reach `Tier 2 | semantic color`. A component colour pointing straight at a primitive (say `color/brand/secondary/400`) looks right in light mode and stays the same in dark, so the pull request fails until it points at a semantic token.
+
 ## Commands
 
 ```bash
