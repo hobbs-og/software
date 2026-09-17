@@ -40,7 +40,7 @@ Icons are content. Example: `button/color/outline/content/default` → `--button
    - Token name: `Figma tokens plugin`
    - Resource owner: `hobbs-og`
    - Repository access: **Only select repositories** → `software`
-   - Repository permissions: **Contents** → Read and write. **Pull requests** → Read and write.
+   - Scroll to **Permissions** and click **+ Add permissions**. Choose **Contents** and **Pull requests**, then set each one's access to **Read and write** (they are added as Read-only).
    - Click **Generate token** and copy it.
 2. **Install the plugin in Figma.** This needs the Figma desktop app.
    - Open the software-subatomic file.
