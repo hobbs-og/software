@@ -1398,7 +1398,10 @@
           "com.figma": {
             "variableId": "VariableID:14377:2668",
             "collection": "Tier 1  |  base values",
-            "scopes": []
+            "scopes": [
+              "ALL_FILLS",
+              "STROKE_COLOR"
+            ]
           }
         }
       },
@@ -1532,7 +1535,10 @@
           "com.figma": {
             "variableId": "VariableID:14377:2669",
             "collection": "Tier 1  |  base values",
-            "scopes": []
+            "scopes": [
+              "ALL_FILLS",
+              "STROKE_COLOR"
+            ]
           }
         }
       },

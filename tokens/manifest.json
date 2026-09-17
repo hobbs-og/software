@@ -1,5 +1,5 @@
 {
-  "exporterVersion": 1,
+  "exporterVersion": 2,
   "collections": [
     {
       "name": "Tier 2  |  semantic typography",
@@ -26,16 +26,6 @@
         {
           "name": "small",
           "file": "tokens/grid.small.json"
-        }
-      ]
-    },
-    {
-      "name": "Tier 3  |  component specific",
-      "tier": "component",
-      "modes": [
-        {
-          "name": "baseline",
-          "file": "tokens/component.json"
         }
       ]
     },
