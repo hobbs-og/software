@@ -313,7 +313,7 @@
         "background": {
           "default": {
             "$type": "color",
-            "$value": "{color.transparency.black.80}",
+            "$value": "{color.background.knockout-translucent}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:14351:5060",
@@ -1423,7 +1423,7 @@
         },
         "selected": {
           "$type": "color",
-          "$value": "{color.brand.secondary.200}",
+          "$value": "{color.background.selected}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:14048:266",
@@ -1465,7 +1465,7 @@
         },
         "focus": {
           "$type": "color",
-          "$value": "{color.brand.secondary.400}",
+          "$value": "{color.border.focus}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:5822:2159",
@@ -1478,7 +1478,7 @@
         },
         "hover": {
           "$type": "color",
-          "$value": "{color.brand.secondary.400}",
+          "$value": "{color.border.hover}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:5822:2160",
@@ -1491,7 +1491,7 @@
         },
         "selected": {
           "$type": "color",
-          "$value": "{color.brand.secondary.500}",
+          "$value": "{color.border.selected}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:14049:543",

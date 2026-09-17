@@ -4584,7 +4584,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14375:2269",
@@ -4663,7 +4663,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:8335:1209",
@@ -4742,7 +4742,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:8335:1202",
@@ -4821,7 +4821,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14159:1173",
@@ -4900,7 +4900,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14375:2274",
@@ -4979,7 +4979,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14375:2279",
@@ -5058,7 +5058,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{color.transparency.black.40}",
+        "$value": "{color.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14375:2284",
