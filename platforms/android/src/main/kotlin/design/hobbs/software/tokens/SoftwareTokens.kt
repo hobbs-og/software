@@ -259,9 +259,6 @@ object SoftwareTokens {
         /** button/spacing/padding-y */
         val spacingPaddingY = 8.dp
 
-        /** button/typography/font-family */
-        const val typographyFontFamily = "Inter"
-
         /** button/typography/font-size */
         val typographyFontSize = 14.sp
 
@@ -761,9 +758,6 @@ object SoftwareTokens {
         /** inputs/spacing/padding */
         val spacingPadding = 16.dp
 
-        /** inputs/typography/font-family */
-        const val typographyFontFamily = "Inter"
-
         /** inputs/typography/font-size */
         val typographyFontSize = 16.sp
 
@@ -867,9 +861,6 @@ object SoftwareTokens {
     }
 
     object Typography {
-        /** typography/body-default/font-family */
-        const val bodyDefaultFontFamily = "Inter"
-
         /** typography/body-default/font-size */
         val bodyDefaultFontSize = 16.sp
 
@@ -884,9 +875,6 @@ object SoftwareTokens {
 
         /** typography/body-default/text-transform */
         const val bodyDefaultTextTransform = "none"
-
-        /** typography/body-emphasized/font-family */
-        const val bodyEmphasizedFontFamily = "Inter"
 
         /** typography/body-emphasized/font-size */
         val bodyEmphasizedFontSize = 16.sp
@@ -903,9 +891,6 @@ object SoftwareTokens {
         /** typography/body-emphasized/text-transform */
         const val bodyEmphasizedTextTransform = "none"
 
-        /** typography/body-lg/font-family */
-        const val bodyLgFontFamily = "Inter"
-
         /** typography/body-lg/font-size */
         val bodyLgFontSize = 20.sp
 
@@ -920,9 +905,6 @@ object SoftwareTokens {
 
         /** typography/body-lg/text-transform */
         const val bodyLgTextTransform = "none"
-
-        /** typography/body-sm/font-family */
-        const val bodySmFontFamily = "Inter"
 
         /** typography/body-sm/font-size */
         val bodySmFontSize = 14.sp
@@ -939,9 +921,6 @@ object SoftwareTokens {
         /** typography/body-sm/text-transform */
         const val bodySmTextTransform = "none"
 
-        /** typography/display-default-mobile/font-family */
-        const val displayDefaultMobileFontFamily = "Inter"
-
         /** typography/display-default-mobile/font-size */
         val displayDefaultMobileFontSize = 48.sp
 
@@ -956,9 +935,6 @@ object SoftwareTokens {
 
         /** typography/display-default-mobile/text-transform */
         const val displayDefaultMobileTextTransform = "none"
-
-        /** typography/display-default/font-family */
-        const val displayDefaultFontFamily = "Inter"
 
         /** typography/display-default/font-size */
         val displayDefaultFontSize = 72.sp
@@ -975,9 +951,6 @@ object SoftwareTokens {
         /** typography/display-default/text-transform */
         const val displayDefaultTextTransform = "none"
 
-        /** typography/display-sm-mobile/font-family */
-        const val displaySmMobileFontFamily = "Inter"
-
         /** typography/display-sm-mobile/font-size */
         val displaySmMobileFontSize = 32.sp
 
@@ -993,9 +966,6 @@ object SoftwareTokens {
         /** typography/display-sm-mobile/text-transform */
         const val displaySmMobileTextTransform = "none"
 
-        /** typography/display-sm/font-family */
-        const val displaySmFontFamily = "Inter"
-
         /** typography/display-sm/font-size */
         val displaySmFontSize = 40.sp
 
@@ -1010,18 +980,6 @@ object SoftwareTokens {
 
         /** typography/display-sm/text-transform */
         const val displaySmTextTransform = "none"
-
-        /** typography/font-family/base */
-        const val fontFamilyBase = "Inter"
-
-        /** typography/font-family/headline */
-        const val fontFamilyHeadline = "Inter"
-
-        /** typography/font-family/helvetica */
-        const val fontFamilyHelvetica = "Helvetica"
-
-        /** typography/font-family/inter */
-        const val fontFamilyInter = "Inter"
 
         /** typography/font-size/104 */
         val fontSize104 = 104.sp
@@ -1107,9 +1065,6 @@ object SoftwareTokens {
         /** typography/font-weight/semi */
         const val fontWeightSemi = "Semibold"
 
-        /** typography/headline-default-mobile/font-family */
-        const val headlineDefaultMobileFontFamily = "Inter"
-
         /** typography/headline-default-mobile/font-size */
         val headlineDefaultMobileFontSize = 32.sp
 
@@ -1124,9 +1079,6 @@ object SoftwareTokens {
 
         /** typography/headline-default-mobile/text-transform */
         const val headlineDefaultMobileTextTransform = "none"
-
-        /** typography/headline-default/font-family */
-        const val headlineDefaultFontFamily = "Inter"
 
         /** typography/headline-default/font-size */
         val headlineDefaultFontSize = 40.sp
@@ -1143,9 +1095,6 @@ object SoftwareTokens {
         /** typography/headline-default/text-transform */
         const val headlineDefaultTextTransform = "none"
 
-        /** typography/headline-lg-mobile/font-family */
-        const val headlineLgMobileFontFamily = "Inter"
-
         /** typography/headline-lg-mobile/font-size */
         val headlineLgMobileFontSize = 40.sp
 
@@ -1160,9 +1109,6 @@ object SoftwareTokens {
 
         /** typography/headline-lg-mobile/text-transform */
         const val headlineLgMobileTextTransform = "none"
-
-        /** typography/headline-lg/font-family */
-        const val headlineLgFontFamily = "Inter"
 
         /** typography/headline-lg/font-size */
         val headlineLgFontSize = 48.sp
@@ -1179,9 +1125,6 @@ object SoftwareTokens {
         /** typography/headline-lg/text-transform */
         const val headlineLgTextTransform = "none"
 
-        /** typography/headline-sm-mobile/font-family */
-        const val headlineSmMobileFontFamily = "Inter"
-
         /** typography/headline-sm-mobile/font-size */
         val headlineSmMobileFontSize = 28.sp
 
@@ -1196,9 +1139,6 @@ object SoftwareTokens {
 
         /** typography/headline-sm-mobile/text-transform */
         const val headlineSmMobileTextTransform = "none"
-
-        /** typography/headline-sm/font-family */
-        const val headlineSmFontFamily = "Inter"
 
         /** typography/headline-sm/font-size */
         val headlineSmFontSize = 32.sp
@@ -1215,9 +1155,6 @@ object SoftwareTokens {
         /** typography/headline-sm/text-transform */
         const val headlineSmTextTransform = "none"
 
-        /** typography/label-default/font-family */
-        const val labelDefaultFontFamily = "Inter"
-
         /** typography/label-default/font-size */
         val labelDefaultFontSize = 16.sp
 
@@ -1233,9 +1170,6 @@ object SoftwareTokens {
         /** typography/label-default/text-transform */
         const val labelDefaultTextTransform = "none"
 
-        /** typography/label-lg/font-family */
-        const val labelLgFontFamily = "Inter"
-
         /** typography/label-lg/font-size */
         val labelLgFontSize = 20.sp
 
@@ -1250,9 +1184,6 @@ object SoftwareTokens {
 
         /** typography/label-lg/text-transform */
         const val labelLgTextTransform = "none"
-
-        /** typography/label-sm/font-family */
-        const val labelSmFontFamily = "Inter"
 
         /** typography/label-sm/font-size */
         val labelSmFontSize = 14.sp
@@ -1344,9 +1275,6 @@ object SoftwareTokens {
         /** typography/line-height/96 */
         val lineHeight96 = 96.sp
 
-        /** typography/meta-default/font-family */
-        const val metaDefaultFontFamily = "Inter"
-
         /** typography/meta-default/font-size */
         val metaDefaultFontSize = 14.sp
 
@@ -1361,9 +1289,6 @@ object SoftwareTokens {
 
         /** typography/meta-default/text-transform */
         const val metaDefaultTextTransform = "none"
-
-        /** typography/meta-sm/font-family */
-        const val metaSmFontFamily = "Inter"
 
         /** typography/meta-sm/font-size */
         val metaSmFontSize = 12.sp
@@ -1392,9 +1317,6 @@ object SoftwareTokens {
         /** typography/text-transform/uppercase */
         const val textTransformUppercase = "uppercase"
 
-        /** typography/title-default/font-family */
-        const val titleDefaultFontFamily = "Inter"
-
         /** typography/title-default/font-size */
         val titleDefaultFontSize = 28.sp
 
@@ -1409,9 +1331,6 @@ object SoftwareTokens {
 
         /** typography/title-default/text-transform */
         const val titleDefaultTextTransform = "none"
-
-        /** typography/title-lg-mobile/font-family */
-        const val titleLgMobileFontFamily = "Inter"
 
         /** typography/title-lg-mobile/font-size */
         val titleLgMobileFontSize = 28.sp
@@ -1428,9 +1347,6 @@ object SoftwareTokens {
         /** typography/title-lg-mobile/text-transform */
         const val titleLgMobileTextTransform = "none"
 
-        /** typography/title-lg/font-family */
-        const val titleLgFontFamily = "Inter"
-
         /** typography/title-lg/font-size */
         val titleLgFontSize = 32.sp
 
@@ -1445,9 +1361,6 @@ object SoftwareTokens {
 
         /** typography/title-lg/text-transform */
         const val titleLgTextTransform = "none"
-
-        /** typography/title-sm/font-family */
-        const val titleSmFontFamily = "Inter"
 
         /** typography/title-sm/font-size */
         val titleSmFontSize = 24.sp

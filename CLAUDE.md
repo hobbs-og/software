@@ -28,5 +28,6 @@ Every colour pair a component uses goes in `checks/contrast.json`. `npm test` mu
 
 - No npm dependencies. Build and checks are plain Node (≥20).
 - Web values are rem (1rem = 16px); media queries are em. Native: pt / dp, text metrics sp.
+- iOS and Android use the system font (Mark, 2026-09-17). Native outputs omit font-family tokens; don't bundle Inter in apps.
 - Font files in `platforms/web/fonts/` and `platforms/web/fonts.css` come from `scripts/fonts.mjs` (`npm run fonts`); never edit them by hand.
 - Font is Inter, self-hosted from Google Fonts' variable woff2 subsets (all weights, smallest files, no third-party connections). Never link the Google Fonts CDN. Web fallback, fixed by Mark: OS system sans-serif, then Helvetica (`FONT_FALLBACK` in `scripts/build.mjs`).

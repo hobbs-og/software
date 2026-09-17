@@ -222,9 +222,6 @@ public enum SoftwareTokens {
         /// button/spacing/padding-y
         public static let spacingPaddingY: CGFloat = 8
 
-        /// button/typography/font-family
-        public static let typographyFontFamily = "Inter"
-
         /// button/typography/font-size
         public static let typographyFontSize: CGFloat = 14
 
@@ -630,9 +627,6 @@ public enum SoftwareTokens {
         /// inputs/spacing/padding
         public static let spacingPadding: CGFloat = 16
 
-        /// inputs/typography/font-family
-        public static let typographyFontFamily = "Inter"
-
         /// inputs/typography/font-size
         public static let typographyFontSize: CGFloat = 16
 
@@ -736,9 +730,6 @@ public enum SoftwareTokens {
     }
 
     public enum Typography {
-        /// typography/body-default/font-family
-        public static let bodyDefaultFontFamily = "Inter"
-
         /// typography/body-default/font-size
         public static let bodyDefaultFontSize: CGFloat = 16
 
@@ -753,9 +744,6 @@ public enum SoftwareTokens {
 
         /// typography/body-default/text-transform
         public static let bodyDefaultTextTransform = "none"
-
-        /// typography/body-emphasized/font-family
-        public static let bodyEmphasizedFontFamily = "Inter"
 
         /// typography/body-emphasized/font-size
         public static let bodyEmphasizedFontSize: CGFloat = 16
@@ -772,9 +760,6 @@ public enum SoftwareTokens {
         /// typography/body-emphasized/text-transform
         public static let bodyEmphasizedTextTransform = "none"
 
-        /// typography/body-lg/font-family
-        public static let bodyLgFontFamily = "Inter"
-
         /// typography/body-lg/font-size
         public static let bodyLgFontSize: CGFloat = 20
 
@@ -789,9 +774,6 @@ public enum SoftwareTokens {
 
         /// typography/body-lg/text-transform
         public static let bodyLgTextTransform = "none"
-
-        /// typography/body-sm/font-family
-        public static let bodySmFontFamily = "Inter"
 
         /// typography/body-sm/font-size
         public static let bodySmFontSize: CGFloat = 14
@@ -808,9 +790,6 @@ public enum SoftwareTokens {
         /// typography/body-sm/text-transform
         public static let bodySmTextTransform = "none"
 
-        /// typography/display-default-mobile/font-family
-        public static let displayDefaultMobileFontFamily = "Inter"
-
         /// typography/display-default-mobile/font-size
         public static let displayDefaultMobileFontSize: CGFloat = 48
 
@@ -825,9 +804,6 @@ public enum SoftwareTokens {
 
         /// typography/display-default-mobile/text-transform
         public static let displayDefaultMobileTextTransform = "none"
-
-        /// typography/display-default/font-family
-        public static let displayDefaultFontFamily = "Inter"
 
         /// typography/display-default/font-size
         public static let displayDefaultFontSize: CGFloat = 72
@@ -844,9 +820,6 @@ public enum SoftwareTokens {
         /// typography/display-default/text-transform
         public static let displayDefaultTextTransform = "none"
 
-        /// typography/display-sm-mobile/font-family
-        public static let displaySmMobileFontFamily = "Inter"
-
         /// typography/display-sm-mobile/font-size
         public static let displaySmMobileFontSize: CGFloat = 32
 
@@ -862,9 +835,6 @@ public enum SoftwareTokens {
         /// typography/display-sm-mobile/text-transform
         public static let displaySmMobileTextTransform = "none"
 
-        /// typography/display-sm/font-family
-        public static let displaySmFontFamily = "Inter"
-
         /// typography/display-sm/font-size
         public static let displaySmFontSize: CGFloat = 40
 
@@ -879,18 +849,6 @@ public enum SoftwareTokens {
 
         /// typography/display-sm/text-transform
         public static let displaySmTextTransform = "none"
-
-        /// typography/font-family/base
-        public static let fontFamilyBase = "Inter"
-
-        /// typography/font-family/headline
-        public static let fontFamilyHeadline = "Inter"
-
-        /// typography/font-family/helvetica
-        public static let fontFamilyHelvetica = "Helvetica"
-
-        /// typography/font-family/inter
-        public static let fontFamilyInter = "Inter"
 
         /// typography/font-size/104
         public static let fontSize104: CGFloat = 104
@@ -976,9 +934,6 @@ public enum SoftwareTokens {
         /// typography/font-weight/semi
         public static let fontWeightSemi = "Semibold"
 
-        /// typography/headline-default-mobile/font-family
-        public static let headlineDefaultMobileFontFamily = "Inter"
-
         /// typography/headline-default-mobile/font-size
         public static let headlineDefaultMobileFontSize: CGFloat = 32
 
@@ -993,9 +948,6 @@ public enum SoftwareTokens {
 
         /// typography/headline-default-mobile/text-transform
         public static let headlineDefaultMobileTextTransform = "none"
-
-        /// typography/headline-default/font-family
-        public static let headlineDefaultFontFamily = "Inter"
 
         /// typography/headline-default/font-size
         public static let headlineDefaultFontSize: CGFloat = 40
@@ -1012,9 +964,6 @@ public enum SoftwareTokens {
         /// typography/headline-default/text-transform
         public static let headlineDefaultTextTransform = "none"
 
-        /// typography/headline-lg-mobile/font-family
-        public static let headlineLgMobileFontFamily = "Inter"
-
         /// typography/headline-lg-mobile/font-size
         public static let headlineLgMobileFontSize: CGFloat = 40
 
@@ -1029,9 +978,6 @@ public enum SoftwareTokens {
 
         /// typography/headline-lg-mobile/text-transform
         public static let headlineLgMobileTextTransform = "none"
-
-        /// typography/headline-lg/font-family
-        public static let headlineLgFontFamily = "Inter"
 
         /// typography/headline-lg/font-size
         public static let headlineLgFontSize: CGFloat = 48
@@ -1048,9 +994,6 @@ public enum SoftwareTokens {
         /// typography/headline-lg/text-transform
         public static let headlineLgTextTransform = "none"
 
-        /// typography/headline-sm-mobile/font-family
-        public static let headlineSmMobileFontFamily = "Inter"
-
         /// typography/headline-sm-mobile/font-size
         public static let headlineSmMobileFontSize: CGFloat = 28
 
@@ -1065,9 +1008,6 @@ public enum SoftwareTokens {
 
         /// typography/headline-sm-mobile/text-transform
         public static let headlineSmMobileTextTransform = "none"
-
-        /// typography/headline-sm/font-family
-        public static let headlineSmFontFamily = "Inter"
 
         /// typography/headline-sm/font-size
         public static let headlineSmFontSize: CGFloat = 32
@@ -1084,9 +1024,6 @@ public enum SoftwareTokens {
         /// typography/headline-sm/text-transform
         public static let headlineSmTextTransform = "none"
 
-        /// typography/label-default/font-family
-        public static let labelDefaultFontFamily = "Inter"
-
         /// typography/label-default/font-size
         public static let labelDefaultFontSize: CGFloat = 16
 
@@ -1102,9 +1039,6 @@ public enum SoftwareTokens {
         /// typography/label-default/text-transform
         public static let labelDefaultTextTransform = "none"
 
-        /// typography/label-lg/font-family
-        public static let labelLgFontFamily = "Inter"
-
         /// typography/label-lg/font-size
         public static let labelLgFontSize: CGFloat = 20
 
@@ -1119,9 +1053,6 @@ public enum SoftwareTokens {
 
         /// typography/label-lg/text-transform
         public static let labelLgTextTransform = "none"
-
-        /// typography/label-sm/font-family
-        public static let labelSmFontFamily = "Inter"
 
         /// typography/label-sm/font-size
         public static let labelSmFontSize: CGFloat = 14
@@ -1213,9 +1144,6 @@ public enum SoftwareTokens {
         /// typography/line-height/96
         public static let lineHeight96: CGFloat = 96
 
-        /// typography/meta-default/font-family
-        public static let metaDefaultFontFamily = "Inter"
-
         /// typography/meta-default/font-size
         public static let metaDefaultFontSize: CGFloat = 14
 
@@ -1230,9 +1158,6 @@ public enum SoftwareTokens {
 
         /// typography/meta-default/text-transform
         public static let metaDefaultTextTransform = "none"
-
-        /// typography/meta-sm/font-family
-        public static let metaSmFontFamily = "Inter"
 
         /// typography/meta-sm/font-size
         public static let metaSmFontSize: CGFloat = 12
@@ -1261,9 +1186,6 @@ public enum SoftwareTokens {
         /// typography/text-transform/uppercase
         public static let textTransformUppercase = "uppercase"
 
-        /// typography/title-default/font-family
-        public static let titleDefaultFontFamily = "Inter"
-
         /// typography/title-default/font-size
         public static let titleDefaultFontSize: CGFloat = 28
 
@@ -1278,9 +1200,6 @@ public enum SoftwareTokens {
 
         /// typography/title-default/text-transform
         public static let titleDefaultTextTransform = "none"
-
-        /// typography/title-lg-mobile/font-family
-        public static let titleLgMobileFontFamily = "Inter"
 
         /// typography/title-lg-mobile/font-size
         public static let titleLgMobileFontSize: CGFloat = 28
@@ -1297,9 +1216,6 @@ public enum SoftwareTokens {
         /// typography/title-lg-mobile/text-transform
         public static let titleLgMobileTextTransform = "none"
 
-        /// typography/title-lg/font-family
-        public static let titleLgFontFamily = "Inter"
-
         /// typography/title-lg/font-size
         public static let titleLgFontSize: CGFloat = 32
 
@@ -1314,9 +1230,6 @@ public enum SoftwareTokens {
 
         /// typography/title-lg/text-transform
         public static let titleLgTextTransform = "none"
-
-        /// typography/title-sm/font-family
-        public static let titleSmFontFamily = "Inter"
 
         /// typography/title-sm/font-size
         public static let titleSmFontSize: CGFloat = 24

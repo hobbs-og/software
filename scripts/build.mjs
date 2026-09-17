@@ -122,10 +122,16 @@ function escape(name, reserved, quote) {
   return reserved.has(name) ? quote + name + quote : name;
 }
 
+// Native apps use the platform system font (San Francisco, the device default on Android),
+// so font-family tokens are web-only. Sizes, weights, line heights and tracking still apply.
+function nativeKeys() {
+  return keys.filter((k) => resolve(model, k, baseCtx).type !== 'fontFamily');
+}
+
 // Groups public tokens by first path segment: color.background.default → Color.backgroundDefault
 function groups() {
   const map = new Map();
-  for (const key of keys) {
+  for (const key of nativeKeys()) {
     const path = key.split('.');
     if (path.length < 2) throw new Error(`Token "${key}" needs at least two name segments for native output`);
     const group = pascal(path[0]);

@@ -93,7 +93,7 @@ Inter comes from Google Fonts (SIL Open Font License) and is **self-hosted**. Me
 
 `platforms/web/fonts/` holds 14 variable woff2 files (upright and italic × Latin, Latin Extended, Cyrillic, Cyrillic Extended, Greek, Greek Extended, Vietnamese) and `OFL.txt`. `fonts.css` gives each file a `unicode-range`, so an English page downloads only `inter-normal-latin.woff2` (verified in Chrome: one 73 KB request serving weights 400–900). To update Inter, run `npm run fonts`.
 
-On iOS and Android the system font is the fallback automatically.
+**Inter is web-only.** iOS and Android use their system fonts, Mark's decision (2026-09-17), so the native outputs contain no font-family tokens and no font files are bundled.
 
 ### iOS (SwiftUI)
 
@@ -102,13 +102,20 @@ Add the package in Xcode: **File** → **Add Package Dependencies…** → `git@
 ```swift
 import SoftwareTokens
 
-Text("Hello")
-    .font(.custom("Inter", size: SoftwareTokens.Typography.bodyDefaultFontSize))
-    .foregroundStyle(SoftwareTokens.Color.contentDefault)
-    .padding(SoftwareTokens.Spacing.paddingMd)
+struct Greeting: View {
+    // Scales the token size with the user's Dynamic Type setting.
+    @ScaledMetric(relativeTo: .body) private var bodySize = SoftwareTokens.Typography.bodyDefaultFontSize
+
+    var body: some View {
+        Text("Hello")
+            .font(.system(size: bodySize, weight: SoftwareTokens.Typography.bodyDefaultFontWeight))
+            .foregroundStyle(SoftwareTokens.Color.contentDefault)
+            .padding(SoftwareTokens.Spacing.paddingMd)
+    }
+}
 ```
 
-Colours switch with the system appearance and with `.preferredColorScheme`. `Font.custom(_:size:)` scales with Dynamic Type relative to body text.
+iOS uses the system font (San Francisco); font-family tokens are web-only. Colours switch with the system appearance and with `.preferredColorScheme`. A fixed `.system(size:)` does not follow Dynamic Type on its own, which is why the size goes through `@ScaledMetric`.
 
 **Layout on iPhone Duo.** Pick grid values from the width your view actually has, not the device model:
 
@@ -134,7 +141,7 @@ Text(
 )
 ```
 
-Colours follow the system dark theme. Force one for a subtree with `CompositionLocalProvider(LocalSoftwareDarkTheme provides true) { … }`. Use `SoftwareTokens.Grid.forWidth(windowWidth)` for layout values.
+Android uses the device's default system font (no `fontFamily` set); `sp` sizes follow the user's font-scale setting. Colours follow the system dark theme. Force one for a subtree with `CompositionLocalProvider(LocalSoftwareDarkTheme provides true) { … }`. Use `SoftwareTokens.Grid.forWidth(windowWidth)` for layout values.
 
 ## Accessibility checks
 
