@@ -6,8 +6,8 @@
         "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:327:9898",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:786",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -20,8 +20,8 @@
         "$value": "{color.brand.hover}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7831:2493",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:787",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -34,8 +34,8 @@
         "$value": "{color.grayscale.white}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:327:9894",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:781",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -48,8 +48,8 @@
         "$value": "{color.gray-charcoal.50}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7831:2494",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:788",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -62,8 +62,8 @@
         "$value": "{color.grayscale.900}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:618:2759",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:784",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -76,8 +76,8 @@
         "$value": "{color.grayscale.black}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14232:530",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:785",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -90,8 +90,8 @@
         "$value": "{color.grayscale.100}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:618:2758",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:782",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -104,8 +104,8 @@
         "$value": "{color.grayscale.200}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7831:2491",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:783",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "FRAME_FILL",
               "SHAPE_FILL"
@@ -119,8 +119,8 @@
           "$value": "{color.utility.red.100}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:470:2635",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:789",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -133,8 +133,8 @@
           "$value": "{color.utility.red.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:7831:2495",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:790",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -147,8 +147,8 @@
           "$value": "{color.utility.blue.100}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:470:2637",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:795",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -161,8 +161,8 @@
           "$value": "{color.utility.blue.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:7831:2498",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:796",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -175,8 +175,8 @@
           "$value": "{color.utility.green.100}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:470:2638",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:793",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -189,8 +189,8 @@
           "$value": "{color.utility.green.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:7831:2497",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:794",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -203,8 +203,8 @@
           "$value": "{color.utility.yellow.100}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:470:2636",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:791",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -217,8 +217,8 @@
           "$value": "{color.utility.yellow.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:7831:2496",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:792",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
                 "SHAPE_FILL"
@@ -234,8 +234,8 @@
         "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:416:4438",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:802",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -248,8 +248,8 @@
         "$value": "{color.brand.hover}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14113:6556",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:803",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -262,8 +262,8 @@
         "$value": "{color.gray-charcoal.300}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:327:9906",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:797",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -276,8 +276,8 @@
         "$value": "{color.gray-charcoal.300}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7832:2555",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:833",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -290,8 +290,8 @@
         "$value": "{color.transparency.white.80}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:618:2754",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:800",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -304,8 +304,8 @@
         "$value": "{color.grayscale.white}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14113:6559",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:801",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -318,8 +318,8 @@
         "$value": "{color.gray-charcoal.100}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:618:2752",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:798",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -332,8 +332,8 @@
         "$value": "{color.gray-charcoal.200}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14113:6557",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:799",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
               "STROKE_COLOR"
@@ -347,8 +347,8 @@
           "$value": "{color.utility.red.700}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:473:2646",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:804",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "EFFECT_COLOR",
                 "STROKE_COLOR"
@@ -361,8 +361,8 @@
           "$value": "{color.utility.blue.700}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2757",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:807",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "EFFECT_COLOR",
                 "STROKE_COLOR"
@@ -375,8 +375,8 @@
           "$value": "{color.utility.green.700}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2756",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:806",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "EFFECT_COLOR",
                 "STROKE_COLOR"
@@ -389,8 +389,8 @@
           "$value": "{color.utility.yellow.700}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:473:2643",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:805",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "EFFECT_COLOR",
                 "STROKE_COLOR"
@@ -406,8 +406,8 @@
         "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:618:2761",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:821",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -419,8 +419,8 @@
         "$value": "{color.brand.hover}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7830:2492",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:822",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -432,8 +432,8 @@
         "$value": "{color.content.knockout}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14377:2594",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:823",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -445,8 +445,8 @@
         "$value": "{color.gray-charcoal.400}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:327:9899",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:808",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -458,8 +458,8 @@
         "$value": "{color.gray.600}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7834:2492",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:824",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -471,8 +471,8 @@
         "$value": "{color.gray-charcoal.700}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:7834:2491",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:810",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -484,8 +484,8 @@
         "$value": "{color.content.brand}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14184:7352",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:812",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -497,8 +497,8 @@
         "$value": "{color.content.knockout}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14308:1306",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:813",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -510,8 +510,8 @@
         "$value": "{color.gray-charcoal.700}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:13982:1278",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:814",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -523,8 +523,8 @@
         "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14542:910",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:815",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -536,8 +536,8 @@
         "$value": "{color.content.knockout}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14308:1307",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:816",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -549,8 +549,8 @@
         "$value": "{color.gray-charcoal.50}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14308:1309",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:811",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -562,8 +562,8 @@
         "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14175:7320",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:819",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -575,8 +575,8 @@
         "$value": "{color.brand.hover}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14175:7321",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:820",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -588,8 +588,8 @@
         "$value": "{color.gray-charcoal.400}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14248:1246",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:817",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -601,8 +601,8 @@
         "$value": "{color.content.knockout}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14308:1308",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:818",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -614,8 +614,8 @@
         "$value": "{color.gray-charcoal.300}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14377:2671",
-            "collection": "Tier 2  |  semantic tokens",
+            "variableId": "VariableID:15827:809",
+            "collection": "Tier 2  |  semantic color",
             "scopes": [
               "ALL_FILLS"
             ]
@@ -628,8 +628,8 @@
           "$value": "{color.utility.red.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2764",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:825",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -641,8 +641,8 @@
           "$value": "{color.content.knockout}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:14088:4079",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:826",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -654,8 +654,8 @@
           "$value": "{color.utility.blue.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2769",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:831",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -667,8 +667,8 @@
           "$value": "{color.content.knockout}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:14088:4082",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:832",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -680,8 +680,8 @@
           "$value": "{color.utility.green.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2767",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:829",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -693,8 +693,8 @@
           "$value": "{color.content.knockout}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:14088:4081",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:830",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -706,8 +706,8 @@
           "$value": "{color.utility.yellow.600}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:618:2765",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:827",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
@@ -719,1682 +719,12 @@
           "$value": "{color.content.knockout}",
           "$extensions": {
             "com.figma": {
-              "variableId": "VariableID:14088:4080",
-              "collection": "Tier 2  |  semantic tokens",
+              "variableId": "VariableID:15827:828",
+              "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"
               ]
             }
-          }
-        }
-      }
-    }
-  },
-  "typography": {
-    "body-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.body-lg.font-family}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2123",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.16}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2125",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_SIZE"
-            ]
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2124",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_WEIGHT"
-            ]
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.0}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2127",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LETTER_SPACING"
-            ]
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.24}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2126",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LINE_HEIGHT"
-            ]
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2128",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_STYLE"
-            ]
-          }
-        }
-      }
-    },
-    "body-emphasized": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.body-lg.font-family}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:498",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.body-default.font-size}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:500",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_SIZE"
-            ]
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.600}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:499",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_WEIGHT"
-            ]
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.body-default.letter-spacing}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:502",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LETTER_SPACING"
-            ]
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.body-default.line-height}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:501",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LINE_HEIGHT"
-            ]
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.body-default.text-transform}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:503",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_STYLE"
-            ]
-          }
-        }
-      }
-    },
-    "body-lg": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2129",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.20}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2131",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2130",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.body-default.letter-spacing}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2133",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.28}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2132",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.body-default.text-transform}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2134",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "body-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.body-lg.font-family}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2147",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.14}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2149",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.body-default.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2148",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.body-default.letter-spacing}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2151",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.20}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2150",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.body-default.text-transform}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2152",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "display-default-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2310",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.48}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2312",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.display-default.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2311",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-1-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2314",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.56}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2313",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5849:2315",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "display-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5836:2117",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.72}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5838:2740",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.900}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5838:2738",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5838:2742",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.80}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5838:2741",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5838:2743",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "display-sm-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2322",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.32}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2324",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.display-sm.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2323",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-1}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2326",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2325",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2327",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "display-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2316",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2318",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2317",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-1-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2320",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.48}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2319",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2321",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "font-family": {
-      "base": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.inter}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:525",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "headline": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.inter}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14251:524",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      }
-    },
-    "headline-default-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2346",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.32}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2348",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_SIZE"
-            ]
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.headline-default.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2347",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_WEIGHT"
-            ]
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2350",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LETTER_SPACING"
-            ]
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2349",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LINE_HEIGHT"
-            ]
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2351",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_STYLE"
-            ]
-          }
-        }
-      }
-    },
-    "headline-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2340",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2342",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2341",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2344",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.48}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2343",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2345",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "headline-lg-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2334",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2336",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_SIZE"
-            ]
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.headline-lg.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2335",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_WEIGHT"
-            ]
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2338",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LETTER_SPACING"
-            ]
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.48}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2337",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LINE_HEIGHT"
-            ]
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2339",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_STYLE"
-            ]
-          }
-        }
-      }
-    },
-    "headline-lg": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2328",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.48}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2330",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2329",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2332",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.56}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2331",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2333",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "headline-sm-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2364",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.28}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2366",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_SIZE"
-            ]
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.headline-sm.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2365",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_WEIGHT"
-            ]
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2368",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LETTER_SPACING"
-            ]
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.36}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2367",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "LINE_HEIGHT"
-            ]
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2369",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_STYLE"
-            ]
-          }
-        }
-      }
-    },
-    "headline-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.headline}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2358",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.32}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2360",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2359",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2362",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2361",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2363",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "label-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2400",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.16}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2402",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2401",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.0}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2404",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.24}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2403",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2405",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "TEXT_CONTENT"
-            ]
-          }
-        }
-      }
-    },
-    "label-lg": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2394",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.20}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2396",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.600}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2395",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.0}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2398",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.28}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2397",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2399",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "ALL_SCOPES"
-            ]
-          }
-        }
-      }
-    },
-    "label-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2117",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.14}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2119",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2118",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2121",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.20}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2120",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5851:2122",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "meta-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5386",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.14}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5382",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5383",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.0}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5379",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.20}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5380",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5378",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "TEXT_CONTENT"
-            ]
-          }
-        }
-      }
-    },
-    "meta-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.meta-default.font-family}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5381",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "FONT_FAMILY"
-            ]
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.12}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5389",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.meta-default.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5388",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.meta-default.letter-spacing}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5384",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.16}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5385",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.meta-default.text-transform}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:14010:5387",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": [
-              "TEXT_CONTENT"
-            ]
-          }
-        }
-      }
-    },
-    "title-default": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2382",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.28}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2384",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2383",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2386",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.36}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2385",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2387",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "title-lg-mobile": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2376",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.28}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2378",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.title-lg.font-weight}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2377",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2380",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.36}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2379",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2381",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "title-lg": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2370",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.32}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2372",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.700}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2371",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-1}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2374",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.40}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2373",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2375",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      }
-    },
-    "title-sm": {
-      "font-family": {
-        "$type": "fontFamily",
-        "$value": "{typography.font-family.base}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2388",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-size": {
-        "$type": "dimension",
-        "$value": "{typography.font-size.24}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2390",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "font-weight": {
-        "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2389",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "letter-spacing": {
-        "$type": "dimension",
-        "$value": "{typography.letter-spacing.minus-half}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2392",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "line-height": {
-        "$type": "dimension",
-        "$value": "{typography.line-height.32}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2391",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
-          }
-        }
-      },
-      "text-transform": {
-        "$type": "string",
-        "$value": "{typography.text-transform.none}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:5850:2393",
-            "collection": "Tier 2  |  semantic tokens",
-            "scopes": []
           }
         }
       }

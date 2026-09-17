@@ -2,16 +2,12 @@
   "exporterVersion": 1,
   "collections": [
     {
-      "name": "Tier 2  |  semantic tokens",
-      "tier": "semantic",
+      "name": "Tier 2  |  semantic typography",
+      "tier": "typography",
       "modes": [
         {
-          "name": "light",
-          "file": "tokens/semantic.light.json"
-        },
-        {
-          "name": "dark",
-          "file": "tokens/semantic.dark.json"
+          "name": "default",
+          "file": "tokens/typography.json"
         }
       ]
     },
@@ -60,6 +56,20 @@
         {
           "name": "mode-1",
           "file": "tokens/primitives.json"
+        }
+      ]
+    },
+    {
+      "name": "Tier 2  |  semantic color",
+      "tier": "semantic",
+      "modes": [
+        {
+          "name": "light",
+          "file": "tokens/semantic.light.json"
+        },
+        {
+          "name": "dark",
+          "file": "tokens/semantic.dark.json"
         }
       ]
     }
