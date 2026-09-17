@@ -85,6 +85,34 @@
           }
         }
       },
+      "knockout-translucent": {
+        "$type": "color",
+        "$value": "{color.transparency.black.80}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:3",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{color.brand.secondary.200}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:2",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
       "subtle": {
         "$type": "color",
         "$value": "{color.grayscale.100}",
@@ -285,6 +313,34 @@
           }
         }
       },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.brand.secondary.400}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:5",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "EFFECT_COLOR",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.brand.secondary.400}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:4",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "EFFECT_COLOR",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "knockout": {
         "$type": "color",
         "$value": "{color.transparency.white.80}",
@@ -305,6 +361,20 @@
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:801",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "EFFECT_COLOR",
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{color.brand.secondary.500}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:6",
             "collection": "Tier 2  |  semantic color",
             "scopes": [
               "EFFECT_COLOR",
@@ -725,6 +795,21 @@
                 "ALL_FILLS"
               ]
             }
+          }
+        }
+      }
+    },
+    "elevation": {
+      "shadow": {
+        "$type": "color",
+        "$value": "{color.transparency.black.40}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15830:7",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "EFFECT_COLOR"
+            ]
           }
         }
       }
