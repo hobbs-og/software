@@ -315,7 +315,7 @@
       },
       "focus": {
         "$type": "color",
-        "$value": "{color.brand.secondary.400}",
+        "$value": "{color.brand.default}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:5",

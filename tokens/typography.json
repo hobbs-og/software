@@ -29,7 +29,7 @@
       },
       "font-weight": {
         "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
+        "$value": "{typography.font-weight.400}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:5851:2124",
