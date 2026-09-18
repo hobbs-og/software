@@ -569,9 +569,22 @@
       }
     },
     "font-family": {
+      "accent": {
+        "$type": "fontFamily",
+        "$value": "{typography.font-family.alex-brush}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15845:1119",
+            "collection": "Tier 2  |  semantic typography",
+            "scopes": [
+              "FONT_FAMILY"
+            ]
+          }
+        }
+      },
       "base": {
         "$type": "fontFamily",
-        "$value": "{typography.font-family.inter}",
+        "$value": "{typography.font-family.libre}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14251:525",
@@ -584,7 +597,7 @@
       },
       "headline": {
         "$type": "fontFamily",
-        "$value": "{typography.font-family.inter}",
+        "$value": "{typography.font-family.fraunces}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14251:524",

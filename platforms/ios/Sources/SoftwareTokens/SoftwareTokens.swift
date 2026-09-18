@@ -115,7 +115,7 @@ public enum SoftwareTokens {
         public static let borderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
 
         /// color/border/focus
-        public static let borderFocus = SwiftUI.Color(light: 0x254EDBFF, dark: 0x436C8AFF)
+        public static let borderFocus = SwiftUI.Color(light: 0x254EDBFF, dark: 0x2B59EBFF)
 
         /// color/border/hover
         public static let borderHover = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)

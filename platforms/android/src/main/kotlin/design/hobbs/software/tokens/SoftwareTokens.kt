@@ -156,7 +156,7 @@ object SoftwareTokens {
         /** color/border/focus */
         val borderFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF436C8A) else ComposeColor(0xFF254EDB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF2B59EB) else ComposeColor(0xFF254EDB)
 
         /** color/border/hover */
         val borderHover = ComposeColor(0xFF436C8A)
