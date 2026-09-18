@@ -47,17 +47,17 @@ object SoftwareTokens {
         /** border/radius/xxsm */
         val radiusXxsm = 2.dp
 
-        /** border/width/border-default */
-        val widthBorderDefault = 1.dp
+        /** border/width/default */
+        val widthDefault = 1.dp
 
-        /** border/width/border-lg */
-        val widthBorderLg = 8.dp
+        /** border/width/lg */
+        val widthLg = 8.dp
 
-        /** border/width/border-md */
-        val widthBorderMd = 4.dp
+        /** border/width/md */
+        val widthMd = 4.dp
 
-        /** border/width/border-sm */
-        val widthBorderSm = 2.dp
+        /** border/width/sm */
+        val widthSm = 2.dp
     }
 
     object Color {
@@ -154,7 +154,9 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
 
         /** color/border/focus */
-        val borderFocus = ComposeColor(0xFF436C8A)
+        val borderFocus: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF436C8A) else ComposeColor(0xFF254EDB)
 
         /** color/border/hover */
         val borderHover = ComposeColor(0xFF436C8A)
@@ -529,7 +531,7 @@ object SoftwareTokens {
         val bodyDefaultFontSize = 16.sp
 
         /** typography/body-default/font-weight */
-        val bodyDefaultFontWeight = FontWeight(500)
+        val bodyDefaultFontWeight = FontWeight(400)
 
         /** typography/body-default/letter-spacing */
         val bodyDefaultLetterSpacing = 0.sp
@@ -574,7 +576,7 @@ object SoftwareTokens {
         val bodySmFontSize = 14.sp
 
         /** typography/body-sm/font-weight */
-        val bodySmFontWeight = FontWeight(500)
+        val bodySmFontWeight = FontWeight(400)
 
         /** typography/body-sm/letter-spacing */
         val bodySmLetterSpacing = 0.sp

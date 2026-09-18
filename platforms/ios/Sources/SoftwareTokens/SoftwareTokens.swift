@@ -34,17 +34,17 @@ public enum SoftwareTokens {
         /// border/radius/xxsm
         public static let radiusXxsm: CGFloat = 2
 
-        /// border/width/border-default
-        public static let widthBorderDefault: CGFloat = 1
+        /// border/width/default
+        public static let widthDefault: CGFloat = 1
 
-        /// border/width/border-lg
-        public static let widthBorderLg: CGFloat = 8
+        /// border/width/lg
+        public static let widthLg: CGFloat = 8
 
-        /// border/width/border-md
-        public static let widthBorderMd: CGFloat = 4
+        /// border/width/md
+        public static let widthMd: CGFloat = 4
 
-        /// border/width/border-sm
-        public static let widthBorderSm: CGFloat = 2
+        /// border/width/sm
+        public static let widthSm: CGFloat = 2
     }
 
     public enum Color {
@@ -115,7 +115,7 @@ public enum SoftwareTokens {
         public static let borderDisabled = SwiftUI.Color(light: 0x6F7078FF, dark: 0x42454EFF)
 
         /// color/border/focus
-        public static let borderFocus = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
+        public static let borderFocus = SwiftUI.Color(light: 0x254EDBFF, dark: 0x436C8AFF)
 
         /// color/border/hover
         public static let borderHover = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
@@ -430,7 +430,7 @@ public enum SoftwareTokens {
         public static let bodyDefaultFontSize: CGFloat = 16
 
         /// typography/body-default/font-weight
-        public static let bodyDefaultFontWeight = SwiftUI.Font.Weight.medium
+        public static let bodyDefaultFontWeight = SwiftUI.Font.Weight.regular
 
         /// typography/body-default/letter-spacing
         public static let bodyDefaultLetterSpacing: CGFloat = 0
@@ -475,7 +475,7 @@ public enum SoftwareTokens {
         public static let bodySmFontSize: CGFloat = 14
 
         /// typography/body-sm/font-weight
-        public static let bodySmFontWeight = SwiftUI.Font.Weight.medium
+        public static let bodySmFontWeight = SwiftUI.Font.Weight.regular
 
         /// typography/body-sm/letter-spacing
         public static let bodySmLetterSpacing: CGFloat = 0

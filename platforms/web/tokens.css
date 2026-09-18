@@ -10,10 +10,10 @@
   --border-radius-xlg: 3rem;
   --border-radius-xsm: 0.25rem;
   --border-radius-xxsm: 0.125rem;
-  --border-width-border-default: 0.0625rem;
-  --border-width-border-lg: 0.5rem;
-  --border-width-border-md: 0.25rem;
-  --border-width-border-sm: 0.125rem;
+  --border-width-default: 0.0625rem;
+  --border-width-lg: 0.5rem;
+  --border-width-md: 0.25rem;
+  --border-width-sm: 0.125rem;
   --color-background-brand: var(--color-brand-default);
   --color-background-brand-hover: var(--color-brand-hover);
   --color-background-default: #ffffff;
@@ -36,7 +36,7 @@
   --color-border-brand-hover: var(--color-brand-hover);
   --color-border-default: #6f7078;
   --color-border-disabled: #6f7078;
-  --color-border-focus: #436c8a;
+  --color-border-focus: var(--color-brand-default);
   --color-border-hover: #436c8a;
   --color-border-knockout: #ffffffcc;
   --color-border-knockout-hover: #ffffff;
@@ -140,7 +140,7 @@
   --spacing-padding-xxsm: var(--spacing-2);
   --typography-body-default-font-family: var(--typography-body-lg-font-family);
   --typography-body-default-font-size: var(--typography-font-size-16);
-  --typography-body-default-font-weight: var(--typography-font-weight-500);
+  --typography-body-default-font-weight: var(--typography-font-weight-400);
   --typography-body-default-letter-spacing: var(--typography-letter-spacing-0);
   --typography-body-default-line-height: var(--typography-line-height-24);
   --typography-body-default-text-transform: var(--typography-text-transform-none);
@@ -396,6 +396,7 @@
     --color-border-brand: #6690ff;
     --color-border-brand-hover: #84a9ff;
     --color-border-disabled: #42454e;
+    --color-border-focus: #436c8a;
     --color-border-selected: #73a6c4;
     --color-border-subtle: #42454e;
     --color-border-subtle-hover: #6f7078;
@@ -436,6 +437,7 @@
   --color-border-brand: #6690ff;
   --color-border-brand-hover: #84a9ff;
   --color-border-disabled: #42454e;
+  --color-border-focus: #436c8a;
   --color-border-selected: #73a6c4;
   --color-border-subtle: #42454e;
   --color-border-subtle-hover: #6f7078;
