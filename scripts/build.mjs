@@ -73,7 +73,11 @@ function buildCss() {
 
   // Theme-independent and default-theme tokens. [data-theme] re-declares them on any
   // themed subtree so var() references resolve against that subtree's colors.
-  out.push(block(':root,\n[data-theme]', keys.map((k) => [cssVar(k), cssValue(k, baseCtx)])));
+  const isType = (k) => model.tierOf(k) === 'typography';
+  out.push(block(':root,\n[data-theme]', keys.filter((k) => !isType(k)).map((k) => [cssVar(k), cssValue(k, baseCtx)])));
+  // Typography gets its own selector for the same reason: [data-typography] re-declares it so a
+  // brand's font families reach every text style. Kept apart so it never resets theme colors.
+  out.push(block(':root,\n[data-typography]', keys.filter(isType).map((k) => [cssVar(k), cssValue(k, baseCtx)])));
   out.push(block(':root', [['color-scheme', 'light dark']]));
 
   const layoutEntries = (mode) => layoutKeys(model).map((k) => [cssVar(k), cssValue(k, { semantic: semanticDefault, layout: mode })]);
@@ -95,6 +99,14 @@ function buildCss() {
     out.push(block(`[data-theme="${mode}"]`, withScheme));
   }
   out.push(block(`[data-theme="${semanticDefault}"]`, [['color-scheme', semanticDefault === 'dark' ? 'dark' : 'light']]));
+
+  // Other typography modes (brands): only tokens whose output differs from the default mode.
+  // Opt in per subtree with data-typography="<mode>". Native outputs use the default mode.
+  for (const mode of model.typographyModes.slice(1)) {
+    const ctx = { ...baseCtx, typography: mode };
+    const diff = keys.filter((k) => model.tierOf(k) === 'typography' && cssValue(k, ctx) !== cssValue(k, baseCtx)).map((k) => [cssVar(k), cssValue(k, ctx)]);
+    out.push(block(`[data-typography="${mode}"]`, diff));
+  }
 
   return out.filter(Boolean).join('\n');
 }

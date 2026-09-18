@@ -30,10 +30,12 @@ function loadFile(file) {
   return map;
 }
 
-// Returns { primitives, typography, component, semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
+// Returns { primitives, typography, typographyByMode: {mode: Map}, typographyModes, component,
+//           semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
+// model.typography is the first (default) typography mode.
 export function loadTokens() {
   const manifest = readJson('tokens/manifest.json');
-  const model = { primitives: new Map(), typography: new Map(), component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
+  const model = { primitives: new Map(), typography: new Map(), typographyByMode: {}, typographyModes: [], component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
   const seenFiles = new Set();
 
   for (const c of manifest.collections) {
@@ -44,8 +46,9 @@ export function loadTokens() {
       if (c.tier === 'primitive') {
         for (const [k, t] of tokens) model.primitives.set(k, t);
       } else if (c.tier === 'typography') {
-        // Semantic typography has no theme modes: it is the same in light and dark.
-        for (const [k, t] of tokens) model.typography.set(k, t);
+        // Typography modes are brands (default, rhinestone, …), not themes: the same in light and dark.
+        model.typographyByMode[mode.name] = tokens;
+        model.typographyModes.push(mode.name);
       } else if (c.tier === 'component') {
         for (const [k, t] of tokens) model.component.set(k, t);
       } else if (c.tier === 'semantic') {
@@ -61,6 +64,7 @@ export function loadTokens() {
     }
   }
 
+  if (model.typographyModes.length) model.typography = model.typographyByMode[model.typographyModes[0]];
   if (!model.semanticModes.length) throw new Error('No semantic collection found in tokens/manifest.json');
   if (!model.layoutModes.length) throw new Error('No layout (grid) collection found in tokens/manifest.json');
 
@@ -73,7 +77,7 @@ export function loadTokens() {
     }
   };
   claim('primitives', model.primitives);
-  claim('typography', model.typography);
+  for (const m of model.typographyModes) claim('typography', model.typographyByMode[m]);
   claim('component', model.component);
   for (const m of model.semanticModes) claim('semantic', model.semantic[m]);
   for (const m of model.layoutModes) claim('layout', model.layout[m]);
@@ -97,11 +101,12 @@ export function isPrivate(model, key) {
   return model.tierOf(key) === 'primitives' && model.primitives.get(key).scopes.length === 0;
 }
 
-// A context picks one semantic mode and one layout mode.
+// A context picks one semantic mode and one layout mode, and optionally a typography mode
+// (the default one when omitted).
 export function lookup(model, key, ctx) {
   switch (model.tierOf(key)) {
     case 'primitives': return model.primitives.get(key);
-    case 'typography': return model.typography.get(key);
+    case 'typography': return (ctx && ctx.typography ? model.typographyByMode[ctx.typography] : model.typography).get(key);
     case 'component': return model.component.get(key);
     case 'semantic': return model.semantic[ctx.semantic].get(key);
     case 'layout': return model.layout[ctx.layout].get(key);

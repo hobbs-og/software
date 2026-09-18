@@ -16,11 +16,11 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 |---|---|---|---|
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
 | Semantic color | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
-| Semantic typography | Tier 2 · semantic typography | `tokens/typography.json` | nothing |
+| Semantic typography | Tier 2 · semantic typography | `tokens/typography.default.json`, `typography.rhinestone.json` | brand mode (font families only, today) |
 | Component | a product's own Figma file, linked to this library | that product's repository | inherits from semantic |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
-**Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
+**Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Its modes are brands, not themes: the first mode (`default`) is the baseline, and each other mode (`rhinestone`) overrides only what differs. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
 
 **Primitive colors are private.** In Figma they are hidden from every property picker. The build treats a primitive with no scopes the same way: platforms get its resolved value, never the token. Designers and developers both reach for `color/content/default`, never `color/gray-charcoal/400`.
 
@@ -81,6 +81,7 @@ The plugin refuses to export, and lists why, if a variable points to another lib
 ```
 
 - **Theme:** follows the operating system by default. Force one with `data-theme="light"` or `data-theme="dark"` on `<html>` or on any section, which also lets a dark section sit inside a light page.
+- **Typography brand:** the default mode applies everywhere. Switch a page or section to another typography mode with `data-typography="rhinestone"`. Native outputs use the default mode (and the system font).
 - **Grid:** `--columns`, `--container-gutter`, `--section-padding` and `--section-gap` change at 35em (560px) and 60em (960px). Breakpoints use `em` so they move with the user's browser font size.
 - **Font:** every font-family token falls back to the OS system sans-serif, then Helvetica: `"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif`. Inter is self-hosted, never loaded from the Google Fonts CDN (see Fonts below).
 
