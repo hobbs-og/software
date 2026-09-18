@@ -7,7 +7,7 @@ import UIKit
 import AppKit
 #endif
 
-/// Design tokens. Sizes are points (1pt = 1px = 1/16rem); colours follow the system appearance.
+/// Design tokens. Sizes are points (1pt = 1px = 1/16rem); colors follow the system appearance.
 public enum SoftwareTokens {
     public enum Border {
         /// border/radius/lg
@@ -969,7 +969,7 @@ public enum SoftwareTokens {
 }
 
 extension SwiftUI.Color {
-    /// A colour that follows the current appearance, including per-view overrides
+    /// A color that follows the current appearance, including per-view overrides
     /// such as `.preferredColorScheme(.dark)`.
     init(light: UInt32, dark: UInt32) {
         #if canImport(UIKit)

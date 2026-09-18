@@ -2,8 +2,8 @@
 // Builds platform outputs from tokens/*.json.
 //
 //   platforms/web/tokens.css                     CSS custom properties, rem units
-//   platforms/ios/Sources/SoftwareTokens/*.swift SwiftUI, points, dynamic light/dark colours
-//   platforms/android/.../SoftwareTokens.kt      Jetpack Compose, dp/sp, light/dark colours
+//   platforms/ios/Sources/SoftwareTokens/*.swift SwiftUI, points, dynamic light/dark colors
+//   platforms/android/.../SoftwareTokens.kt      Jetpack Compose, dp/sp, light/dark colors
 //
 // Usage: node scripts/build.mjs
 
@@ -72,7 +72,7 @@ function buildCss() {
   const out = [`/* ${HEADER} */\n`];
 
   // Theme-independent and default-theme tokens. [data-theme] re-declares them on any
-  // themed subtree so var() references resolve against that subtree's colours.
+  // themed subtree so var() references resolve against that subtree's colors.
   out.push(block(':root,\n[data-theme]', keys.map((k) => [cssVar(k), cssValue(k, baseCtx)])));
   out.push(block(':root', [['color-scheme', 'light dark']]));
 
@@ -197,7 +197,7 @@ function buildSwift() {
     'import AppKit',
     '#endif',
     '',
-    '/// Design tokens. Sizes are points (1pt = 1px = 1/16rem); colours follow the system appearance.',
+    '/// Design tokens. Sizes are points (1pt = 1px = 1/16rem); colors follow the system appearance.',
     'public enum SoftwareTokens {',
   ];
   for (const [group, members] of groups()) {
@@ -236,7 +236,7 @@ function buildSwift() {
 
   lines.push(
     'extension SwiftUI.Color {',
-    '    /// A colour that follows the current appearance, including per-view overrides',
+    '    /// A color that follows the current appearance, including per-view overrides',
     '    /// such as `.preferredColorScheme(.dark)`.',
     '    init(light: UInt32, dark: UInt32) {',
     '        #if canImport(UIKit)',

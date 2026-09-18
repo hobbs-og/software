@@ -10,19 +10,19 @@ Figma: software-subatomic  ──plugin──▶  tokens/*.json  ──scripts/b
 
 Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in Figma, push, review the pull request.
 
-## How the tokens are organised
+## How the tokens are organized
 
 | Tier | Figma collection | File | Themed by |
 |---|---|---|---|
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
-| Semantic colour | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
+| Semantic color | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
 | Semantic typography | Tier 2 · semantic typography | `tokens/typography.json` | nothing |
 | Component | a product's own Figma file, linked to this library | that product's repository | inherits from semantic |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
-**Only semantic colour changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
+**Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
 
-**Primitive colours are private.** In Figma they are hidden from every property picker. The build treats a primitive with no scopes the same way: platforms get its resolved value, never the token. Designers and developers both reach for `color/content/default`, never `color/gray-charcoal/400`.
+**Primitive colors are private.** In Figma they are hidden from every property picker. The build treats a primitive with no scopes the same way: platforms get its resolved value, never the token. Designers and developers both reach for `color/content/default`, never `color/gray-charcoal/400`.
 
 ### Component naming
 
@@ -116,7 +116,7 @@ struct Greeting: View {
 }
 ```
 
-iOS uses the system font (San Francisco); font-family tokens are web-only. Colours switch with the system appearance and with `.preferredColorScheme`. A fixed `.system(size:)` does not follow Dynamic Type on its own, which is why the size goes through `@ScaledMetric`.
+iOS uses the system font (San Francisco); font-family tokens are web-only. Colors switch with the system appearance and with `.preferredColorScheme`. A fixed `.system(size:)` does not follow Dynamic Type on its own, which is why the size goes through `@ScaledMetric`.
 
 **Layout on iPhone Duo.** Pick grid values from the width your view actually has, not the device model:
 
@@ -142,13 +142,13 @@ Text(
 )
 ```
 
-Android uses the device's default system font (no `fontFamily` set); `sp` sizes follow the user's font-scale setting. Colours follow the system dark theme. Force one for a subtree with `CompositionLocalProvider(LocalSoftwareDarkTheme provides true) { … }`. Use `SoftwareTokens.Grid.forWidth(windowWidth)` for layout values.
+Android uses the device's default system font (no `fontFamily` set); `sp` sizes follow the user's font-scale setting. Colors follow the system dark theme. Force one for a subtree with `CompositionLocalProvider(LocalSoftwareDarkTheme provides true) { … }`. Use `SoftwareTokens.Grid.forWidth(windowWidth)` for layout values.
 
 ## Accessibility checks
 
-`checks/contrast.json` lists every foreground/background pair a component uses. `npm test` measures each pair in every theme against WCAG 2.1 AA (4.5:1 for text, 3:1 for boundaries and focus indicators) and fails the pull request if one falls short. Add a pair whenever a component puts two colours together.
+`checks/contrast.json` lists every foreground/background pair a component uses. `npm test` measures each pair in every theme against WCAG 2.1 AA (4.5:1 for text, 3:1 for boundaries and focus indicators) and fails the pull request if one falls short. Add a pair whenever a component puts two colors together.
 
-The same command checks **theme coverage**: every colour a designer can pick must reach `Tier 2 | semantic color`. A component colour pointing straight at a primitive (say `color/brand/secondary/400`) looks right in light mode and stays the same in dark, so the pull request fails until it points at a semantic token.
+The same command checks **theme coverage**: every color a designer can pick must reach `Tier 2 | semantic color`. A component color pointing straight at a primitive (say `color/brand/secondary/400`) looks right in light mode and stays the same in dark, so the pull request fails until it points at a semantic token.
 
 ## Commands
 

@@ -135,7 +135,7 @@ export function layoutKeys(model) {
   return [...model.layout[model.layoutModes[0]].keys()].sort();
 }
 
-// ─── Colour maths (WCAG 2.1) ────────────────────────────────────────────────
+// ─── Color math (WCAG 2.1) ────────────────────────────────────────────────
 
 export function rgba(color) {
   const [r, g, b] = color.components;
@@ -161,7 +161,7 @@ export function contrast(fg, bg) {
   return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
 }
 
-// Paints a translucent colour over an opaque one.
+// Paints a translucent color over an opaque one.
 export function over(top, bottom) {
   const a = top.a;
   return { r: top.r * a + bottom.r * (1 - a), g: top.g * a + bottom.g * (1 - a), b: top.b * a + bottom.b * (1 - a), a: 1 };

@@ -24,7 +24,7 @@ for (const theme of model.semanticModes) {
       failures.push(line);
       continue;
     }
-    if (f.type !== 'color' || b.type !== 'color') throw new Error(`${fg} / ${bg} must both be colours`);
+    if (f.type !== 'color' || b.type !== 'color') throw new Error(`${fg} / ${bg} must both be colors`);
     const back = rgba(b.value);
     if (back.a < 1) {
       rows.push(`  skip  ${theme.padEnd(6)} ${fg} on ${bg}: background is translucent, so contrast depends on what is behind it`);
@@ -42,8 +42,8 @@ for (const theme of model.semanticModes) {
 console.log(rows.join('\n'));
 console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
 
-// Theme coverage: every colour a designer or developer can use must reach the semantic
-// colour tier, or it cannot change between light and dark.
+// Theme coverage: every color a designer or developer can use must reach the semantic
+// color tier, or it cannot change between light and dark.
 const themeCtx = { semantic: model.semanticModes[0], layout: model.layoutModes[0] };
 
 // Primitives the semantic tier itself points at (the brand override tokens) sit upstream of
@@ -68,7 +68,7 @@ for (const key of usable) {
   }
   if (!themed) unthemed.push(`  FAIL  ${key} never reaches Tier 2 semantic color, so it cannot follow dark mode`);
 }
-console.log(`\nTheme coverage: ${unthemed.length ? unthemed.length + ' colour tokens bypass semantic colour' : 'every usable colour follows the theme'}`);
+console.log(`\nTheme coverage: ${unthemed.length ? unthemed.length + ' color tokens bypass semantic color' : 'every usable color follows the theme'}`);
 if (unthemed.length) {
   console.log(unthemed.join('\n'));
   failures.push(...unthemed);
