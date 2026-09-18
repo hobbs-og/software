@@ -6,6 +6,7 @@
   "private": true,
   "exports": {
     "./tokens.css": "./platforms/web/tokens.css",
+    "./grid.css": "./platforms/web/grid.css",
     "./fonts.css": "./platforms/web/fonts.css",
     "./fonts/*": "./platforms/web/fonts/*",
     "./tokens/*": "./tokens/*"

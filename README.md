@@ -82,6 +82,16 @@ The plugin refuses to export, and lists why, if a variable points to another lib
 
 - **Theme:** follows the operating system by default. Force one with `data-theme="light"` or `data-theme="dark"` on `<html>` or on any section, which also lets a dark section sit inside a light page.
 - **Typography brand:** the default mode applies everywhere. Switch a page or section to another typography mode with `data-typography="rhinestone"`. Native outputs use the default mode (and the system font).
+
+### Grid (web)
+
+Import `@hobbs-og/software/grid.css` after `tokens.css`. It is generated from the grid tokens: 2 columns below 35em, 8 from 35em, 12 from 60em.
+
+- `.grid` is the page grid. Write spans for 12 columns: `.span-1` … `.span-12`, or `.span-all`.
+- On 8 columns, spans remap by the share of the row they take (Mark's tablet rule): 1–4 → 2, 5–7 → 4, 8–11 → 6, 12 → 8. A row that fills 12 columns still fills 8 (8+4 → 6+2, 6+3+3 → 4+2+2).
+- On 2 columns, every span is full width.
+- `.subgrid` on a span lays its children on the page's own tracks, so nested spans line up with the page columns and remap with them. It replaces the old `.columns--N` containers.
+- Empty `span`/`div` children are spacers: they shift content on the 12-column grid and are hidden below it.
 - **Grid:** `--columns`, `--container-gutter`, `--section-padding` and `--section-gap` change at 35em (560px) and 60em (960px). Breakpoints use `em` so they move with the user's browser font size.
 - **Font:** every font-family token falls back to the OS system sans-serif, then Helvetica: `"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif`. Inter is self-hosted, never loaded from the Google Fonts CDN (see Fonts below).
 

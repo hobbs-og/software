@@ -2,6 +2,7 @@
 // Builds platform outputs from tokens/*.json.
 //
 //   platforms/web/tokens.css                     CSS custom properties, rem units
+//   platforms/web/grid.css                       .grid, .subgrid and .span-N from the grid tokens
 //   platforms/ios/Sources/SoftwareTokens/*.swift SwiftUI, points, dynamic light/dark colors
 //   platforms/android/.../SoftwareTokens.kt      Jetpack Compose, dp/sp, light/dark colors
 //
@@ -109,6 +110,91 @@ function buildCss() {
   }
 
   return out.filter(Boolean).join('\n');
+}
+
+// ─── Web grid ───────────────────────────────────────────────────────────────
+//
+// Layout classes for the grid collection. Markup is written for the largest mode
+// (.span-1 … .span-N of its columns); smaller modes remap those spans:
+//
+//   smallest mode  every span is full width.
+//   middle modes   Mark's grid rule (his pre-subgrid _grid.scss, 12 → 6 columns on a
+//                  tablet): spans are bucketed by the share of the row they take, and
+//                  each bucket gets that share of the mode's columns. On 8 columns:
+//                  1–4 → 2, 5–7 → 4, 8–11 → 6, 12 → 8. Rows that fill the large grid
+//                  still fill the row (8+4 → 6+2, 6+3+3 → 4+2+2).
+//   largest mode   spans as written.
+//
+// .subgrid replaces the old nested .columns--N containers: a span that is also a
+// subgrid lays its children on the parent's own tracks, so a nested .span-4 lines up
+// with the page's columns and remaps with them.
+
+// Upper bound of each bucket as a share of the largest mode's columns, and the share
+// of a middle mode's columns it becomes.
+const MIDDLE_BUCKETS = [
+  { upTo: 4 / 12, share: 1 / 4 },
+  { upTo: 7 / 12, share: 1 / 2 },
+  { upTo: 11 / 12, share: 3 / 4 },
+  { upTo: 1, share: 1 },
+];
+
+function gridColumns(mode) {
+  const t = model.layout[mode].get('columns');
+  if (!t || typeof t.value !== 'number') throw new Error(`Grid mode "${mode}" needs a numeric columns token`);
+  return t.value;
+}
+
+function buildGridCss() {
+  const modes = model.layoutModes;
+  const large = modes[modes.length - 1];
+  const max = gridColumns(large);
+  const spans = Array.from({ length: max }, (_, i) => i + 1);
+  const sel = (list) => list.map((n) => `.span-${n}`).join(',\n');
+  const media = (mode) => `@media (min-width: ${Number((model.layout[mode].get('min-width').value.value / ROOT_FONT_SIZE).toFixed(4))}em)`;
+  const out = [`/* ${HEADER} */\n`];
+
+  out.push(`.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: var(--container-gutter);
+}
+
+/* A span that lays its children on the parent grid's tracks. Gaps are inherited. */
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+/* ${modes[0]}: ${gridColumns(modes[0])} columns, every span full width. */
+${sel(spans)},
+.span-all {
+  grid-column: 1 / -1;
+}
+
+/* Empty spacer elements only shift content on the ${large} grid. */
+@media (width < ${media(large).match(/[\d.]+em/)[0]}) {
+  :is(.grid, .subgrid) > :is(span, div):empty {
+    display: none;
+  }
+}
+`);
+
+  for (const mode of modes.slice(1, -1)) {
+    const cols = gridColumns(mode);
+    const groups = new Map();
+    for (const n of spans) {
+      const bucket = MIDDLE_BUCKETS.find((b) => n / max <= b.upTo + 1e-9);
+      const target = Math.round(cols * bucket.share);
+      if (!groups.has(target)) groups.set(target, []);
+      groups.get(target).push(n);
+    }
+    const rules = [...groups].map(([target, list]) => `  ${sel(list).replace(/\n/g, '\n  ')} {\n    grid-column: ${target >= cols ? '1 / -1' : `span ${target}`};\n  }`);
+    out.push(`/* ${mode}: ${cols} columns. */\n${media(mode)} {\n${rules.join('\n\n')}\n}\n`);
+  }
+
+  const largeRules = spans.map((n) => `  .span-${n} {\n    grid-column: span ${n};\n  }`);
+  out.push(`/* ${large}: ${max} columns, spans as written. */\n${media(large)} {\n${largeRules.join('\n')}\n}\n`);
+  return out.join('\n');
 }
 
 // ─── Native naming ──────────────────────────────────────────────────────────
@@ -373,6 +459,7 @@ function buildKotlin() {
 // ─── Write ──────────────────────────────────────────────────────────────────
 
 write('platforms/web/tokens.css', buildCss());
+write('platforms/web/grid.css', buildGridCss());
 write('platforms/ios/Sources/SoftwareTokens/SoftwareTokens.swift', buildSwift());
 write('platforms/android/src/main/kotlin/design/hobbs/software/tokens/SoftwareTokens.kt', buildKotlin());
 
