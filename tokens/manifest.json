@@ -7,7 +7,11 @@
       "modes": [
         {
           "name": "default",
-          "file": "tokens/typography.json"
+          "file": "tokens/typography.default.json"
+        },
+        {
+          "name": "rhinestone",
+          "file": "tokens/typography.rhinestone.json"
         }
       ]
     },
