@@ -186,10 +186,14 @@
   --typography-display-sm-letter-spacing: var(--typography-letter-spacing-minus-1-half);
   --typography-display-sm-line-height: var(--typography-line-height-48);
   --typography-display-sm-text-transform: var(--typography-text-transform-none);
-  --typography-font-family-base: var(--typography-font-family-inter);
-  --typography-font-family-headline: var(--typography-font-family-inter);
+  --typography-font-family-accent: var(--typography-font-family-alex-brush);
+  --typography-font-family-alex-brush: "Alex Brush", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+  --typography-font-family-base: var(--typography-font-family-libre);
+  --typography-font-family-fraunces: "Fraunces 72pt SuperSoft", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+  --typography-font-family-headline: var(--typography-font-family-fraunces);
   --typography-font-family-helvetica: "Helvetica", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --typography-font-family-inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+  --typography-font-family-libre: "Libre Franklin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
   --typography-font-size-104: 6.5rem;
   --typography-font-size-12: 0.75rem;
   --typography-font-size-14: 0.875rem;
@@ -396,7 +400,7 @@
     --color-border-brand: #6690ff;
     --color-border-brand-hover: #84a9ff;
     --color-border-disabled: #42454e;
-    --color-border-focus: #436c8a;
+    --color-border-focus: var(--color-brand-hover);
     --color-border-selected: #73a6c4;
     --color-border-subtle: #42454e;
     --color-border-subtle-hover: #6f7078;
@@ -437,7 +441,7 @@
   --color-border-brand: #6690ff;
   --color-border-brand-hover: #84a9ff;
   --color-border-disabled: #42454e;
-  --color-border-focus: #436c8a;
+  --color-border-focus: var(--color-brand-hover);
   --color-border-selected: #73a6c4;
   --color-border-subtle: #42454e;
   --color-border-subtle-hover: #6f7078;
