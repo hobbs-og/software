@@ -430,6 +430,107 @@ object SoftwareTokens {
         const val typographyTextTransform = "capitalize"
     }
 
+    object Chip {
+        /** chip/border/radius/default */
+        val borderRadiusDefault = 9999.dp
+
+        /** chip/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** chip/color/default/background/default */
+        val colorDefaultBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** chip/color/default/border/default */
+        val colorDefaultBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** chip/color/default/content/default */
+        val colorDefaultContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** chip/color/draft/background/default */
+        val colorDraftBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF15193F) else ComposeColor(0xFFECEEFC)
+
+        /** chip/color/draft/border/default */
+        val colorDraftBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8792EA) else ComposeColor(0xFF34409E)
+
+        /** chip/color/draft/content/default */
+        val colorDraftContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFABB3F0) else ComposeColor(0xFF4555D3)
+
+        /** chip/color/error/background/default */
+        val colorErrorBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF390E0E) else ComposeColor(0xFFFCEAEF)
+
+        /** chip/color/error/border/default */
+        val colorErrorBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFDD7C88) else ComposeColor(0xFF8D2121)
+
+        /** chip/color/error/content/default */
+        val colorErrorContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
+
+        /** chip/color/partial/background/default */
+        val colorPartialBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** chip/color/partial/border/default */
+        val colorPartialBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** chip/color/partial/content/default */
+        val colorPartialContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** chip/color/sent/background/default */
+        val colorSentBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** chip/color/sent/border/default */
+        val colorSentBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** chip/color/sent/content/default */
+        val colorSentContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** chip/color/success/background/default */
+        val colorSuccessBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF03211A) else ComposeColor(0xFFDCF3EE)
+
+        /** chip/color/success/border/default */
+        val colorSuccessBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF11AD86) else ComposeColor(0xFF085442)
+
+        /** chip/color/success/content/default */
+        val colorSuccessContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF5DC9AF) else ComposeColor(0xFF0B7058)
+
+        /** chip/spacing/default/padding-x */
+        val spacingDefaultPaddingX = 4.dp
+
+        /** chip/spacing/default/padding-y */
+        val spacingDefaultPaddingY = 2.dp
+
+        /** chip/spacing/groups/gap */
+        val spacingGroupsGap = 4.dp
+    }
+
     object Color {
         /** color/background/brand */
         val backgroundBrand = ComposeColor(0xFF254EDB)
