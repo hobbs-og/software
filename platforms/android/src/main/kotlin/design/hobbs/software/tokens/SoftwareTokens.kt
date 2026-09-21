@@ -858,7 +858,7 @@ object SoftwareTokens {
         val labelSmFontWeight = FontWeight(500)
 
         /** typography/label-sm/letter-spacing */
-        val labelSmLetterSpacing = 0.5.sp
+        val labelSmLetterSpacing = 0.sp
 
         /** typography/label-sm/line-height */
         val labelSmLineHeight = 20.sp
