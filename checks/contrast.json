@@ -403,6 +403,42 @@
       "bg": "color.background.subtle",
       "min": 4.5,
       "note": "link, hover, on subtle"
+    },
+    {
+      "fg": "chip.color.default.content.default",
+      "bg": "chip.color.default.background.default",
+      "min": 4.5,
+      "note": "default chip label"
+    },
+    {
+      "fg": "chip.color.draft.content.default",
+      "bg": "chip.color.draft.background.default",
+      "min": 4.5,
+      "note": "draft chip label"
+    },
+    {
+      "fg": "chip.color.sent.content.default",
+      "bg": "chip.color.sent.background.default",
+      "min": 4.5,
+      "note": "sent chip label"
+    },
+    {
+      "fg": "chip.color.partial.content.default",
+      "bg": "chip.color.partial.background.default",
+      "min": 4.5,
+      "note": "partial chip label"
+    },
+    {
+      "fg": "chip.color.success.content.default",
+      "bg": "chip.color.success.background.default",
+      "min": 4.5,
+      "note": "success chip label"
+    },
+    {
+      "fg": "chip.color.error.content.default",
+      "bg": "chip.color.error.background.default",
+      "min": 4.5,
+      "note": "error chip label"
     }
   ]
 }
