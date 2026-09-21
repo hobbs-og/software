@@ -1,5 +1,5 @@
 {
-  "$description": "Foreground/background pairs that must meet WCAG 2.1 AA in every theme. 4.5 = text (1.4.3). 3 = large text, UI boundaries and focus indicators (1.4.11). This repository holds the shared tiers only; component pairs live with the product that owns the component.",
+  "$description": "Foreground/background pairs that must meet WCAG 2.1 AA in every theme. 4.5 = text (1.4.3). 3 = large text, UI boundaries and focus indicators (1.4.11). Disabled states are exempt (1.4.3). Add a pair whenever a component puts two colors together.",
   "pairs": [
     {
       "fg": "color.content.default",
@@ -145,6 +145,264 @@
       "fg": "color.border.utility.error",
       "bg": "color.background.default",
       "min": 3
+    },
+    {
+      "fg": "button.color.primary.content.default",
+      "bg": "button.color.primary.background.default",
+      "min": 4.5,
+      "note": "primary button label, default"
+    },
+    {
+      "fg": "button.color.primary.content.hover",
+      "bg": "button.color.primary.background.hover",
+      "min": 4.5,
+      "note": "primary button label, hover"
+    },
+    {
+      "fg": "button.color.primary.content.focus",
+      "bg": "button.color.primary.background.focus",
+      "min": 4.5,
+      "note": "primary button label, focus"
+    },
+    {
+      "fg": "button.color.outline.content.default",
+      "bg": "button.color.outline.background.default",
+      "min": 4.5,
+      "note": "outline button label, default"
+    },
+    {
+      "fg": "button.color.outline.content.hover",
+      "bg": "button.color.outline.background.hover",
+      "min": 4.5,
+      "note": "outline button label, hover"
+    },
+    {
+      "fg": "button.color.outline.content.focus",
+      "bg": "button.color.outline.background.focus",
+      "min": 4.5,
+      "note": "outline button label, focus"
+    },
+    {
+      "fg": "button.color.ghost.content.default",
+      "bg": "button.color.ghost.background.default",
+      "min": 4.5,
+      "note": "ghost button label, default"
+    },
+    {
+      "fg": "button.color.ghost.content.hover",
+      "bg": "button.color.ghost.background.hover",
+      "min": 4.5,
+      "note": "ghost button label, hover"
+    },
+    {
+      "fg": "button.color.ghost.content.focus",
+      "bg": "button.color.ghost.background.focus",
+      "min": 4.5,
+      "note": "ghost button label, focus"
+    },
+    {
+      "fg": "button.color.danger.content.default",
+      "bg": "button.color.danger.background.default",
+      "min": 4.5,
+      "note": "danger button label, default"
+    },
+    {
+      "fg": "button.color.danger.content.hover",
+      "bg": "button.color.danger.background.hover",
+      "min": 4.5,
+      "note": "danger button label, hover"
+    },
+    {
+      "fg": "button.color.danger.content.focus",
+      "bg": "button.color.danger.background.focus",
+      "min": 4.5,
+      "note": "danger button label, focus"
+    },
+    {
+      "fg": "button.color.primary.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "primary button edge on the page"
+    },
+    {
+      "fg": "button.color.outline.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "outline button edge on the page"
+    },
+    {
+      "fg": "button.color.ghost.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "ghost button edge on the page"
+    },
+    {
+      "fg": "button.color.danger.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "danger button edge on the page"
+    },
+    {
+      "fg": "button.focus-ring.outer-shadow.outer-shadow",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "button focus ring"
+    },
+    {
+      "fg": "field.color.content.default",
+      "bg": "field.color.background.default",
+      "min": 4.5,
+      "note": "field value, default"
+    },
+    {
+      "fg": "field.color.content.hover",
+      "bg": "field.color.background.hover",
+      "min": 4.5,
+      "note": "field value, hover"
+    },
+    {
+      "fg": "field.color.content.focus",
+      "bg": "field.color.background.focus",
+      "min": 4.5,
+      "note": "field value, focus"
+    },
+    {
+      "fg": "field.color.content.selected",
+      "bg": "field.color.background.selected",
+      "min": 4.5,
+      "note": "field value, selected"
+    },
+    {
+      "fg": "field.color.content.label",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "field label"
+    },
+    {
+      "fg": "field.color.content.error",
+      "bg": "field.color.background.default",
+      "min": 4.5,
+      "note": "field error message"
+    },
+    {
+      "fg": "field.color.content.success",
+      "bg": "field.color.background.default",
+      "min": 4.5,
+      "note": "field success message"
+    },
+    {
+      "fg": "field.color.border.default",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, default"
+    },
+    {
+      "fg": "field.color.border.hover",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, hover"
+    },
+    {
+      "fg": "field.color.border.focus",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, focus"
+    },
+    {
+      "fg": "field.color.border.error",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, error"
+    },
+    {
+      "fg": "field.color.border.success",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, success"
+    },
+    {
+      "fg": "field.color.border.selected",
+      "bg": "field.color.background.default",
+      "min": 3,
+      "note": "field edge, selected"
+    },
+    {
+      "fg": "field.focus-ring.outer-shadow.outer-shadow",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "field focus ring"
+    },
+    {
+      "fg": "navbar.color.content.default",
+      "bg": "navbar.color.background.default",
+      "min": 4.5,
+      "note": "nav link, default"
+    },
+    {
+      "fg": "navbar.color.content.hover",
+      "bg": "navbar.color.background.default",
+      "min": 4.5,
+      "note": "nav link, hover"
+    },
+    {
+      "fg": "navbar.color.content.focus",
+      "bg": "navbar.color.background.default",
+      "min": 4.5,
+      "note": "nav link, focus"
+    },
+    {
+      "fg": "navbar.color.content.active",
+      "bg": "navbar.color.background.default",
+      "min": 4.5,
+      "note": "nav link, active"
+    },
+    {
+      "fg": "accordion.color.content.default",
+      "bg": "accordion.color.background.default",
+      "min": 4.5,
+      "note": "accordion label, default"
+    },
+    {
+      "fg": "accordion.color.content.hover",
+      "bg": "accordion.color.background.default",
+      "min": 4.5,
+      "note": "accordion label, hover"
+    },
+    {
+      "fg": "accordion.color.content.focus",
+      "bg": "accordion.color.background.default",
+      "min": 4.5,
+      "note": "accordion label, focus"
+    },
+    {
+      "fg": "accordion.color.content.active",
+      "bg": "accordion.color.background.default",
+      "min": 4.5,
+      "note": "accordion label, active"
+    },
+    {
+      "fg": "hyperlink.color.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "link, default, on default"
+    },
+    {
+      "fg": "hyperlink.color.default",
+      "bg": "color.background.subtle",
+      "min": 4.5,
+      "note": "link, default, on subtle"
+    },
+    {
+      "fg": "hyperlink.color.hover",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "link, hover, on default"
+    },
+    {
+      "fg": "hyperlink.color.hover",
+      "bg": "color.background.subtle",
+      "min": 4.5,
+      "note": "link, hover, on subtle"
     }
   ]
 }
