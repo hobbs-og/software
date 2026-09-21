@@ -115,7 +115,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.brand.primary.100}",
+        "$value": "{color.grayscale.100}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:782",
@@ -129,7 +129,7 @@
       },
       "subtle-hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.200}",
+        "$value": "{color.grayscale.200}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:783",
@@ -385,7 +385,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.brand.primary.100}",
+        "$value": "{color.gray-charcoal.100}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:798",
@@ -399,7 +399,7 @@
       },
       "subtle-hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.200}",
+        "$value": "{color.gray-charcoal.200}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:799",
@@ -538,7 +538,7 @@
       },
       "emphasized": {
         "$type": "color",
-        "$value": "{color.brand.primary.900}",
+        "$value": "{color.gray-charcoal.700}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:810",
@@ -681,7 +681,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.content.brand-hover}",
+        "$value": "{color.gray-charcoal.300}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:809",
