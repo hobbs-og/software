@@ -50,6 +50,62 @@ public enum SoftwareTokens {
         public static let spacingPaddingY: CGFloat = 16
     }
 
+    public enum Alert {
+        /// alert/border/radius/default
+        public static let borderRadiusDefault: CGFloat = 4
+
+        /// alert/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// alert/color/error/background/default
+        public static let colorErrorBackgroundDefault = SwiftUI.Color(light: 0xFCEAEFFF, dark: 0x390E0EFF)
+
+        /// alert/color/error/border/default
+        public static let colorErrorBorderDefault = SwiftUI.Color(light: 0x8D2121FF, dark: 0xDD7C88FF)
+
+        /// alert/color/error/content/default
+        public static let colorErrorContentDefault = SwiftUI.Color(light: 0xB82F30FF, dark: 0xEFA2B2FF)
+
+        /// alert/color/info/background/default
+        public static let colorInfoBackgroundDefault = SwiftUI.Color(light: 0xECEEFCFF, dark: 0x15193FFF)
+
+        /// alert/color/info/border/default
+        public static let colorInfoBorderDefault = SwiftUI.Color(light: 0x34409EFF, dark: 0x8792EAFF)
+
+        /// alert/color/info/content/default
+        public static let colorInfoContentDefault = SwiftUI.Color(light: 0x4555D3FF, dark: 0xABB3F0FF)
+
+        /// alert/color/success/background/default
+        public static let colorSuccessBackgroundDefault = SwiftUI.Color(light: 0xDCF3EEFF, dark: 0x03211AFF)
+
+        /// alert/color/success/border/default
+        public static let colorSuccessBorderDefault = SwiftUI.Color(light: 0x085442FF, dark: 0x11AD86FF)
+
+        /// alert/color/success/content/default
+        public static let colorSuccessContentDefault = SwiftUI.Color(light: 0x0B7058FF, dark: 0x5DC9AFFF)
+
+        /// alert/color/warning/background/default
+        public static let colorWarningBackgroundDefault = SwiftUI.Color(light: 0xF9EFBBFF, dark: 0x2C1900FF)
+
+        /// alert/color/warning/border/default
+        public static let colorWarningBorderDefault = SwiftUI.Color(light: 0x6D3F00FF, dark: 0xDBB305FF)
+
+        /// alert/color/warning/content/default
+        public static let colorWarningContentDefault = SwiftUI.Color(light: 0x8A5801FF, dark: 0xEFD242FF)
+
+        /// alert/spacing/gap
+        public static let spacingGap: CGFloat = 8
+
+        /// alert/spacing/min-height
+        public static let spacingMinHeight: CGFloat = 48
+
+        /// alert/spacing/padding-x
+        public static let spacingPaddingX: CGFloat = 16
+
+        /// alert/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 8
+    }
+
     public enum Border {
         /// border/radius/lg
         public static let radiusLg: CGFloat = 24
