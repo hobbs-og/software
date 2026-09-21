@@ -1069,7 +1069,7 @@ object SoftwareTokens {
         val spacingPaddingX = 16.dp
 
         /** field/spacing/padding-y */
-        val spacingPaddingY = 16.dp
+        val spacingPaddingY = 8.dp
 
         /** field/typography/font-size */
         val typographyFontSize = 16.sp
