@@ -183,22 +183,22 @@
       "note": "outline button label, focus"
     },
     {
-      "fg": "button.color.ghost.content.default",
-      "bg": "button.color.ghost.background.default",
+      "fg": "button.color.quiet.content.default",
+      "bg": "button.color.quiet.background.default",
       "min": 4.5,
-      "note": "ghost button label, default"
+      "note": "quiet button label, default"
     },
     {
-      "fg": "button.color.ghost.content.hover",
-      "bg": "button.color.ghost.background.hover",
+      "fg": "button.color.quiet.content.hover",
+      "bg": "button.color.quiet.background.hover",
       "min": 4.5,
-      "note": "ghost button label, hover"
+      "note": "quiet button label, hover"
     },
     {
-      "fg": "button.color.ghost.content.focus",
-      "bg": "button.color.ghost.background.focus",
+      "fg": "button.color.quiet.content.focus",
+      "bg": "button.color.quiet.background.focus",
       "min": 4.5,
-      "note": "ghost button label, focus"
+      "note": "quiet button label, focus"
     },
     {
       "fg": "button.color.danger.content.default",
@@ -231,10 +231,10 @@
       "note": "outline button edge on the page"
     },
     {
-      "fg": "button.color.ghost.border.default",
+      "fg": "button.color.quiet.border.default",
       "bg": "color.background.default",
       "min": 3,
-      "note": "ghost button edge on the page"
+      "note": "quiet button edge on the page"
     },
     {
       "fg": "button.color.danger.border.default",
