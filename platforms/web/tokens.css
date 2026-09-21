@@ -138,8 +138,8 @@
   --color-background-knockout-hover: #000000;
   --color-background-knockout-translucent: #000000cc;
   --color-background-selected: #aad6eb;
-  --color-background-subtle: #d6e4ff;
-  --color-background-subtle-hover: #adc8ff;
+  --color-background-subtle: #c5c6c9;
+  --color-background-subtle-hover: #8c8f9b;
   --color-background-utility-error: #fceaef;
   --color-background-utility-error-knockout: #b82f30;
   --color-background-utility-info: #eceefc;
@@ -164,7 +164,7 @@
   --color-border-utility-success: #085442;
   --color-border-utility-warning: #6d3f00;
   --color-brand-default: #254edb;
-  --color-brand-hover: #254edb;
+  --color-brand-hover: #2b59eb;
   --color-content-brand: var(--color-brand-default);
   --color-content-brand-hover: var(--color-brand-hover);
   --color-content-brand-knockout: var(--color-content-knockout);
@@ -181,7 +181,7 @@
   --color-content-link-hover: var(--color-brand-hover);
   --color-content-subtitle: #42454e;
   --color-content-subtitle-knockout: var(--color-content-knockout);
-  --color-content-subtle: var(--color-content-brand-hover);
+  --color-content-subtle: #6f7078;
   --color-content-utility-error: #b82f30;
   --color-content-utility-error-knockout: var(--color-content-knockout);
   --color-content-utility-info: #4555d3;
