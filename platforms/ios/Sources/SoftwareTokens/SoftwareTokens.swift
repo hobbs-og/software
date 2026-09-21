@@ -327,6 +327,77 @@ public enum SoftwareTokens {
         public static let typographyTextTransform = "capitalize"
     }
 
+    public enum Chip {
+        /// chip/border/radius/default
+        public static let borderRadiusDefault: CGFloat = 9999
+
+        /// chip/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// chip/color/default/background/default
+        public static let colorDefaultBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// chip/color/default/border/default
+        public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// chip/color/default/content/default
+        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// chip/color/draft/background/default
+        public static let colorDraftBackgroundDefault = SwiftUI.Color(light: 0xECEEFCFF, dark: 0x15193FFF)
+
+        /// chip/color/draft/border/default
+        public static let colorDraftBorderDefault = SwiftUI.Color(light: 0x34409EFF, dark: 0x8792EAFF)
+
+        /// chip/color/draft/content/default
+        public static let colorDraftContentDefault = SwiftUI.Color(light: 0x4555D3FF, dark: 0xABB3F0FF)
+
+        /// chip/color/error/background/default
+        public static let colorErrorBackgroundDefault = SwiftUI.Color(light: 0xFCEAEFFF, dark: 0x390E0EFF)
+
+        /// chip/color/error/border/default
+        public static let colorErrorBorderDefault = SwiftUI.Color(light: 0x8D2121FF, dark: 0xDD7C88FF)
+
+        /// chip/color/error/content/default
+        public static let colorErrorContentDefault = SwiftUI.Color(light: 0xB82F30FF, dark: 0xEFA2B2FF)
+
+        /// chip/color/partial/background/default
+        public static let colorPartialBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// chip/color/partial/border/default
+        public static let colorPartialBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// chip/color/partial/content/default
+        public static let colorPartialContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// chip/color/sent/background/default
+        public static let colorSentBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// chip/color/sent/border/default
+        public static let colorSentBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// chip/color/sent/content/default
+        public static let colorSentContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// chip/color/success/background/default
+        public static let colorSuccessBackgroundDefault = SwiftUI.Color(light: 0xDCF3EEFF, dark: 0x03211AFF)
+
+        /// chip/color/success/border/default
+        public static let colorSuccessBorderDefault = SwiftUI.Color(light: 0x085442FF, dark: 0x11AD86FF)
+
+        /// chip/color/success/content/default
+        public static let colorSuccessContentDefault = SwiftUI.Color(light: 0x0B7058FF, dark: 0x5DC9AFFF)
+
+        /// chip/spacing/default/padding-x
+        public static let spacingDefaultPaddingX: CGFloat = 4
+
+        /// chip/spacing/default/padding-y
+        public static let spacingDefaultPaddingY: CGFloat = 2
+
+        /// chip/spacing/groups/gap
+        public static let spacingGroupsGap: CGFloat = 4
+    }
+
     public enum Color {
         /// color/background/brand
         public static let backgroundBrand = SwiftUI.Color(light: 0x254EDBFF, dark: 0x254EDBFF)
