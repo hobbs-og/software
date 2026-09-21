@@ -1233,7 +1233,7 @@
       },
       "letter-spacing": {
         "$type": "dimension",
-        "$value": "{typography.letter-spacing.half}",
+        "$value": "{typography.letter-spacing.0}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:5851:2121",
