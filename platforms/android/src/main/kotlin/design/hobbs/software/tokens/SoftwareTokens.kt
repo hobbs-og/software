@@ -202,64 +202,6 @@ object SoftwareTokens {
         /** button/color/disabled/content/default */
         val colorDisabledContentDefault = ComposeColor(0xFF61646B)
 
-        /** button/color/ghost/background/default */
-        val colorGhostBackgroundDefault: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
-
-        /** button/color/ghost/background/disabled */
-        val colorGhostBackgroundDisabled: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF3F4F4)
-
-        /** button/color/ghost/background/focus */
-        val colorGhostBackgroundFocus: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
-
-        /** button/color/ghost/background/hover */
-        val colorGhostBackgroundHover: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF7F7F7)
-
-        /** button/color/ghost/border/default */
-        val colorGhostBorderDefault: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
-
-        /** button/color/ghost/border/disabled */
-        val colorGhostBorderDisabled: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
-
-        /** button/color/ghost/border/focus */
-        val colorGhostBorderFocus: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
-
-        /** button/color/ghost/border/hover */
-        val colorGhostBorderHover: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
-
-        /** button/color/ghost/content/default */
-        val colorGhostContentDefault: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
-
-        /** button/color/ghost/content/disabled */
-        val colorGhostContentDisabled = ComposeColor(0xFF61646B)
-
-        /** button/color/ghost/content/focus */
-        val colorGhostContentFocus: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
-
-        /** button/color/ghost/content/hover */
-        val colorGhostContentHover: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
-
         /** button/color/outline/background/default */
         val colorOutlineBackgroundDefault: ComposeColor
             @Composable @ReadOnlyComposable
@@ -364,6 +306,64 @@ object SoftwareTokens {
         /** button/color/primary/content/hover */
         val colorPrimaryContentHover = ComposeColor(0xFFF3F4F4)
 
+        /** button/color/quiet/background/default */
+        val colorQuietBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** button/color/quiet/background/disabled */
+        val colorQuietBackgroundDisabled: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF3F4F4)
+
+        /** button/color/quiet/background/focus */
+        val colorQuietBackgroundFocus: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** button/color/quiet/background/hover */
+        val colorQuietBackgroundHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF7F7F7)
+
+        /** button/color/quiet/border/default */
+        val colorQuietBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** button/color/quiet/border/disabled */
+        val colorQuietBorderDisabled: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
+
+        /** button/color/quiet/border/focus */
+        val colorQuietBorderFocus: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+
+        /** button/color/quiet/border/hover */
+        val colorQuietBorderHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+
+        /** button/color/quiet/content/default */
+        val colorQuietContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** button/color/quiet/content/disabled */
+        val colorQuietContentDisabled = ComposeColor(0xFF61646B)
+
+        /** button/color/quiet/content/focus */
+        val colorQuietContentFocus: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** button/color/quiet/content/hover */
+        val colorQuietContentHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+
         /** button/focus-ring/inner-shadow/blur */
         val focusRingInnerShadowBlur = 0.dp
 
@@ -409,9 +409,6 @@ object SoftwareTokens {
 
         /** button/spacing/default/padding-y */
         val spacingDefaultPaddingY = 8.dp
-
-        /** button/spacing/ghost/padding-x */
-        val spacingGhostPaddingX = 0.dp
 
         /** button/spacing/groups/gap */
         val spacingGroupsGap = 16.dp
