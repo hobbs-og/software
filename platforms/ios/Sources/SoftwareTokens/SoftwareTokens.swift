@@ -757,7 +757,7 @@ public enum SoftwareTokens {
         public static let labelSmFontWeight = SwiftUI.Font.Weight.medium
 
         /// typography/label-sm/letter-spacing
-        public static let labelSmLetterSpacing: CGFloat = 0.5
+        public static let labelSmLetterSpacing: CGFloat = 0
 
         /// typography/label-sm/line-height
         public static let labelSmLineHeight: CGFloat = 20

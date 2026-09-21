@@ -306,7 +306,7 @@
   --typography-label-sm-font-family: var(--typography-font-family-base);
   --typography-label-sm-font-size: var(--typography-font-size-14);
   --typography-label-sm-font-weight: var(--typography-font-weight-500);
-  --typography-label-sm-letter-spacing: var(--typography-letter-spacing-half);
+  --typography-label-sm-letter-spacing: var(--typography-letter-spacing-0);
   --typography-label-sm-line-height: var(--typography-line-height-20);
   --typography-label-sm-text-transform: var(--typography-text-transform-none);
   --typography-meta-default-font-family: var(--typography-font-family-base);
