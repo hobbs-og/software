@@ -1244,7 +1244,7 @@
       },
       "line-height": {
         "$type": "dimension",
-        "$value": "{typography.line-height.20}",
+        "$value": "{typography.line-height.16}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:5851:2120",
