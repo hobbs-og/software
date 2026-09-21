@@ -439,6 +439,54 @@
       "bg": "chip.color.error.background.default",
       "min": 4.5,
       "note": "error chip label"
+    },
+    {
+      "fg": "alerts.color.info.content.default",
+      "bg": "alerts.color.info.background.default",
+      "min": 4.5,
+      "note": "info alert message"
+    },
+    {
+      "fg": "alerts.color.info.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "info alert edge on the page"
+    },
+    {
+      "fg": "alerts.color.success.content.default",
+      "bg": "alerts.color.success.background.default",
+      "min": 4.5,
+      "note": "success alert message"
+    },
+    {
+      "fg": "alerts.color.success.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "success alert edge on the page"
+    },
+    {
+      "fg": "alerts.color.warning.content.default",
+      "bg": "alerts.color.warning.background.default",
+      "min": 4.5,
+      "note": "warning alert message"
+    },
+    {
+      "fg": "alerts.color.warning.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "warning alert edge on the page"
+    },
+    {
+      "fg": "alerts.color.error.content.default",
+      "bg": "alerts.color.error.background.default",
+      "min": 4.5,
+      "note": "error alert message"
+    },
+    {
+      "fg": "alerts.color.error.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "error alert edge on the page"
     }
   ]
 }
