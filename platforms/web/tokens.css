@@ -264,7 +264,7 @@
   --field-spacing-gap: var(--spacing-gap-sm);
   --field-spacing-min-height: var(--spacing-48);
   --field-spacing-padding-x: var(--spacing-padding-md);
-  --field-spacing-padding-y: var(--spacing-padding-md);
+  --field-spacing-padding-y: var(--spacing-padding-sm);
   --field-typography-font-family: var(--typography-font-family-base);
   --field-typography-font-size: var(--typography-font-size-16);
   --field-typography-font-weight: var(--typography-font-weight-500);

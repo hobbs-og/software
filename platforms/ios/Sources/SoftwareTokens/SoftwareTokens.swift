@@ -806,7 +806,7 @@ public enum SoftwareTokens {
         public static let spacingPaddingX: CGFloat = 16
 
         /// field/spacing/padding-y
-        public static let spacingPaddingY: CGFloat = 16
+        public static let spacingPaddingY: CGFloat = 8
 
         /// field/typography/font-size
         public static let typographyFontSize: CGFloat = 16

@@ -2233,7 +2233,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.padding.md}",
+        "$value": "{spacing.padding.sm}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:56:425",
