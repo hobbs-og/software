@@ -4,7 +4,7 @@ Read `README.md` first. This file holds the rules that aren't obvious from the c
 
 ## Source of truth
 
-- Two Figma files control every token value and name: **software-subatomic** (`lNddkUU3x5467wcBKWZbvP`: Tier 1 core, Tier 2 semantic, grid) and **components-contractor** (`DFr6O3drKIuNSN8fNRflXr`: Tier 3 component tokens for the shared components every product uses). Never edit `tokens/*.json` or `platforms/**` by hand, and never invent a value to fill a gap. Ask Mark.
+- Two Figma files control every token value and name: **software-subatomic** (`lNddkUU3x5467wcBKWZbvP`: Tier 1 core, Tier 2 semantic, grid) and **software-components** (`DFr6O3drKIuNSN8fNRflXr`: Tier 3 component tokens for the shared components every product uses). Never edit `tokens/*.json` or `platforms/**` by hand, and never invent a value to fill a gap. Ask Mark.
 - Figma's Variables REST API is Enterprise-only; Mark is on Pro. Tokens reach the repo through `figma-plugin/` (Plugin API → pull request). Don't reintroduce a REST sync.
 - `figma-plugin/code.js` `exportTokens()` is the only Figma → JSON converter. If you script an export (e.g. through the Figma MCP), run that exact function so output matches the plugin byte for byte.
 

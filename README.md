@@ -17,7 +17,7 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
 | Semantic color | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
 | Semantic typography | Tier 2 · semantic typography | `tokens/typography.default.json`, `typography.rhinestone.json` | brand mode (font families only, today) |
-| Component | components-contractor, linked to software-subatomic | `tokens/component/component.json` | inherits from semantic (one mode) |
+| Component | software-components, linked to software-subatomic | `tokens/component/component.json` | inherits from semantic (one mode) |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
 **Brands are modes on core, themes are modes on semantic color, and components have one mode.** A frame or page picks a brand and a theme independently, and a component follows both because it only points at semantic tokens. **Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Its modes are brands, not themes: the first mode (`default`) is the baseline, and each other mode (`rhinestone`) overrides only what differs. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
@@ -56,7 +56,7 @@ Icons are content. Example: `button/color/outline/content/default` → `--button
 4. Open the pull request. Within a few minutes the **Tokens** workflow commits the rebuilt web, iOS and Android files to it and runs the contrast check.
 5. Review the diff and merge.
 
-Run the plugin from either Figma file. **software-subatomic** exports core, semantic and grid to `tokens/`; **components-contractor** exports component tokens to `tokens/component/`. Each export only adds, changes or removes files in its own folder. Both use the repository `hobbs-og/software`.
+Run the plugin from either Figma file. **software-subatomic** exports core, semantic and grid to `tokens/`; **software-components** exports component tokens to `tokens/component/`. Each export only adds, changes or removes files in its own folder. Both use the repository `hobbs-og/software`.
 
 The plugin refuses to export, and lists why, if a variable points to another library, if a name is both a token and a group (for example `color/brand` next to `color/brand/primary/100`), if a file mixes component collections with shared tiers, or if a component collection has more than one mode. Fix those in Figma first.
 
