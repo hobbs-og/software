@@ -1,0 +1,15 @@
+{
+  "exporterVersion": 3,
+  "collections": [
+    {
+      "name": "Tier 3 | components",
+      "tier": "component",
+      "modes": [
+        {
+          "name": "baseline",
+          "file": "tokens/component/component.json"
+        }
+      ]
+    }
+  ]
+}
