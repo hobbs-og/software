@@ -4,10 +4,17 @@
   "api": "1.0.0",
   "main": "code.js",
   "ui": "ui.html",
-  "editorType": ["figma"],
+  "editorType": [
+    "figma"
+  ],
   "documentAccess": "dynamic-page",
   "networkAccess": {
-    "allowedDomains": ["https://api.github.com"],
+    "allowedDomains": [
+      "https://api.github.com"
+    ],
     "reasoning": "Creates a branch, commit and pull request with the exported token files."
-  }
+  },
+  "permissions": [
+    "teamlibrary"
+  ]
 }

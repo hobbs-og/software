@@ -25,6 +25,7 @@ const COLLECTION_FILES = [
   { match: /^tier 2\b.*typography/i, file: 'typography', tier: 'typography' },
   { match: /^tier 2\b/i, file: 'semantic', tier: 'semantic' },
   { match: /^tier 3\b/i, file: 'component', tier: 'component' },
+  { match: /^components?$/i, file: 'component', tier: 'component' },
   { match: /^grid$/i, file: 'grid', tier: 'layout' },
 ];
 
@@ -52,24 +53,34 @@ function stringType(path) {
   return path.includes('font-family') ? 'fontFamily' : 'string';
 }
 
-// Keys of every variable published by an allowed library, so a remote link can be checked.
+// Keys of every variable published by an allowed library, so a remote link can be
+// checked. Needs the "teamlibrary" permission in manifest.json. A failure here is
+// reported once, rather than as one error per linked variable.
 async function allowedLibraryVariableKeys() {
   const keys = new Set();
+  const seen = new Set();
+  let problem = null;
   try {
     for (const c of await figma.teamLibrary.getAvailableLibraryVariableCollectionsAsync()) {
+      seen.add(c.libraryName);
       if (!ALLOWED_LIBRARIES.includes(c.libraryName)) continue;
       for (const v of await figma.teamLibrary.getVariablesInLibraryCollectionAsync(c.key)) keys.add(v.key);
     }
+    if (!keys.size) {
+      problem = `Can't find the ${ALLOWED_LIBRARIES.join(' or ')} library. Enable it in this file (Assets → Libraries). Libraries this file can see: ${seen.size ? [...seen].join(', ') : 'none'}.`;
+    }
   } catch (err) {
-    // No library access (or none enabled): every remote link is then reported below.
+    problem = `Couldn't read team libraries: ${(err && err.message) || err}`;
   }
-  return keys;
+  return { keys, problem };
 }
 
 async function exportTokens() {
   const errors = [];
   const warnings = [];
-  const allowedKeys = await allowedLibraryVariableKeys();
+  const library = await allowedLibraryVariableKeys();
+  const allowedKeys = library.keys;
+  let libraryReported = false;
   const collections = await figma.variables.getLocalVariableCollectionsAsync();
   const tierOf = (c) => {
     const rule = COLLECTION_FILES.find((r) => r.match.test(c.name));
@@ -87,7 +98,9 @@ async function exportTokens() {
   for (const collection of collections) {
     const rule = COLLECTION_FILES.find((r) => r.match.test(collection.name));
     const base = rule ? rule.file : slug(collection.name);
-    if (!rule) warnings.push(`Collection "${collection.name}" has no tier mapping; exported to ${dir}${base}*.json`);
+    // An unmapped collection can't be placed safely, so the export stops rather
+    // than guess a folder (a wrong guess could remove another file's tokens).
+    if (!rule) errors.push(`Collection "${collection.name}" has no tier. Name it to match COLLECTION_FILES in figma-plugin/code.js (e.g. "Tier 1 | …", "Tier 2 | semantic color", "components"), or ask for a new mapping.`);
 
     // Themes live on Tier 2 semantic color and brands on Tier 1, so a component
     // collection has one mode: its tokens point at semantic tokens and follow both.
@@ -133,6 +146,11 @@ async function exportTokens() {
           const target = await figma.variables.getVariableByIdAsync(raw.id);
           if (!target) {
             errors.push(`${label}: points to a variable that no longer exists`);
+            continue;
+          }
+          if (target.remote && library.problem) {
+            if (!libraryReported) errors.push(library.problem);
+            libraryReported = true;
             continue;
           }
           if (target.remote && !allowedKeys.has(target.key)) {
