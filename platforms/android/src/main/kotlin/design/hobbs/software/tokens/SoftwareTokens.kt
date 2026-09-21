@@ -410,9 +410,6 @@ object SoftwareTokens {
         /** button/spacing/default/padding-y */
         val spacingDefaultPaddingY = 8.dp
 
-        /** button/spacing/ghost/padding-x */
-        val spacingGhostPaddingX = 0.dp
-
         /** button/spacing/groups/gap */
         val spacingGroupsGap = 16.dp
 

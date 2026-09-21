@@ -99,7 +99,6 @@
   --button-spacing-default-min-height: var(--spacing-48);
   --button-spacing-default-padding-x: var(--spacing-padding-md);
   --button-spacing-default-padding-y: var(--spacing-padding-sm);
-  --button-spacing-ghost-padding-x: var(--spacing-padding-none);
   --button-spacing-groups-gap: var(--container-gutter);
   --button-spacing-groups-padding-y: var(--spacing-padding-md);
   --button-typography-font-family: var(--typography-font-family-base);

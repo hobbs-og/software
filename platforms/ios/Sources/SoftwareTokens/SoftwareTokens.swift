@@ -305,9 +305,6 @@ public enum SoftwareTokens {
         /// button/spacing/default/padding-y
         public static let spacingDefaultPaddingY: CGFloat = 8
 
-        /// button/spacing/ghost/padding-x
-        public static let spacingGhostPaddingX: CGFloat = 0
-
         /// button/spacing/groups/gap
         public static let spacingGroupsGap: CGFloat = 16
 
