@@ -681,7 +681,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.brand.primary.600}",
+        "$value": "{color.content.brand-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:809",
