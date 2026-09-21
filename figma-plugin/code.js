@@ -5,12 +5,18 @@
 // Everything that turns Figma variables into token files lives in exportTokens(),
 // so the plugin and any scripted export produce byte-identical output.
 
-const EXPORTER_VERSION = 2;
+const EXPORTER_VERSION = 3;
 
 // A component file may point at these published libraries; the build resolves those
 // references against the same token names. A link to any other library is an error,
 // because nothing would resolve it.
 const ALLOWED_LIBRARIES = ['software-subatomic'];
+
+// Each Figma file owns one folder of token files, so an export can only add, change
+// or remove files it owns. The subatomic file owns tokens/*.json; a component file
+// (only Tier 3 collections) owns tokens/component/*.json. Each folder has its own
+// manifest.json, and loadTokens() in scripts/lib/tokens.mjs reads both.
+const COMPONENT_DIR = 'tokens/component/';
 
 // Figma collection name → token file. Order matters: first match wins.
 const COLLECTION_FILES = [
@@ -65,6 +71,15 @@ async function exportTokens() {
   const warnings = [];
   const allowedKeys = await allowedLibraryVariableKeys();
   const collections = await figma.variables.getLocalVariableCollectionsAsync();
+  const tierOf = (c) => {
+    const rule = COLLECTION_FILES.find((r) => r.match.test(c.name));
+    return rule ? rule.tier : 'unmapped';
+  };
+  const componentFile = collections.length > 0 && collections.every((c) => tierOf(c) === 'component');
+  if (!componentFile && collections.some((c) => tierOf(c) === 'component')) {
+    errors.push('This file mixes Tier 3 (component) collections with shared tiers. Component tokens belong in their own Figma file, linked to software-subatomic.');
+  }
+  const dir = componentFile ? COMPONENT_DIR : 'tokens/';
   const trees = {}; // file path → token tree
   const manifest = { exporterVersion: EXPORTER_VERSION, collections: [] };
   let tokenCount = 0;
@@ -72,13 +87,18 @@ async function exportTokens() {
   for (const collection of collections) {
     const rule = COLLECTION_FILES.find((r) => r.match.test(collection.name));
     const base = rule ? rule.file : slug(collection.name);
-    if (!rule) warnings.push(`Collection "${collection.name}" has no tier mapping; exported to tokens/${base}*.json`);
+    if (!rule) warnings.push(`Collection "${collection.name}" has no tier mapping; exported to ${dir}${base}*.json`);
 
+    // Themes live on Tier 2 semantic color and brands on Tier 1, so a component
+    // collection has one mode: its tokens point at semantic tokens and follow both.
+    if (componentFile && collection.modes.length > 1) {
+      errors.push(`${collection.name}: component collections have one mode (found ${collection.modes.length}: ${collection.modes.map((m) => m.name).join(', ')}). Put theme differences in Tier 2 semantic color and brand differences in Tier 1.`);
+    }
     const multiMode = collection.modes.length > 1;
     const modes = collection.modes.map((m) => ({
       name: m.name,
       modeId: m.modeId,
-      file: `tokens/${base}${multiMode ? '.' + slug(m.name) : ''}.json`,
+      file: `${dir}${base}${multiMode ? '.' + slug(m.name) : ''}.json`,
     }));
     manifest.collections.push({
       name: collection.name,
@@ -175,12 +195,13 @@ async function exportTokens() {
 
   const files = {};
   for (const [path, tree] of Object.entries(trees)) files[path] = JSON.stringify(tree, null, 2) + '\n';
-  files['tokens/manifest.json'] = JSON.stringify(manifest, null, 2) + '\n';
+  files[`${dir}manifest.json`] = JSON.stringify(manifest, null, 2) + '\n';
 
   return {
     files,
     summary: {
       fileName: figma.root.name,
+      dir,
       collections: manifest.collections.map((c) => `${c.name} (${c.modes.map((m) => m.name).join(', ')})`),
       tokenCount,
       errors,

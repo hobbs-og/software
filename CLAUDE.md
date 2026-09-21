@@ -4,14 +4,16 @@ Read `README.md` first. This file holds the rules that aren't obvious from the c
 
 ## Source of truth
 
-- The Figma file **software-subatomic** (`lNddkUU3x5467wcBKWZbvP`) controls every token value and name. Never edit `tokens/*.json` or `platforms/**` by hand, and never invent a value to fill a gap. Ask Mark.
+- Two Figma files control every token value and name: **software-subatomic** (`lNddkUU3x5467wcBKWZbvP`: Tier 1 core, Tier 2 semantic, grid) and **components-contractor** (`DFr6O3drKIuNSN8fNRflXr`: Tier 3 component tokens for the shared components every product uses). Never edit `tokens/*.json` or `platforms/**` by hand, and never invent a value to fill a gap. Ask Mark.
 - Figma's Variables REST API is Enterprise-only; Mark is on Pro. Tokens reach the repo through `figma-plugin/` (Plugin API → pull request). Don't reintroduce a REST sync.
 - `figma-plugin/code.js` `exportTokens()` is the only Figma → JSON converter. If you script an export (e.g. through the Figma MCP), run that exact function so output matches the plugin byte for byte.
 
 ## Structure rules the build enforces
 
 - Collection → tier mapping lives in `COLLECTION_FILES` in `figma-plugin/code.js`. A new collection needs an entry there.
-- This repository holds the shared tiers only. Component tokens (button, inputs, …) live in the Figma file of the product that owns them and export to that product's repository; their contrast pairs go with them. The plugin allows links into the libraries in `ALLOWED_LIBRARIES`.
+- This repository holds every tier, including shared component tokens (Mark, 2026-09-21; this reverses the 2026-09-17 rule that sent them to product repos). Products pin a tagged release and build their UI from it. Only a component no other product could use stays in its product's repo.
+- Each Figma file owns one folder and an export touches nothing else: the subatomic file owns `tokens/*.json` + `tokens/manifest.json`; the components file owns `tokens/component/*.json` + `tokens/component/manifest.json`. `exportTokens()` picks the folder (a file whose collections are all Tier 3 is a component file) and refuses a file that mixes Tier 3 with shared tiers. `loadTokens()` merges both manifests. The plugin allows links into the libraries in `ALLOWED_LIBRARIES`.
+- Where modes go (Mark, 2026-09-21): **brands** are modes on Tier 1 (and on semantic typography, whose modes are brands); **themes** (light, dark) are modes on Tier 2 semantic color; **component** collections have one mode and point only at semantic tokens, so they follow both. The exporter rejects a component collection with more than one mode.
 - A token name belongs to exactly one tier, and a path can't be both a token and a group.
 - Primitive tokens with empty Figma scopes are private: resolved into outputs, never emitted.
 - Tier 2 is two collections: `Tier 2  |  semantic color` (modes Light, Dark → tier `semantic`) and `Tier 2  |  semantic typography` (tier `typography`, unthemed). Only semantic color has theme modes. Typography modes are brands (`default`, `rhinestone`): the first is the baseline on `:root`; the others emit `[data-typography="<mode>"]` blocks with only the differing tokens. `loadTokens()` keeps every mode in `typographyByMode`; don't collapse them into one map (that shipped Rhinestone fonts as the default in PR #6).

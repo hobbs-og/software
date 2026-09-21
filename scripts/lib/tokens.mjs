@@ -34,7 +34,16 @@ function loadFile(file) {
 //           semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
 // model.typography is the first (default) typography mode.
 export function loadTokens() {
+  // The subatomic file owns tokens/manifest.json; a component file owns
+  // tokens/component/manifest.json. Each lists its own files by full path.
   const manifest = readJson('tokens/manifest.json');
+  if (fs.existsSync(path.join(ROOT, 'tokens/component/manifest.json'))) {
+    const component = readJson('tokens/component/manifest.json');
+    for (const c of component.collections) {
+      if (c.tier !== 'component') throw new Error(`tokens/component/manifest.json lists "${c.name}" as ${c.tier}; only component collections belong there`);
+    }
+    manifest.collections = manifest.collections.concat(component.collections);
+  }
   const model = { primitives: new Map(), typography: new Map(), typographyByMode: {}, typographyModes: [], component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
   const seenFiles = new Set();
 

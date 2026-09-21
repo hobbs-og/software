@@ -237,9 +237,11 @@
       const baseCommit = await github(token, 'GET', `${r}/git/commits/${ref.object.sha}`);
       const baseTree = await github(token, 'GET', `${r}/git/trees/${baseCommit.tree.sha}?recursive=1`);
 
-      // Token files that no longer exist in Figma get deleted.
+      // Token files that no longer exist in Figma get deleted, but only in the folder
+      // this file owns (summary.dir), never another Figma file's tokens.
+      const owned = (path) => path.startsWith(summary.dir) && path.endsWith('.json') && !path.slice(summary.dir.length).includes('/');
       const removed = baseTree.tree
-        .filter((e) => e.type === 'blob' && /^tokens\/[^/]+\.json$/.test(e.path) && !(e.path in files))
+        .filter((e) => e.type === 'blob' && owned(e.path) && !(e.path in files))
         .map((e) => ({ path: e.path, mode: '100644', type: 'blob', sha: null }));
 
       const entries = Object.entries(files).map(([path, content]) => ({ path, mode: '100644', type: 'blob', content }));

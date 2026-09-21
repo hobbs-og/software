@@ -17,10 +17,10 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 | Primitive | Tier 1 · base values, core | `tokens/primitives.json` | nothing |
 | Semantic color | Tier 2 · semantic color | `tokens/semantic.light.json`, `semantic.dark.json` | Light / Dark mode |
 | Semantic typography | Tier 2 · semantic typography | `tokens/typography.default.json`, `typography.rhinestone.json` | brand mode (font families only, today) |
-| Component | a product's own Figma file, linked to this library | that product's repository | inherits from semantic |
+| Component | components-contractor, linked to software-subatomic | `tokens/component/component.json` | inherits from semantic (one mode) |
 | Layout | grid | `tokens/grid.small.json`, `medium`, `large` | viewport width |
 
-**Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Its modes are brands, not themes: the first mode (`default`) is the baseline, and each other mode (`rhinestone`) overrides only what differs. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
+**Brands are modes on core, themes are modes on semantic color, and components have one mode.** A frame or page picks a brand and a theme independently, and a component follows both because it only points at semantic tokens. **Only semantic color changes with the theme.** Typography lives in its own collection so its variables don't carry an unused Dark column. Its modes are brands, not themes: the first mode (`default`) is the baseline, and each other mode (`rhinestone`) overrides only what differs. Component tokens point at semantic tokens, so every button, input and card follows Light/Dark without its own dark values.
 
 **Primitive colors are private.** In Figma they are hidden from every property picker. The build treats a primitive with no scopes the same way: platforms get its resolved value, never the token. Designers and developers both reach for `color/content/default`, never `color/gray-charcoal/400`.
 
@@ -56,11 +56,13 @@ Icons are content. Example: `button/color/outline/content/default` → `--button
 4. Open the pull request. Within a few minutes the **Tokens** workflow commits the rebuilt web, iOS and Android files to it and runs the contrast check.
 5. Review the diff and merge.
 
-The plugin refuses to export, and lists why, if a variable points to another library, or if a name is both a token and a group (for example `color/brand` next to `color/brand/primary/100`). Fix those in Figma first.
+Run the plugin from either Figma file. **software-subatomic** exports core, semantic and grid to `tokens/`; **components-contractor** exports component tokens to `tokens/component/`. Each export only adds, changes or removes files in its own folder. Both use the repository `hobbs-og/software`.
+
+The plugin refuses to export, and lists why, if a variable points to another library, if a name is both a token and a group (for example `color/brand` next to `color/brand/primary/100`), if a file mixes component collections with shared tiers, or if a component collection has more than one mode. Fix those in Figma first.
 
 ## Using the tokens
 
-1rem = 16px = 16pt = 16dp. Text sizes use rem on the web, sp on Android and scale with Dynamic Type on iOS, so every platform honours the user's text-size setting.
+1rem = 16px = 16pt = 16dp. Text sizes use rem on the web, sp on Android and scale with Dynamic Type on iOS, so every platform honors the user's text-size setting.
 
 ### Web
 
