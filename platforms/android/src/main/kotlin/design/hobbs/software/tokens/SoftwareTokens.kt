@@ -75,6 +75,110 @@ object SoftwareTokens {
         val spacingPaddingY = 16.dp
     }
 
+    object Alerts {
+        /** alerts/border/radius/default */
+        val borderRadiusDefault = 4.dp
+
+        /** alerts/border/radius/focus */
+        val borderRadiusFocus = 4.dp
+
+        /** alerts/border/radius/hover */
+        val borderRadiusHover = 4.dp
+
+        /** alerts/border/radius/lg */
+        val borderRadiusLg = 24.dp
+
+        /** alerts/border/radius/md */
+        val borderRadiusMd = 16.dp
+
+        /** alerts/border/radius/round */
+        val borderRadiusRound = 9999.dp
+
+        /** alerts/border/radius/sm */
+        val borderRadiusSm = 8.dp
+
+        /** alerts/border/radius/xlg */
+        val borderRadiusXlg = 48.dp
+
+        /** alerts/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** alerts/border/width/hover */
+        val borderWidthHover = 1.dp
+
+        /** alerts/color/error/background/default */
+        val colorErrorBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF390E0E) else ComposeColor(0xFFFCEAEF)
+
+        /** alerts/color/error/border/default */
+        val colorErrorBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFDD7C88) else ComposeColor(0xFF8D2121)
+
+        /** alerts/color/error/content/default */
+        val colorErrorContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
+
+        /** alerts/color/info/background/default */
+        val colorInfoBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF15193F) else ComposeColor(0xFFECEEFC)
+
+        /** alerts/color/info/border/default */
+        val colorInfoBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8792EA) else ComposeColor(0xFF34409E)
+
+        /** alerts/color/info/content/default */
+        val colorInfoContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFABB3F0) else ComposeColor(0xFF4555D3)
+
+        /** alerts/color/success/background/default */
+        val colorSuccessBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF03211A) else ComposeColor(0xFFDCF3EE)
+
+        /** alerts/color/success/border/default */
+        val colorSuccessBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF11AD86) else ComposeColor(0xFF085442)
+
+        /** alerts/color/success/content/default */
+        val colorSuccessContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF5DC9AF) else ComposeColor(0xFF0B7058)
+
+        /** alerts/color/warning/background/default */
+        val colorWarningBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF2C1900) else ComposeColor(0xFFF9EFBB)
+
+        /** alerts/color/warning/border/default */
+        val colorWarningBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFDBB305) else ComposeColor(0xFF6D3F00)
+
+        /** alerts/color/warning/content/default */
+        val colorWarningContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFD242) else ComposeColor(0xFF8A5801)
+
+        /** alerts/spacing/gap */
+        val spacingGap = 8.dp
+
+        /** alerts/spacing/min-height */
+        val spacingMinHeight = 48.dp
+
+        /** alerts/spacing/padding-x */
+        val spacingPaddingX = 16.dp
+
+        /** alerts/spacing/padding-y */
+        val spacingPaddingY = 8.dp
+    }
+
     object Border {
         /** border/radius/lg */
         val radiusLg = 24.dp
