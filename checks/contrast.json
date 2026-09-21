@@ -439,6 +439,54 @@
       "bg": "chip.color.error.background.default",
       "min": 4.5,
       "note": "error chip label"
+    },
+    {
+      "fg": "alert.color.info.content.default",
+      "bg": "alert.color.info.background.default",
+      "min": 4.5,
+      "note": "info alert message"
+    },
+    {
+      "fg": "alert.color.info.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "info alert edge on the page"
+    },
+    {
+      "fg": "alert.color.success.content.default",
+      "bg": "alert.color.success.background.default",
+      "min": 4.5,
+      "note": "success alert message"
+    },
+    {
+      "fg": "alert.color.success.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "success alert edge on the page"
+    },
+    {
+      "fg": "alert.color.warning.content.default",
+      "bg": "alert.color.warning.background.default",
+      "min": 4.5,
+      "note": "warning alert message"
+    },
+    {
+      "fg": "alert.color.warning.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "warning alert edge on the page"
+    },
+    {
+      "fg": "alert.color.error.content.default",
+      "bg": "alert.color.error.background.default",
+      "min": 4.5,
+      "note": "error alert message"
+    },
+    {
+      "fg": "alert.color.error.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "error alert edge on the page"
     }
   ]
 }
