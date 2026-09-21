@@ -181,7 +181,7 @@
   --color-content-link-hover: var(--color-brand-hover);
   --color-content-subtitle: #42454e;
   --color-content-subtitle-knockout: var(--color-content-knockout);
-  --color-content-subtle: #254edb;
+  --color-content-subtle: var(--color-content-brand-hover);
   --color-content-utility-error: #b82f30;
   --color-content-utility-error-knockout: var(--color-content-knockout);
   --color-content-utility-info: #4555d3;
