@@ -83,7 +83,8 @@ The plugin refuses to export, and lists why, if a variable points to another lib
 ```
 
 - **Theme:** follows the operating system by default. Force one with `data-theme="light"` or `data-theme="dark"` on `<html>` or on any section, which also lets a dark section sit inside a light page.
-- **Brand:** the default brand applies everywhere. Switch a page or section to another
+- **Brand:** the default brand applies everywhere, in light and dark. Another brand may
+  ship fewer themes (`brandThemes` in `checks/contrast.json` records which). Switch a page or section to another
   brand with `data-brand="rhinestone"`, which carries both its colors (Tier 1) and its
   type (semantic typography) — one brand, one switch. It works on `<html>` or on any
   subtree, in either theme. Native outputs use the default brand (and the system font).
