@@ -38,8 +38,12 @@
       "tier": "primitive",
       "modes": [
         {
-          "name": "mode-1",
-          "file": "tokens/primitives.json"
+          "name": "default",
+          "file": "tokens/primitives.default.json"
+        },
+        {
+          "name": "rhinestone",
+          "file": "tokens/primitives.rhinestone.json"
         }
       ]
     },
