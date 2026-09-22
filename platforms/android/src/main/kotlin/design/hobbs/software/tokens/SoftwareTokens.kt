@@ -1748,7 +1748,7 @@ object SoftwareTokens {
         val metaDefaultFontSize = 14.sp
 
         /** typography/meta-default/font-weight */
-        val metaDefaultFontWeight = FontWeight(500)
+        val metaDefaultFontWeight = FontWeight(400)
 
         /** typography/meta-default/letter-spacing */
         val metaDefaultLetterSpacing = 0.sp
@@ -1763,7 +1763,7 @@ object SoftwareTokens {
         val metaSmFontSize = 12.sp
 
         /** typography/meta-sm/font-weight */
-        val metaSmFontWeight = FontWeight(500)
+        val metaSmFontWeight = FontWeight(400)
 
         /** typography/meta-sm/letter-spacing */
         val metaSmLetterSpacing = 0.sp
