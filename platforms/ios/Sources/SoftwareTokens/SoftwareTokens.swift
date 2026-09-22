@@ -1445,7 +1445,7 @@ public enum SoftwareTokens {
         public static let metaDefaultFontSize: CGFloat = 14
 
         /// typography/meta-default/font-weight
-        public static let metaDefaultFontWeight = SwiftUI.Font.Weight.medium
+        public static let metaDefaultFontWeight = SwiftUI.Font.Weight.regular
 
         /// typography/meta-default/letter-spacing
         public static let metaDefaultLetterSpacing: CGFloat = 0
@@ -1460,7 +1460,7 @@ public enum SoftwareTokens {
         public static let metaSmFontSize: CGFloat = 12
 
         /// typography/meta-sm/font-weight
-        public static let metaSmFontWeight = SwiftUI.Font.Weight.medium
+        public static let metaSmFontWeight = SwiftUI.Font.Weight.regular
 
         /// typography/meta-sm/letter-spacing
         public static let metaSmLetterSpacing: CGFloat = 0
