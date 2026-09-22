@@ -7,14 +7,29 @@ import path from 'node:path';
 import { ROOT, loadTokens, resolve, lookup, aliasKey, isPrivate, rgba, contrast, over, hex8 } from './lib/tokens.mjs';
 
 const model = loadTokens();
-const { pairs } = JSON.parse(fs.readFileSync(path.join(ROOT, 'checks/contrast.json'), 'utf8'));
+const { pairs, brandThemes = {} } = JSON.parse(fs.readFileSync(path.join(ROOT, 'checks/contrast.json'), 'utf8'));
+// A brand need not ship every theme. One left out of brandThemes is checked in all of them.
+for (const [brand, themes] of Object.entries(brandThemes)) {
+  // A brand named here before its Figma export lands is not an error: it is checked
+  // as soon as Tier 1 carries it.
+  if (!model.brandModes.includes(brand)) {
+    console.log(`  note  brandThemes names "${brand}", which Tier 1 has no mode for yet; nothing to check.`);
+    continue;
+  }
+  for (const theme of themes) {
+    if (!model.semanticModes.includes(theme)) throw new Error(`checks/contrast.json gives brand "${brand}" theme "${theme}", which is not a semantic mode. Themes: ${model.semanticModes.join(', ')}`);
+  }
+}
+const themesFor = (brand) => brandThemes[brand] || model.semanticModes;
+let combinations = 0;
 const failures = [];
 const rows = [];
 
 // A brand repoints Tier 1, so a pair that passes in one brand can fail in another.
 // Every brand a product can switch to is checked, in every theme.
 for (const brand of model.brandModes) {
-  for (const theme of model.semanticModes) {
+  for (const theme of themesFor(brand)) {
+  combinations++;
   const label = model.brandModes.length > 1 ? `${brand}/${theme}` : theme;
   const ctx = { semantic: theme, layout: model.layoutModes[0], brand };
   for (const { fg, bg, min, note } of pairs) {
@@ -45,7 +60,8 @@ for (const brand of model.brandModes) {
 }
 
 console.log(rows.join('\n'));
-console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes × ${model.brandModes.length} brand${model.brandModes.length > 1 ? 's' : ''}: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
+const scope = model.brandModes.map((b) => `${b} (${themesFor(b).join(', ')})`).join(', ');
+console.log(`\n${pairs.length} pairs × ${combinations} brand/theme combination${combinations > 1 ? 's' : ''} — ${scope}: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
 
 // Theme coverage: every color a designer or developer can use must reach the semantic
 // color tier, or it cannot change between light and dark.
