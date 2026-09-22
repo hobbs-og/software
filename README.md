@@ -88,6 +88,12 @@ The plugin refuses to export, and lists why, if a variable points to another lib
   brand with `data-brand="rhinestone"`, which carries both its colors (Tier 1) and its
   type (semantic typography) — one brand, one switch. It works on `<html>` or on any
   subtree, in either theme. Native outputs use the default brand (and the system font).
+- **A light-only brand must pin its theme.** Rhinestone ships light only (Mark,
+  2026-09-22), so `npm test` checks its pairs in light and skips dark. The dark
+  theme still applies to it in `tokens.css`: a Rhinestone page left to follow the
+  operating system resolves the dark semantic colors against Rhinestone's
+  ramps, a combination no check has passed. Put
+  `data-theme="light"` on `<html>` in any product that uses a light-only brand.
 
 ### Grid (web)
 
