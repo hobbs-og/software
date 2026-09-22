@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Checks every pair in checks/contrast.json against WCAG 2.1 in every theme.
+// Checks every pair in checks/contrast.json against WCAG 2.1 in every brand and theme.
 // Exits 1 if any pair fails. Usage: node scripts/check-contrast.mjs
 
 import fs from 'node:fs';
@@ -11,15 +11,19 @@ const { pairs } = JSON.parse(fs.readFileSync(path.join(ROOT, 'checks/contrast.js
 const failures = [];
 const rows = [];
 
-for (const theme of model.semanticModes) {
-  const ctx = { semantic: theme, layout: model.layoutModes[0] };
+// A brand repoints Tier 1, so a pair that passes in one brand can fail in another.
+// Every brand a product can switch to is checked, in every theme.
+for (const brand of model.brandModes) {
+  for (const theme of model.semanticModes) {
+  const label = model.brandModes.length > 1 ? `${brand}/${theme}` : theme;
+  const ctx = { semantic: theme, layout: model.layoutModes[0], brand };
   for (const { fg, bg, min, note } of pairs) {
     let f, b;
     try {
       f = resolve(model, fg, ctx);
       b = resolve(model, bg, ctx);
     } catch (err) {
-      const line = `  FAIL  ${theme.padEnd(6)} ${fg} on ${bg}: ${err.message}. Export from Figma, or fix the pair in checks/contrast.json`;
+      const line = `  FAIL  ${label.padEnd(16)} ${fg} on ${bg}: ${err.message}. Export from Figma, or fix the pair in checks/contrast.json`;
       rows.push(line);
       failures.push(line);
       continue;
@@ -27,20 +31,21 @@ for (const theme of model.semanticModes) {
     if (f.type !== 'color' || b.type !== 'color') throw new Error(`${fg} / ${bg} must both be colors`);
     const back = rgba(b.value);
     if (back.a < 1) {
-      rows.push(`  skip  ${theme.padEnd(6)} ${fg} on ${bg}: background is translucent, so contrast depends on what is behind it`);
+      rows.push(`  skip  ${label.padEnd(16)} ${fg} on ${bg}: background is translucent, so contrast depends on what is behind it`);
       continue;
     }
     const front = over(rgba(f.value), back);
     const ratio = contrast(front, back);
     const ok = ratio >= min;
-    const line = `${ok ? '  pass' : '  FAIL'}  ${theme.padEnd(6)} ${ratio.toFixed(2).padStart(5)} ≥ ${min}  ${fg} #${hex8(f.value).slice(0, 6)} on ${bg} #${hex8(b.value).slice(0, 6)}${note ? `  (${note})` : ''}`;
+    const line = `${ok ? '  pass' : '  FAIL'}  ${label.padEnd(16)} ${ratio.toFixed(2).padStart(5)} ≥ ${min}  ${fg} #${hex8(f.value).slice(0, 6)} on ${bg} #${hex8(b.value).slice(0, 6)}${note ? `  (${note})` : ''}`;
     rows.push(line);
     if (!ok) failures.push(line);
+  }
   }
 }
 
 console.log(rows.join('\n'));
-console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
+console.log(`\n${pairs.length} pairs × ${model.semanticModes.length} themes × ${model.brandModes.length} brand${model.brandModes.length > 1 ? 's' : ''}: ${failures.length ? failures.length + ' failing' : 'all pass'}`);
 
 // Theme coverage: every color a designer or developer can use must reach the semantic
 // color tier, or it cannot change between light and dark.

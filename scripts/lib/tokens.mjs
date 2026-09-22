@@ -30,9 +30,10 @@ function loadFile(file) {
   return map;
 }
 
-// Returns { primitives, typography, typographyByMode: {mode: Map}, typographyModes, component,
+// Returns { primitives, primitivesByMode: {mode: Map}, brandModes, typography,
+//           typographyByMode: {mode: Map}, typographyModes, component,
 //           semantic: {mode: Map}, semanticModes, layout: {mode: Map}, layoutModes }
-// model.typography is the first (default) typography mode.
+// model.primitives and model.typography are the first (default) brand.
 export function loadTokens() {
   // The subatomic file owns tokens/manifest.json; a component file owns
   // tokens/component/manifest.json. Each lists its own files by full path.
@@ -44,16 +45,53 @@ export function loadTokens() {
     }
     manifest.collections = manifest.collections.concat(component.collections);
   }
-  const model = { primitives: new Map(), typography: new Map(), typographyByMode: {}, typographyModes: [], component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
+  const model = { primitives: new Map(), primitivesByMode: {}, brandModes: [], typography: new Map(), typographyByMode: {}, typographyModes: [], component: new Map(), semantic: {}, semanticModes: [], layout: {}, layoutModes: [] };
   const seenFiles = new Set();
+  // Primitive collections are read first: a brand is a mode on Tier 1, and a
+  // single-mode collection (core) is shared by every brand.
+  const shared = new Map();
+  const byBrand = {};
+  for (const c of manifest.collections.filter((x) => x.tier === 'primitive')) {
+    for (const mode of c.modes) {
+      if (seenFiles.has(mode.file)) continue;
+      seenFiles.add(mode.file);
+      const tokens = loadFile(mode.file);
+      if (c.modes.length === 1) {
+        for (const [k, t] of tokens) shared.set(k, t);
+      } else {
+        if (!byBrand[mode.name]) {
+          byBrand[mode.name] = new Map();
+          model.brandModes.push(mode.name);
+        }
+        for (const [k, t] of tokens) byBrand[mode.name].set(k, t);
+      }
+    }
+  }
+  if (!model.brandModes.length) model.brandModes.push('default');
+  for (const brand of model.brandModes) {
+    const map = new Map(shared);
+    for (const [k, t] of byBrand[brand] || []) map.set(k, t);
+    model.primitivesByMode[brand] = map;
+  }
+  model.primitives = model.primitivesByMode[model.brandModes[0]];
+  // Every brand must define the same tokens, or a token exists in one brand and
+  // not another and the platform outputs disagree about what the system holds.
+  for (const brand of model.brandModes.slice(1)) {
+    for (const k of model.primitivesByMode[brand].keys()) {
+      if (!model.primitives.has(k)) throw new Error(`Primitive "${k}" is in brand "${brand}" but not in "${model.brandModes[0]}"`);
+    }
+    for (const k of model.primitives.keys()) {
+      if (!model.primitivesByMode[brand].has(k)) throw new Error(`Primitive "${k}" is in brand "${model.brandModes[0]}" but not in "${brand}"`);
+    }
+  }
 
   for (const c of manifest.collections) {
     for (const mode of c.modes) {
-      // Several primitive collections share tokens/primitives.json; read it once.
+      // Several collections share one file; read it once.
       if (seenFiles.has(mode.file)) continue;
       const tokens = loadFile(mode.file);
       if (c.tier === 'primitive') {
-        for (const [k, t] of tokens) model.primitives.set(k, t);
+        throw new Error(`Primitive collection "${c.name}" was not read in the first pass`);
       } else if (c.tier === 'typography') {
         // Typography modes are brands (default, rhinestone, …), not themes: the same in light and dark.
         model.typographyByMode[mode.name] = tokens;
@@ -85,7 +123,7 @@ export function loadTokens() {
       owners.set(k, tier);
     }
   };
-  claim('primitives', model.primitives);
+  for (const b of model.brandModes) claim('primitives', model.primitivesByMode[b]);
   for (const m of model.typographyModes) claim('typography', model.typographyByMode[m]);
   claim('component', model.component);
   for (const m of model.semanticModes) claim('semantic', model.semantic[m]);
@@ -110,12 +148,33 @@ export function isPrivate(model, key) {
   return model.tierOf(key) === 'primitives' && model.primitives.get(key).scopes.length === 0;
 }
 
-// A context picks one semantic mode and one layout mode, and optionally a typography mode
-// (the default one when omitted).
+// Primitives a brand repoints. They reach the products through the semantic and
+// component tiers, so CSS keeps them as variables even when they are private:
+// a brand then overrides these alone, and everything downstream follows.
+export function brandVarying(model, ctx) {
+  const keys = new Set();
+  if (model.brandModes.length < 2) return keys;
+  const base = model.brandModes[0];
+  for (const key of model.primitives.keys()) {
+    const value = (brand) => JSON.stringify(resolve(model, key, { ...ctx, brand }).value);
+    const first = value(base);
+    if (model.brandModes.slice(1).some((brand) => value(brand) !== first)) keys.add(key);
+  }
+  return keys;
+}
+
+// A context picks one semantic mode and one layout mode, and optionally a brand
+// (the default one when omitted). A brand names both a Tier 1 mode and the
+// typography mode of the same name, so one switch carries a brand's color and type.
+export function typographyMode(model, brand) {
+  return brand && model.typographyByMode[brand] ? brand : model.typographyModes[0];
+}
+
 export function lookup(model, key, ctx) {
+  const brand = (ctx && ctx.brand) || model.brandModes[0];
   switch (model.tierOf(key)) {
-    case 'primitives': return model.primitives.get(key);
-    case 'typography': return (ctx && ctx.typography ? model.typographyByMode[ctx.typography] : model.typography).get(key);
+    case 'primitives': return model.primitivesByMode[brand].get(key);
+    case 'typography': return model.typographyByMode[typographyMode(model, brand)].get(key);
     case 'component': return model.component.get(key);
     case 'semantic': return model.semantic[ctx.semantic].get(key);
     case 'layout': return model.layout[ctx.layout].get(key);
