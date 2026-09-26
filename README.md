@@ -27,11 +27,11 @@ Nothing in `tokens/` or `platforms/` is edited by hand. Change the variable in F
 ### Component naming
 
 ```
-{component}/spacing/{gap | padding-x | padding-y | …}
+{component}/spacing/{segment}/{gap | padding-x | padding-y | …}
 {component}/color/{variant}/{background | content | border}/{default | hover | focus | disabled}
 ```
 
-Icons are content. Example: `button/color/outline/content/default` → `--button-color-outline-content-default`, `SoftwareTokens.Button.colorOutlineContentDefault`.
+A segment is a named part of the component, such as `accordion/spacing/heading/padding-x` and `accordion/spacing/panel/gap`. A component with one part leaves the segment out: `field/spacing/padding-x`. Padding is always split into `padding-x` and `padding-y`, never one `padding` value. Children stack with flexbox `gap`, never margins. Icons are content. Example: `button/color/outline/content/default` → `--button-color-outline-content-default`, `SoftwareTokens.Button.colorOutlineContentDefault`.
 
 ## Pushing changes from Figma
 

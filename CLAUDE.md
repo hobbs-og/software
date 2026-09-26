@@ -28,7 +28,7 @@ Read `README.md` first. This file holds the rules that aren't obvious from the c
 
 ## Naming
 
-`{component}/color/{variant}/{background|content|border}/{default|hover|focus|disabled}` and `{component}/spacing/{gap|padding-x|padding-y}`. Icons are content. Mark set this pattern; follow it for every new component.
+`{component}/color/{variant}/{background|content|border}/{default|hover|focus|disabled}` and `{component}/spacing/{segment}/{gap|padding-x|padding-y}`. A segment names a part of the component (`accordion/spacing/heading/…`, `accordion/spacing/panel/…`); a one-part component leaves it out. Padding is always `padding-x` and `padding-y`, never a single `padding`. Every element stacks with flexbox `gap`. Icons are content. Mark set this pattern; follow it for every new component.
 
 ## Accessibility
 
