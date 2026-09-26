@@ -40,14 +40,23 @@ public enum SoftwareTokens {
         /// accordion/color/content/hover
         public static let colorContentHover = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
 
-        /// accordion/spacing/gap
-        public static let spacingGap: CGFloat = 16
+        /// accordion/spacing/heading/gap
+        public static let spacingHeadingGap: CGFloat = 8
 
-        /// accordion/spacing/padding-x
-        public static let spacingPaddingX: CGFloat = 24
+        /// accordion/spacing/heading/padding-x
+        public static let spacingHeadingPaddingX: CGFloat = 24
 
-        /// accordion/spacing/padding-y
-        public static let spacingPaddingY: CGFloat = 16
+        /// accordion/spacing/heading/padding-y
+        public static let spacingHeadingPaddingY: CGFloat = 16
+
+        /// accordion/spacing/panel/gap
+        public static let spacingPanelGap: CGFloat = 24
+
+        /// accordion/spacing/panel/padding-x
+        public static let spacingPanelPaddingX: CGFloat = 24
+
+        /// accordion/spacing/panel/padding-y
+        public static let spacingPanelPaddingY: CGFloat = 24
     }
 
     public enum Alert {
