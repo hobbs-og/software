@@ -150,42 +150,72 @@
       }
     },
     "spacing": {
-      "gap": {
-        "$type": "dimension",
-        "$value": "{spacing.gap.md}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:17:1011",
-            "collection": "Tier 3 | components",
-            "scopes": [
-              "GAP"
-            ]
+      "heading": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.sm}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:86:295",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        },
+        "padding-x": {
+          "$type": "dimension",
+          "$value": "{spacing.padding.lg}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:17:991",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        },
+        "padding-y": {
+          "$type": "dimension",
+          "$value": "{spacing.padding.md}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:86:309",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
           }
         }
       },
-      "padding-x": {
-        "$type": "dimension",
-        "$value": "{spacing.padding.lg}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:17:991",
-            "collection": "Tier 3 | components",
-            "scopes": [
-              "GAP"
-            ]
+      "panel": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.lg}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:86:287",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
           }
-        }
-      },
-      "padding-y": {
-        "$type": "dimension",
-        "$value": "{spacing.padding.md}",
-        "$extensions": {
-          "com.figma": {
-            "variableId": "VariableID:17:1010",
-            "collection": "Tier 3 | components",
-            "scopes": [
-              "GAP"
-            ]
+        },
+        "padding": {
+          "$type": "dimension",
+          "$value": "{spacing.padding.lg}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:86:294",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
           }
         }
       }
