@@ -13,9 +13,11 @@
   --accordion-color-content-disabled: var(--color-content-disabled);
   --accordion-color-content-focus: var(--color-content-emphasized);
   --accordion-color-content-hover: var(--color-content-emphasized);
-  --accordion-spacing-gap: var(--spacing-gap-md);
-  --accordion-spacing-padding-x: var(--spacing-padding-lg);
-  --accordion-spacing-padding-y: var(--spacing-padding-md);
+  --accordion-spacing-heading-gap: var(--spacing-gap-sm);
+  --accordion-spacing-heading-padding-x: var(--spacing-padding-lg);
+  --accordion-spacing-heading-padding-y: var(--spacing-padding-md);
+  --accordion-spacing-panel-gap: var(--spacing-gap-lg);
+  --accordion-spacing-panel-padding: var(--spacing-padding-lg);
   --alert-border-radius-default: var(--border-radius-xsm);
   --alert-border-width-default: var(--border-width-default);
   --alert-color-error-background-default: var(--color-background-utility-error);

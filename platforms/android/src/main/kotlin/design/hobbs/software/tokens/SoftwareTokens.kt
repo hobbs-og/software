@@ -65,14 +65,20 @@ object SoftwareTokens {
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
 
-        /** accordion/spacing/gap */
-        val spacingGap = 16.dp
+        /** accordion/spacing/heading/gap */
+        val spacingHeadingGap = 8.dp
 
-        /** accordion/spacing/padding-x */
-        val spacingPaddingX = 24.dp
+        /** accordion/spacing/heading/padding-x */
+        val spacingHeadingPaddingX = 24.dp
 
-        /** accordion/spacing/padding-y */
-        val spacingPaddingY = 16.dp
+        /** accordion/spacing/heading/padding-y */
+        val spacingHeadingPaddingY = 16.dp
+
+        /** accordion/spacing/panel/gap */
+        val spacingPanelGap = 24.dp
+
+        /** accordion/spacing/panel/padding */
+        val spacingPanelPadding = 24.dp
     }
 
     object Alert {
