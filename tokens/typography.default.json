@@ -185,7 +185,7 @@
       },
       "font-weight": {
         "$type": "fontWeight",
-        "$value": "{typography.font-weight.500}",
+        "$value": "{typography.font-weight.400}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:5851:2130",
@@ -1244,7 +1244,7 @@
       },
       "line-height": {
         "$type": "dimension",
-        "$value": "{typography.line-height.16}",
+        "$value": "{typography.line-height.20}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:5851:2120",
@@ -1375,7 +1375,7 @@
       },
       "letter-spacing": {
         "$type": "dimension",
-        "$value": "{typography.meta-default.letter-spacing}",
+        "$value": "{typography.letter-spacing.half}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14010:5384",
@@ -1397,7 +1397,7 @@
       },
       "text-transform": {
         "$type": "string",
-        "$value": "{typography.meta-default.text-transform}",
+        "$value": "{typography.text-transform.uppercase}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14010:5387",

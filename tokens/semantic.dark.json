@@ -3,7 +3,7 @@
     "background": {
       "brand": {
         "$type": "color",
-        "$value": "{color.brand.default}",
+        "$value": "{color.role.dark.background.brand}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:786",
@@ -17,7 +17,7 @@
       },
       "brand-hover": {
         "$type": "color",
-        "$value": "{color.brand.hover}",
+        "$value": "{color.role.dark.background.brand-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:787",
@@ -31,7 +31,7 @@
       },
       "default": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.700}",
+        "$value": "{color.role.dark.background.default}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:781",
@@ -45,7 +45,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.500}",
+        "$value": "{color.role.dark.background.disabled}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:788",
@@ -57,9 +57,23 @@
           }
         }
       },
+      "highlight": {
+        "$type": "color",
+        "$value": "{color.role.dark.background.highlight}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15964:12",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
       "knockout": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.400}",
+        "$value": "{color.role.dark.background.knockout}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:784",
@@ -73,7 +87,7 @@
       },
       "knockout-hover": {
         "$type": "color",
-        "$value": "{color.grayscale.black}",
+        "$value": "{color.role.dark.background.knockout-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:785",
@@ -87,7 +101,7 @@
       },
       "knockout-translucent": {
         "$type": "color",
-        "$value": "{color.transparency.black.80}",
+        "$value": "{color.role.dark.background.knockout-translucent}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:3",
@@ -99,9 +113,23 @@
           }
         }
       },
+      "raised": {
+        "$type": "color",
+        "$value": "{color.role.dark.background.raised}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15964:13",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
       "selected": {
         "$type": "color",
-        "$value": "{color.brand.secondary.500}",
+        "$value": "{color.role.dark.background.selected}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:2",
@@ -115,7 +143,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.500}",
+        "$value": "{color.role.dark.background.subtle}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:782",
@@ -129,7 +157,7 @@
       },
       "subtle-hover": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.400}",
+        "$value": "{color.role.dark.background.subtle-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:783",
@@ -141,10 +169,24 @@
           }
         }
       },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.role.dark.background.surface}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15973:101",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
       "utility": {
         "error": {
           "$type": "color",
-          "$value": "{color.utility.red.900}",
+          "$value": "{color.role.dark.background.utility.error}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:789",
@@ -158,7 +200,7 @@
         },
         "error-knockout": {
           "$type": "color",
-          "$value": "{color.utility.red.600}",
+          "$value": "{color.role.dark.background.utility.error-knockout}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:790",
@@ -172,7 +214,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{color.utility.blue.900}",
+          "$value": "{color.role.dark.background.utility.info}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:795",
@@ -186,7 +228,7 @@
         },
         "info-knockout": {
           "$type": "color",
-          "$value": "{color.utility.blue.600}",
+          "$value": "{color.role.dark.background.utility.info-knockout}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:796",
@@ -200,7 +242,7 @@
         },
         "success": {
           "$type": "color",
-          "$value": "{color.utility.green.900}",
+          "$value": "{color.role.dark.background.utility.success}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:793",
@@ -214,7 +256,7 @@
         },
         "success-knockout": {
           "$type": "color",
-          "$value": "{color.utility.green.600}",
+          "$value": "{color.role.dark.background.utility.success-knockout}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:794",
@@ -228,7 +270,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{color.utility.yellow.900}",
+          "$value": "{color.role.dark.background.utility.warning}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:791",
@@ -242,7 +284,7 @@
         },
         "warning-knockout": {
           "$type": "color",
-          "$value": "{color.utility.yellow.600}",
+          "$value": "{color.role.dark.background.utility.warning-knockout}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:792",
@@ -259,7 +301,7 @@
     "border": {
       "brand": {
         "$type": "color",
-        "$value": "{color.brand.primary.400}",
+        "$value": "{color.role.dark.border.brand}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:802",
@@ -273,7 +315,7 @@
       },
       "brand-hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.300}",
+        "$value": "{color.role.dark.border.brand-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:803",
@@ -287,7 +329,7 @@
       },
       "default": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.300}",
+        "$value": "{color.role.dark.border.default}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:797",
@@ -301,7 +343,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.400}",
+        "$value": "{color.role.dark.border.disabled}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:833",
@@ -315,7 +357,7 @@
       },
       "focus": {
         "$type": "color",
-        "$value": "{color.brand.hover}",
+        "$value": "{color.role.dark.border.focus}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:5",
@@ -329,7 +371,7 @@
       },
       "hover": {
         "$type": "color",
-        "$value": "{color.brand.secondary.400}",
+        "$value": "{color.role.dark.border.hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:4",
@@ -343,7 +385,7 @@
       },
       "knockout": {
         "$type": "color",
-        "$value": "{color.transparency.white.80}",
+        "$value": "{color.role.dark.border.knockout}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:800",
@@ -357,7 +399,7 @@
       },
       "knockout-hover": {
         "$type": "color",
-        "$value": "{color.grayscale.white}",
+        "$value": "{color.role.dark.border.knockout-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:801",
@@ -371,7 +413,7 @@
       },
       "selected": {
         "$type": "color",
-        "$value": "{color.brand.secondary.300}",
+        "$value": "{color.role.dark.border.selected}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:6",
@@ -383,9 +425,22 @@
           }
         }
       },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.role.dark.border.strong}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15973:102",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "STROKE_COLOR"
+            ]
+          }
+        }
+      },
       "subtle": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.400}",
+        "$value": "{color.role.dark.border.subtle}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:798",
@@ -399,7 +454,7 @@
       },
       "subtle-hover": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.300}",
+        "$value": "{color.role.dark.border.subtle-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:799",
@@ -414,7 +469,7 @@
       "utility": {
         "error": {
           "$type": "color",
-          "$value": "{color.utility.red.400}",
+          "$value": "{color.role.dark.border.utility.error}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:804",
@@ -428,7 +483,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{color.utility.blue.400}",
+          "$value": "{color.role.dark.border.utility.info}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:807",
@@ -442,7 +497,7 @@
         },
         "success": {
           "$type": "color",
-          "$value": "{color.utility.green.400}",
+          "$value": "{color.role.dark.border.utility.success}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:806",
@@ -456,7 +511,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{color.utility.yellow.300}",
+          "$value": "{color.role.dark.border.utility.warning}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:805",
@@ -471,9 +526,36 @@
       }
     },
     "content": {
+      "accent": {
+        "$type": "color",
+        "$value": "{color.role.dark.content.accent}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15973:100",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "SHAPE_FILL",
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
+      "body": {
+        "$type": "color",
+        "$value": "{color.role.dark.content.body}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15973:99",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "TEXT_FILL"
+            ]
+          }
+        }
+      },
       "brand": {
         "$type": "color",
-        "$value": "{color.brand.primary.400}",
+        "$value": "{color.role.dark.content.brand}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:821",
@@ -486,7 +568,7 @@
       },
       "brand-hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.300}",
+        "$value": "{color.role.dark.content.brand-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:822",
@@ -512,7 +594,7 @@
       },
       "default": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.100}",
+        "$value": "{color.role.dark.content.default}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:808",
@@ -525,7 +607,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{color.gray.600}",
+        "$value": "{color.role.dark.content.disabled}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:824",
@@ -538,7 +620,7 @@
       },
       "emphasized": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.50}",
+        "$value": "{color.role.dark.content.emphasized}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:810",
@@ -577,7 +659,7 @@
       },
       "headline": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.50}",
+        "$value": "{color.role.dark.content.headline}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:814",
@@ -590,7 +672,7 @@
       },
       "headline-brand": {
         "$type": "color",
-        "$value": "{color.brand.primary.400}",
+        "$value": "{color.role.dark.content.headline-brand}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:815",
@@ -616,7 +698,7 @@
       },
       "knockout": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.50}",
+        "$value": "{color.role.dark.content.knockout}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:811",
@@ -629,7 +711,7 @@
       },
       "link": {
         "$type": "color",
-        "$value": "{color.brand.primary.400}",
+        "$value": "{color.role.dark.content.link}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:819",
@@ -642,7 +724,7 @@
       },
       "link-hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.300}",
+        "$value": "{color.role.dark.content.link-hover}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:820",
@@ -655,7 +737,7 @@
       },
       "subtitle": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.100}",
+        "$value": "{color.role.dark.content.subtitle}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:817",
@@ -668,7 +750,7 @@
       },
       "subtitle-knockout": {
         "$type": "color",
-        "$value": "{color.content.knockout}",
+        "$value": "{color.role.dark.content.subtitle-knockout}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:818",
@@ -681,7 +763,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.gray-charcoal.200}",
+        "$value": "{color.role.dark.content.subtle}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15827:809",
@@ -695,7 +777,7 @@
       "utility": {
         "error": {
           "$type": "color",
-          "$value": "{color.utility.red.300}",
+          "$value": "{color.role.dark.content.utility.error}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:825",
@@ -721,7 +803,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{color.utility.blue.300}",
+          "$value": "{color.role.dark.content.utility.info}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:831",
@@ -747,7 +829,7 @@
         },
         "success": {
           "$type": "color",
-          "$value": "{color.utility.green.300}",
+          "$value": "{color.role.dark.content.utility.success}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:829",
@@ -773,7 +855,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{color.utility.yellow.200}",
+          "$value": "{color.role.dark.content.utility.warning}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:827",
@@ -797,12 +879,74 @@
             }
           }
         }
+      },
+      "xray": {
+        "atom": {
+          "$type": "color",
+          "$value": "{color.role.dark.content.xray.atom}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:15964:14",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        },
+        "molecule": {
+          "$type": "color",
+          "$value": "{color.role.dark.content.xray.molecule}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:15964:15",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        },
+        "organism": {
+          "$type": "color",
+          "$value": "{color.role.dark.content.xray.organism}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:15964:16",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        },
+        "template": {
+          "$type": "color",
+          "$value": "{color.role.dark.content.xray.template}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:15964:17",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "SHAPE_FILL",
+                "STROKE_COLOR",
+                "TEXT_FILL"
+              ]
+            }
+          }
+        }
       }
     },
     "elevation": {
       "shadow": {
         "$type": "color",
-        "$value": "{color.transparency.black.80}",
+        "$value": "{color.role.dark.elevation.shadow}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:15830:7",
