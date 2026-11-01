@@ -592,6 +592,19 @@
           }
         }
       },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "{color.role.light.content.brand-secondary}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16064:51",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "ALL_FILLS"
+            ]
+          }
+        }
+      },
       "default": {
         "$type": "color",
         "$value": "{color.role.light.content.default}",

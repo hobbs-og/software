@@ -491,6 +491,42 @@
       "bg": "color.background.default",
       "min": 3,
       "note": "error alert edge on the page"
+    },
+    {
+      "fg": "color.content.headline-brand",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "display type: \"Let's talk.\", stat values, card titles on hover (≥24px)"
+    },
+    {
+      "fg": "color.content.eyebrow",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "case study number label"
+    },
+    {
+      "fg": "color.content.subtitle",
+      "bg": "color.background.subtle",
+      "min": 4.5,
+      "note": "lead text on card surface"
+    },
+    {
+      "fg": "color.border.strong",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "stat and readout rules"
+    },
+    {
+      "fg": "color.border.focus",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "focus outline"
+    },
+    {
+      "fg": "color.content.brand",
+      "bg": "color.background.subtle",
+      "min": 4.5,
+      "note": "brand text on card surface"
     }
   ]
 }

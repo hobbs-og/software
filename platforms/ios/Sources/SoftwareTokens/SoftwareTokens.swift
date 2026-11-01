@@ -596,6 +596,9 @@ public enum SoftwareTokens {
         /// color/content/brand-knockout
         public static let contentBrandKnockout = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
 
+        /// color/content/brand-secondary
+        public static let contentBrandSecondary = SwiftUI.Color(light: 0x436C8AFF, dark: 0x436C8AFF)
+
         /// color/content/default
         public static let contentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
 
@@ -1614,7 +1617,7 @@ public enum SoftwareTokens {
 
     public enum Grid {
         public static let small = GridMode(columns: 2, containerGutter: 16, defaultWidth: 375, maxWidth: 560, minWidth: 320, sectionGap: 16, sectionPadding: 16, viewport: "small")
-        public static let medium = GridMode(columns: 8, containerGutter: 16, defaultWidth: 768, maxWidth: 960, minWidth: 560, sectionGap: 24, sectionPadding: 24, viewport: "medium")
+        public static let medium = GridMode(columns: 8, containerGutter: 24, defaultWidth: 768, maxWidth: 960, minWidth: 560, sectionGap: 24, sectionPadding: 24, viewport: "medium")
         public static let large = GridMode(columns: 12, containerGutter: 24, defaultWidth: 1200, maxWidth: 1600, minWidth: 960, sectionGap: 48, sectionPadding: 48, viewport: "large")
 
         /// Largest mode whose minimum width fits. Use the width of the window or scene, not the device.

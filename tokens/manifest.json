@@ -16,6 +16,10 @@
         {
           "name": "portfolio",
           "file": "tokens/typography.portfolio.json"
+        },
+        {
+          "name": "swiss",
+          "file": "tokens/typography.swiss.json"
         }
       ]
     },
@@ -52,6 +56,10 @@
         {
           "name": "portfolio",
           "file": "tokens/primitives.portfolio.json"
+        },
+        {
+          "name": "swiss",
+          "file": "tokens/primitives.swiss.json"
         }
       ]
     },

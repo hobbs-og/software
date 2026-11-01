@@ -16,7 +16,7 @@
   "container": {
     "gutter": {
       "$type": "dimension",
-      "$value": "{spacing.gap.md}",
+      "$value": "{spacing.gap.lg}",
       "$extensions": {
         "com.figma": {
           "variableId": "VariableID:14321:40",

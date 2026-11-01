@@ -807,6 +807,9 @@ object SoftwareTokens {
         /** color/content/brand-knockout */
         val contentBrandKnockout = ComposeColor(0xFFF3F4F4)
 
+        /** color/content/brand-secondary */
+        val contentBrandSecondary = ComposeColor(0xFF436C8A)
+
         /** color/content/default */
         val contentDefault: ComposeColor
             @Composable @ReadOnlyComposable
@@ -1945,7 +1948,7 @@ object SoftwareTokens {
         )
         val medium = GridMode(
             columns = 8,
-            containerGutter = 16.dp,
+            containerGutter = 24.dp,
             defaultWidth = 768.dp,
             maxWidth = 960.dp,
             minWidth = 560.dp,
