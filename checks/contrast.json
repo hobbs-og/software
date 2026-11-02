@@ -244,12 +244,6 @@
       "note": "outline button edge on the page"
     },
     {
-      "fg": "button.color.quiet.border.default",
-      "bg": "color.background.default",
-      "min": 3,
-      "note": "quiet button edge on the page"
-    },
-    {
       "fg": "button.color.danger.border.default",
       "bg": "color.background.default",
       "min": 3,

@@ -244,12 +244,12 @@ object SoftwareTokens {
         /** button/color/danger/background/focus */
         val colorDangerBackgroundFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF390E0E) else ComposeColor(0xFFFCEAEF)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF631717) else ComposeColor(0xFFF8C5D1)
 
         /** button/color/danger/background/hover */
         val colorDangerBackgroundHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF390E0E) else ComposeColor(0xFFFCEAEF)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF631717) else ComposeColor(0xFFF8C5D1)
 
         /** button/color/danger/border/default */
         val colorDangerBorderDefault: ComposeColor
@@ -282,12 +282,12 @@ object SoftwareTokens {
         /** button/color/danger/content/focus */
         val colorDangerContentFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFF8D2121)
 
         /** button/color/danger/content/hover */
         val colorDangerContentHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFF8D2121)
 
         /** button/color/disabled/background/default */
         val colorDisabledBackgroundDefault: ComposeColor
@@ -315,12 +315,12 @@ object SoftwareTokens {
         /** button/color/outline/background/focus */
         val colorOutlineBackgroundFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF7F7F7)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF102693) else ComposeColor(0xFFADC8FF)
 
         /** button/color/outline/background/hover */
         val colorOutlineBackgroundHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF7F7F7)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF102693) else ComposeColor(0xFFADC8FF)
 
         /** button/color/outline/border/default */
         val colorOutlineBorderDefault: ComposeColor
@@ -335,12 +335,12 @@ object SoftwareTokens {
         /** button/color/outline/border/focus */
         val colorOutlineBorderFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** button/color/outline/border/hover */
         val colorOutlineBorderHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** button/color/outline/content/default */
         val colorOutlineContentDefault: ComposeColor
@@ -353,12 +353,12 @@ object SoftwareTokens {
         /** button/color/outline/content/focus */
         val colorOutlineContentFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** button/color/outline/content/hover */
         val colorOutlineContentHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** button/color/primary/background/default */
         val colorPrimaryBackgroundDefault = ComposeColor(0xFF254EDB)
@@ -369,10 +369,10 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF3F4F4)
 
         /** button/color/primary/background/focus */
-        val colorPrimaryBackgroundFocus = ComposeColor(0xFF2B59EB)
+        val colorPrimaryBackgroundFocus = ComposeColor(0xFF102693)
 
         /** button/color/primary/background/hover */
-        val colorPrimaryBackgroundHover = ComposeColor(0xFF2B59EB)
+        val colorPrimaryBackgroundHover = ComposeColor(0xFF102693)
 
         /** button/color/primary/border/default */
         val colorPrimaryBorderDefault: ComposeColor
@@ -385,14 +385,10 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
 
         /** button/color/primary/border/focus */
-        val colorPrimaryBorderFocus: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+        val colorPrimaryBorderFocus = ComposeColor(0xFF102693)
 
         /** button/color/primary/border/hover */
-        val colorPrimaryBorderHover: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+        val colorPrimaryBorderHover = ComposeColor(0xFF102693)
 
         /** button/color/primary/content/default */
         val colorPrimaryContentDefault = ComposeColor(0xFFF3F4F4)
@@ -424,27 +420,27 @@ object SoftwareTokens {
         /** button/color/quiet/background/hover */
         val colorQuietBackgroundHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF7F7F7)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF102693) else ComposeColor(0xFFADC8FF)
 
         /** button/color/quiet/border/default */
         val colorQuietBorderDefault: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
         /** button/color/quiet/border/disabled */
         val colorQuietBorderDisabled: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF6F7078)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF161925) else ComposeColor(0xFFF3F4F4)
 
         /** button/color/quiet/border/focus */
         val colorQuietBorderFocus: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
         /** button/color/quiet/border/hover */
         val colorQuietBorderHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF102693) else ComposeColor(0xFFADC8FF)
 
         /** button/color/quiet/content/default */
         val colorQuietContentDefault: ComposeColor
@@ -462,7 +458,7 @@ object SoftwareTokens {
         /** button/color/quiet/content/hover */
         val colorQuietContentHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** button/color/solid/background/default */
         val colorSolidBackgroundDefault: ComposeColor
@@ -684,7 +680,12 @@ object SoftwareTokens {
         val backgroundBrand = ComposeColor(0xFF254EDB)
 
         /** color/background/brand-hover */
-        val backgroundBrandHover = ComposeColor(0xFF2B59EB)
+        val backgroundBrandHover = ComposeColor(0xFF102693)
+
+        /** color/background/brand-subtle */
+        val backgroundBrandSubtle: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF102693) else ComposeColor(0xFFADC8FF)
 
         /** color/background/default */
         val backgroundDefault: ComposeColor
@@ -738,6 +739,11 @@ object SoftwareTokens {
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF390E0E) else ComposeColor(0xFFFCEAEF)
 
+        /** color/background/utility/error-hover */
+        val backgroundUtilityErrorHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF631717) else ComposeColor(0xFFF8C5D1)
+
         /** color/background/utility/error-knockout */
         val backgroundUtilityErrorKnockout = ComposeColor(0xFFB82F30)
 
@@ -773,7 +779,7 @@ object SoftwareTokens {
         /** color/border/brand-hover */
         val borderBrandHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** color/border/default */
         val borderDefault = ComposeColor(0xFF6F7078)
@@ -839,7 +845,7 @@ object SoftwareTokens {
         val brandDefault = ComposeColor(0xFF254EDB)
 
         /** color/brand/hover */
-        val brandHover = ComposeColor(0xFF2B59EB)
+        val brandHover = ComposeColor(0xFF102693)
 
         /** color/content/accent */
         val contentAccent: ComposeColor
@@ -859,7 +865,7 @@ object SoftwareTokens {
         /** color/content/brand-hover */
         val contentBrandHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFADC8FF) else ComposeColor(0xFF102693)
 
         /** color/content/brand-knockout */
         val contentBrandKnockout = ComposeColor(0xFFF3F4F4)
@@ -912,7 +918,7 @@ object SoftwareTokens {
         /** color/content/link-hover */
         val contentLinkHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF102693)
 
         /** color/content/subtitle */
         val contentSubtitle: ComposeColor
@@ -931,6 +937,11 @@ object SoftwareTokens {
         val contentUtilityError: ComposeColor
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
+
+        /** color/content/utility/error-hover */
+        val contentUtilityErrorHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFF8D2121)
 
         /** color/content/utility/error-knockout */
         val contentUtilityErrorKnockout = ComposeColor(0xFFF3F4F4)
@@ -1483,7 +1494,7 @@ object SoftwareTokens {
         /** hyperlink/color/hover */
         val colorHover: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF102693)
 
         /** hyperlink/spacing/cta/gap */
         val spacingCtaGap = 12.dp

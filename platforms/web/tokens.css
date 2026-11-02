@@ -61,23 +61,23 @@
   --button-border-width-hover: var(--border-width-default);
   --button-color-danger-background-default: var(--color-background-default);
   --button-color-danger-background-disabled: var(--button-color-disabled-background-default);
-  --button-color-danger-background-focus: var(--color-background-utility-error);
-  --button-color-danger-background-hover: var(--color-background-utility-error);
+  --button-color-danger-background-focus: var(--color-background-utility-error-hover);
+  --button-color-danger-background-hover: var(--color-background-utility-error-hover);
   --button-color-danger-border-default: var(--color-border-utility-error);
   --button-color-danger-border-disabled: var(--button-color-disabled-border-default);
   --button-color-danger-border-focus: var(--color-border-utility-error);
   --button-color-danger-border-hover: var(--color-content-utility-error);
   --button-color-danger-content-default: var(--color-content-utility-error);
   --button-color-danger-content-disabled: var(--button-color-disabled-content-default);
-  --button-color-danger-content-focus: var(--color-content-utility-error);
-  --button-color-danger-content-hover: var(--color-content-utility-error);
+  --button-color-danger-content-focus: var(--color-content-utility-error-hover);
+  --button-color-danger-content-hover: var(--color-content-utility-error-hover);
   --button-color-disabled-background-default: var(--color-background-disabled);
   --button-color-disabled-border-default: var(--color-border-disabled);
   --button-color-disabled-content-default: var(--color-content-disabled);
   --button-color-outline-background-default: var(--color-background-default);
   --button-color-outline-background-disabled: var(--button-color-disabled-background-default);
-  --button-color-outline-background-focus: var(--color-background-subtle);
-  --button-color-outline-background-hover: var(--color-background-subtle);
+  --button-color-outline-background-focus: var(--color-background-brand-subtle);
+  --button-color-outline-background-hover: var(--color-background-brand-subtle);
   --button-color-outline-border-default: var(--color-border-brand);
   --button-color-outline-border-disabled: var(--button-color-disabled-border-default);
   --button-color-outline-border-focus: var(--color-border-brand-hover);
@@ -92,8 +92,8 @@
   --button-color-primary-background-hover: var(--color-background-brand-hover);
   --button-color-primary-border-default: var(--color-border-brand);
   --button-color-primary-border-disabled: var(--button-color-disabled-border-default);
-  --button-color-primary-border-focus: var(--color-border-brand-hover);
-  --button-color-primary-border-hover: var(--color-border-brand-hover);
+  --button-color-primary-border-focus: var(--button-color-primary-background-focus);
+  --button-color-primary-border-hover: var(--button-color-primary-background-hover);
   --button-color-primary-content-default: var(--color-content-knockout);
   --button-color-primary-content-disabled: var(--button-color-disabled-content-default);
   --button-color-primary-content-focus: var(--color-content-knockout);
@@ -101,11 +101,11 @@
   --button-color-quiet-background-default: var(--color-background-default);
   --button-color-quiet-background-disabled: var(--button-color-disabled-background-default);
   --button-color-quiet-background-focus: var(--color-background-default);
-  --button-color-quiet-background-hover: var(--color-background-subtle);
-  --button-color-quiet-border-default: var(--color-border-brand);
-  --button-color-quiet-border-disabled: var(--button-color-disabled-border-default);
-  --button-color-quiet-border-focus: var(--color-border-brand-hover);
-  --button-color-quiet-border-hover: var(--color-border-brand-hover);
+  --button-color-quiet-background-hover: var(--color-background-brand-subtle);
+  --button-color-quiet-border-default: var(--button-color-quiet-background-default);
+  --button-color-quiet-border-disabled: var(--button-color-quiet-background-disabled);
+  --button-color-quiet-border-focus: var(--button-color-quiet-background-focus);
+  --button-color-quiet-border-hover: var(--button-color-quiet-background-hover);
   --button-color-quiet-content-default: var(--color-content-brand);
   --button-color-quiet-content-disabled: var(--button-color-disabled-content-default);
   --button-color-quiet-content-focus: var(--color-content-brand);
@@ -169,6 +169,7 @@
   --chip-spacing-groups-gap: var(--spacing-gap-xsm);
   --color-background-brand: var(--color-role-light-background-brand);
   --color-background-brand-hover: var(--color-role-light-background-brand-hover);
+  --color-background-brand-subtle: var(--color-role-light-background-brand-subtle);
   --color-background-default: var(--color-role-light-background-default);
   --color-background-disabled: var(--color-role-light-background-disabled);
   --color-background-highlight: var(--color-role-light-background-highlight);
@@ -181,6 +182,7 @@
   --color-background-subtle-hover: var(--color-role-light-background-subtle-hover);
   --color-background-surface: #ffffff;
   --color-background-utility-error: var(--color-role-light-background-utility-error);
+  --color-background-utility-error-hover: #f8c5d1;
   --color-background-utility-error-knockout: #b82f30;
   --color-background-utility-info: #eceefc;
   --color-background-utility-info-knockout: #4555d3;
@@ -225,6 +227,7 @@
   --color-content-subtitle-knockout: var(--color-role-light-content-subtitle-knockout);
   --color-content-subtle: var(--color-role-light-content-subtle);
   --color-content-utility-error: var(--color-role-light-content-utility-error);
+  --color-content-utility-error-hover: var(--color-role-light-content-utility-error-hover);
   --color-content-utility-error-knockout: var(--color-content-knockout);
   --color-content-utility-info: #4555d3;
   --color-content-utility-info-knockout: var(--color-content-knockout);
@@ -551,7 +554,7 @@
 [data-brand] {
   --color-brand-default: var(--color-brand-primary-600);
   --color-brand-highlight: #3366ff66;
-  --color-brand-hover: var(--color-brand-primary-550);
+  --color-brand-hover: var(--color-brand-primary-800);
   --color-brand-primary-100: #d6e4ff;
   --color-brand-primary-200: #adc8ff;
   --color-brand-primary-300: #84a9ff;
@@ -582,6 +585,7 @@
   --color-brand-tertiary-900: #091a7a;
   --color-role-dark-background-brand: var(--color-brand-default);
   --color-role-dark-background-brand-hover: var(--color-brand-hover);
+  --color-role-dark-background-brand-subtle: var(--color-brand-primary-800);
   --color-role-dark-background-default: #0d0f16;
   --color-role-dark-background-disabled: #161925;
   --color-role-dark-background-highlight: var(--color-brand-highlight);
@@ -601,7 +605,7 @@
   --color-role-dark-background-utility-warning: #2c1900;
   --color-role-dark-background-utility-warning-knockout: #8a5801;
   --color-role-dark-border-brand: var(--color-brand-primary-400);
-  --color-role-dark-border-brand-hover: var(--color-brand-primary-300);
+  --color-role-dark-border-brand-hover: var(--color-brand-primary-200);
   --color-role-dark-border-default: #6f7078;
   --color-role-dark-border-disabled: #42454e;
   --color-role-dark-border-focus: var(--color-brand-primary-400);
@@ -616,7 +620,7 @@
   --color-role-dark-content-accent: var(--color-brand-primary-400);
   --color-role-dark-content-body: #c5c6c9;
   --color-role-dark-content-brand: var(--color-brand-primary-400);
-  --color-role-dark-content-brand-hover: var(--color-brand-primary-300);
+  --color-role-dark-content-brand-hover: var(--color-brand-primary-200);
   --color-role-dark-content-brand-secondary: var(--color-brand-secondary-400);
   --color-role-dark-content-default: #c5c6c9;
   --color-role-dark-content-disabled: #61646b;
@@ -630,6 +634,7 @@
   --color-role-dark-content-subtitle-knockout: #f3f4f4;
   --color-role-dark-content-subtle: #8c8f9b;
   --color-role-dark-content-utility-error: #efa2b2;
+  --color-role-dark-content-utility-error-hover: var(--color-role-dark-content-utility-error);
   --color-role-dark-content-utility-success: #5dc9af;
   --color-role-dark-content-utility-warning: #efd242;
   --color-role-dark-content-xray-atom: #abb3f0;
@@ -638,6 +643,7 @@
   --color-role-dark-content-xray-template: #efd242;
   --color-role-light-background-brand: var(--color-brand-default);
   --color-role-light-background-brand-hover: var(--color-brand-hover);
+  --color-role-light-background-brand-subtle: var(--color-brand-primary-200);
   --color-role-light-background-default: #ffffff;
   --color-role-light-background-disabled: #f3f4f4;
   --color-role-light-background-highlight: var(--color-brand-highlight);
@@ -680,6 +686,7 @@
   --color-role-light-content-subtitle-knockout: #f3f4f4;
   --color-role-light-content-subtle: #6f7078;
   --color-role-light-content-utility-error: #b82f30;
+  --color-role-light-content-utility-error-hover: #8d2121;
   --color-role-light-content-utility-success: #0b7058;
   --color-role-light-content-utility-warning: #8a5801;
   --color-role-light-content-xray-atom: #4555d3;
@@ -885,6 +892,7 @@
     color-scheme: dark;
     --color-background-brand: var(--color-role-dark-background-brand);
     --color-background-brand-hover: var(--color-role-dark-background-brand-hover);
+    --color-background-brand-subtle: var(--color-role-dark-background-brand-subtle);
     --color-background-default: var(--color-role-dark-background-default);
     --color-background-disabled: var(--color-role-dark-background-disabled);
     --color-background-highlight: var(--color-role-dark-background-highlight);
@@ -897,6 +905,7 @@
     --color-background-subtle-hover: var(--color-role-dark-background-subtle-hover);
     --color-background-surface: var(--color-role-dark-background-surface);
     --color-background-utility-error: var(--color-role-dark-background-utility-error);
+    --color-background-utility-error-hover: #631717;
     --color-background-utility-error-knockout: var(--color-role-dark-background-utility-error-knockout);
     --color-background-utility-info: #15193f;
     --color-background-utility-info-knockout: var(--color-role-dark-background-utility-info-knockout);
@@ -935,6 +944,7 @@
     --color-content-subtitle-knockout: var(--color-role-dark-content-subtitle-knockout);
     --color-content-subtle: var(--color-role-dark-content-subtle);
     --color-content-utility-error: var(--color-role-dark-content-utility-error);
+    --color-content-utility-error-hover: var(--color-role-dark-content-utility-error-hover);
     --color-content-utility-info: #abb3f0;
     --color-content-utility-success: var(--color-role-dark-content-utility-success);
     --color-content-utility-warning: var(--color-role-dark-content-utility-warning);
@@ -950,6 +960,7 @@
   color-scheme: dark;
   --color-background-brand: var(--color-role-dark-background-brand);
   --color-background-brand-hover: var(--color-role-dark-background-brand-hover);
+  --color-background-brand-subtle: var(--color-role-dark-background-brand-subtle);
   --color-background-default: var(--color-role-dark-background-default);
   --color-background-disabled: var(--color-role-dark-background-disabled);
   --color-background-highlight: var(--color-role-dark-background-highlight);
@@ -962,6 +973,7 @@
   --color-background-subtle-hover: var(--color-role-dark-background-subtle-hover);
   --color-background-surface: var(--color-role-dark-background-surface);
   --color-background-utility-error: var(--color-role-dark-background-utility-error);
+  --color-background-utility-error-hover: #631717;
   --color-background-utility-error-knockout: var(--color-role-dark-background-utility-error-knockout);
   --color-background-utility-info: #15193f;
   --color-background-utility-info-knockout: var(--color-role-dark-background-utility-info-knockout);
@@ -1000,6 +1012,7 @@
   --color-content-subtitle-knockout: var(--color-role-dark-content-subtitle-knockout);
   --color-content-subtle: var(--color-role-dark-content-subtle);
   --color-content-utility-error: var(--color-role-dark-content-utility-error);
+  --color-content-utility-error-hover: var(--color-role-dark-content-utility-error-hover);
   --color-content-utility-info: #abb3f0;
   --color-content-utility-success: var(--color-role-dark-content-utility-success);
   --color-content-utility-warning: var(--color-role-dark-content-utility-warning);
@@ -1046,6 +1059,9 @@
   --color-brand-tertiary-700: #a40f6c;
   --color-brand-tertiary-800: #840962;
   --color-brand-tertiary-900: #6d055b;
+  --color-role-dark-border-brand-hover: var(--color-brand-primary-300);
+  --color-role-dark-content-brand-hover: var(--color-brand-primary-300);
+  --color-role-light-background-brand-subtle: var(--color-brand-primary-100);
   --typography-font-family-accent: var(--typography-font-family-alex-brush);
   --typography-font-family-base: var(--typography-font-family-libre);
   --typography-font-family-headline: var(--typography-font-family-fraunces);
@@ -1157,6 +1173,7 @@
   --color-role-light-content-subtitle-knockout: #f8f8f8b3;
   --color-role-light-content-subtle: #0f0f0f99;
   --color-role-light-content-utility-error: #7e0000;
+  --color-role-light-content-utility-error-hover: var(--color-role-light-content-utility-error);
   --color-role-light-content-utility-success: #005522;
   --color-role-light-content-utility-warning: #6e4600;
   --color-role-light-content-xray-atom: #3b4ede;
@@ -1222,7 +1239,7 @@
 [data-brand="swiss"] {
   --color-brand-default: var(--color-brand-primary-500);
   --color-brand-highlight: #e12a0966;
-  --color-brand-hover: var(--color-brand-primary-600);
+  --color-brand-hover: var(--color-brand-primary-700);
   --color-brand-primary-100: #fce3dd;
   --color-brand-primary-200: #f8bfb2;
   --color-brand-primary-300: #f28a74;
@@ -1254,14 +1271,14 @@
   --color-role-dark-background-default: #1a1a1a;
   --color-role-dark-background-disabled: #242424;
   --color-role-dark-background-knockout: #424242;
-  --color-role-dark-background-knockout-hover: #555555;
+  --color-role-dark-background-knockout-hover: #1c1c1c;
   --color-role-dark-background-raised: #ffffff0d;
   --color-role-dark-background-selected: var(--color-brand-secondary-800);
   --color-role-dark-background-subtle: #242424;
   --color-role-dark-background-subtle-hover: #333333;
   --color-role-dark-background-surface: #242424;
   --color-role-dark-border-brand: #e96149;
-  --color-role-dark-border-brand-hover: #ed7a66;
+  --color-role-dark-border-brand-hover: #f8bfb2;
   --color-role-dark-border-default: #8c8c89;
   --color-role-dark-border-disabled: #424242;
   --color-role-dark-border-focus: #e96149;
@@ -1273,7 +1290,7 @@
   --color-role-dark-content-accent: #e96149;
   --color-role-dark-content-body: #ababa8;
   --color-role-dark-content-brand: #e96149;
-  --color-role-dark-content-brand-hover: #ed7a66;
+  --color-role-dark-content-brand-hover: #f8bfb2;
   --color-role-dark-content-default: #ababa8;
   --color-role-dark-content-disabled: #686868;
   --color-role-dark-content-emphasized: #ededea;
@@ -1298,7 +1315,7 @@
   --color-role-light-background-subtle: #ffffff;
   --color-role-light-background-subtle-hover: #ededea;
   --color-role-light-border-brand: var(--color-brand-primary-500);
-  --color-role-light-border-brand-hover: var(--color-brand-primary-600);
+  --color-role-light-border-brand-hover: var(--color-brand-primary-700);
   --color-role-light-border-default: #686868;
   --color-role-light-border-disabled: #b5b5b2;
   --color-role-light-border-focus: var(--color-brand-primary-500);
@@ -1310,7 +1327,7 @@
   --color-role-light-content-accent: var(--color-brand-primary-550);
   --color-role-light-content-body: #555555;
   --color-role-light-content-brand: var(--color-brand-primary-550);
-  --color-role-light-content-brand-hover: var(--color-brand-primary-600);
+  --color-role-light-content-brand-hover: var(--color-brand-primary-700);
   --color-role-light-content-default: #555555;
   --color-role-light-content-disabled: #8c8c89;
   --color-role-light-content-emphasized: #0f0f0f;

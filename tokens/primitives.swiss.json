@@ -1550,7 +1550,7 @@
       },
       "hover": {
         "$type": "color",
-        "$value": "{color.brand.primary.600}",
+        "$value": "{color.brand.primary.700}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:14377:2669",
@@ -4752,6 +4752,17 @@
               }
             }
           },
+          "brand-subtle": {
+            "$type": "color",
+            "$value": "{color.brand.primary.800}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:16093:3",
+                "collection": "Tier 1  |  base values",
+                "scopes": []
+              }
+            }
+          },
           "default": {
             "$type": "color",
             "$value": "{color.stone.825}",
@@ -4798,7 +4809,7 @@
           },
           "knockout-hover": {
             "$type": "color",
-            "$value": "{color.stone.600}",
+            "$value": "{color.stone.800}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:112",
@@ -4880,6 +4891,17 @@
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:120",
+                  "collection": "Tier 1  |  base values",
+                  "scopes": []
+                }
+              }
+            },
+            "error-hover": {
+              "$type": "color",
+              "$value": "{color.utility.red.800}",
+              "$extensions": {
+                "com.figma": {
+                  "variableId": "VariableID:16093:5",
                   "collection": "Tier 1  |  base values",
                   "scopes": []
                 }
@@ -4978,7 +5000,7 @@
           },
           "brand-hover": {
             "$type": "color",
-            "$value": "{color.signal-red.350}",
+            "$value": "{color.signal-red.200}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:148",
@@ -5180,7 +5202,7 @@
           },
           "brand-hover": {
             "$type": "color",
-            "$value": "{color.signal-red.350}",
+            "$value": "{color.signal-red.200}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:180",
@@ -5333,6 +5355,17 @@
                 }
               }
             },
+            "error-hover": {
+              "$type": "color",
+              "$value": "{color.role.dark.content.utility.error}",
+              "$extensions": {
+                "com.figma": {
+                  "variableId": "VariableID:16093:7",
+                  "collection": "Tier 1  |  base values",
+                  "scopes": []
+                }
+              }
+            },
             "info": {
               "$type": "color",
               "$value": "{color.utility.blue.300}",
@@ -5447,6 +5480,17 @@
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:115",
+                "collection": "Tier 1  |  base values",
+                "scopes": []
+              }
+            }
+          },
+          "brand-subtle": {
+            "$type": "color",
+            "$value": "{color.brand.primary.200}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:16093:2",
                 "collection": "Tier 1  |  base values",
                 "scopes": []
               }
@@ -5585,6 +5629,17 @@
                 }
               }
             },
+            "error-hover": {
+              "$type": "color",
+              "$value": "{color.utility.red.200}",
+              "$extensions": {
+                "com.figma": {
+                  "variableId": "VariableID:16093:4",
+                  "collection": "Tier 1  |  base values",
+                  "scopes": []
+                }
+              }
+            },
             "error-knockout": {
               "$type": "color",
               "$value": "{color.utility.red.600}",
@@ -5678,7 +5733,7 @@
           },
           "brand-hover": {
             "$type": "color",
-            "$value": "{color.brand.primary.600}",
+            "$value": "{color.brand.primary.700}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:147",
@@ -5880,7 +5935,7 @@
           },
           "brand-hover": {
             "$type": "color",
-            "$value": "{color.brand.primary.600}",
+            "$value": "{color.brand.primary.700}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:179",
@@ -6028,6 +6083,17 @@
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:183",
+                  "collection": "Tier 1  |  base values",
+                  "scopes": []
+                }
+              }
+            },
+            "error-hover": {
+              "$type": "color",
+              "$value": "{color.utility.red.700}",
+              "$extensions": {
+                "com.figma": {
+                  "variableId": "VariableID:16093:6",
                   "collection": "Tier 1  |  base values",
                   "scopes": []
                 }

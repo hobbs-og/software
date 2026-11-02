@@ -29,6 +29,20 @@
           }
         }
       },
+      "brand-subtle": {
+        "$type": "color",
+        "$value": "{color.role.dark.background.brand-subtle}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16093:8",
+            "collection": "Tier 2  |  semantic color",
+            "scopes": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ]
+          }
+        }
+      },
       "default": {
         "$type": "color",
         "$value": "{color.role.dark.background.default}",
@@ -190,6 +204,20 @@
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:789",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "error-hover": {
+          "$type": "color",
+          "$value": "{color.role.dark.background.utility.error-hover}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:16093:9",
               "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "FRAME_FILL",
@@ -794,6 +822,19 @@
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15827:825",
+              "collection": "Tier 2  |  semantic color",
+              "scopes": [
+                "ALL_FILLS"
+              ]
+            }
+          }
+        },
+        "error-hover": {
+          "$type": "color",
+          "$value": "{color.role.dark.content.utility.error-hover}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:16093:10",
               "collection": "Tier 2  |  semantic color",
               "scopes": [
                 "ALL_FILLS"

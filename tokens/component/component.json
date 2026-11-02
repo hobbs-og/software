@@ -692,7 +692,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.background.utility.error}",
+            "$value": "{color.background.utility.error-hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:309",
@@ -706,7 +706,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.utility.error}",
+            "$value": "{color.background.utility.error-hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:308",
@@ -804,7 +804,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.content.utility.error}",
+            "$value": "{color.content.utility.error-hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:312",
@@ -818,7 +818,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.content.utility.error}",
+            "$value": "{color.content.utility.error-hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:311",
@@ -913,7 +913,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.background.subtle}",
+            "$value": "{color.background.brand-subtle}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:10:122",
@@ -927,7 +927,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.subtle}",
+            "$value": "{color.background.brand-subtle}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:10:121",
@@ -1141,7 +1141,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.border.brand-hover}",
+            "$value": "{button.color.primary.background.focus}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:10:34",
@@ -1154,7 +1154,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.brand-hover}",
+            "$value": "{button.color.primary.background.hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:10:33",
@@ -1271,7 +1271,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.subtle}",
+            "$value": "{color.background.brand-subtle}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:318",
@@ -1287,7 +1287,7 @@
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.brand}",
+            "$value": "{button.color.quiet.background.default}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:325",
@@ -1300,7 +1300,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{button.color.disabled.border.default}",
+            "$value": "{button.color.quiet.background.disabled}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:328",
@@ -1313,7 +1313,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.border.brand-hover}",
+            "$value": "{button.color.quiet.background.focus}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:327",
@@ -1326,7 +1326,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.brand-hover}",
+            "$value": "{button.color.quiet.background.hover}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:56:326",
