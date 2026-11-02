@@ -35,9 +35,7 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
         /** accordion/color/border/default */
-        val colorBorderDefault: ComposeColor
-            @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+        val colorBorderDefault = ComposeColor(0xFF6F7078)
 
         /** accordion/color/border/hover */
         val colorBorderHover = ComposeColor(0xFF6F7078)
@@ -571,18 +569,20 @@ object SoftwareTokens {
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFA2B2) else ComposeColor(0xFFB82F30)
 
-        /** chip/color/partial/background/default */
-        val colorPartialBackgroundDefault: ComposeColor
+        /** chip/color/pending/background/default */
+        val colorPendingBackgroundDefault: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF2C1900) else ComposeColor(0xFFF9EFBB)
 
-        /** chip/color/partial/border/default */
-        val colorPartialBorderDefault = ComposeColor(0xFF6F7078)
-
-        /** chip/color/partial/content/default */
-        val colorPartialContentDefault: ComposeColor
+        /** chip/color/pending/border/default */
+        val colorPendingBorderDefault: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFDBB305) else ComposeColor(0xFF6D3F00)
+
+        /** chip/color/pending/content/default */
+        val colorPendingContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFEFD242) else ComposeColor(0xFF8A5801)
 
         /** chip/color/sent/background/default */
         val colorSentBackgroundDefault: ComposeColor
@@ -590,12 +590,14 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
         /** chip/color/sent/border/default */
-        val colorSentBorderDefault = ComposeColor(0xFF6F7078)
+        val colorSentBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
 
         /** chip/color/sent/content/default */
         val colorSentContentDefault: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
 
         /** chip/color/success/background/default */
         val colorSuccessBackgroundDefault: ComposeColor
@@ -613,7 +615,7 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF5DC9AF) else ComposeColor(0xFF0B7058)
 
         /** chip/spacing/default/padding-x */
-        val spacingDefaultPaddingX = 4.dp
+        val spacingDefaultPaddingX = 8.dp
 
         /** chip/spacing/default/padding-y */
         val spacingDefaultPaddingY = 2.dp
@@ -1223,6 +1225,41 @@ object SoftwareTokens {
         const val typographyTextTransform = "none"
     }
 
+    object Footer {
+        /** footer/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** footer/color/default/border/default */
+        val colorDefaultBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+
+        /** footer/color/default/content/default */
+        val colorDefaultContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** footer/color/link/content/default */
+        val colorLinkContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** footer/spacing/content/padding-y */
+        val spacingContentPaddingY = 64.dp
+
+        /** footer/spacing/gap */
+        val spacingGap = 24.dp
+
+        /** footer/spacing/icon/width */
+        val spacingIconWidth = 12.dp
+
+        /** footer/spacing/link/gap */
+        val spacingLinkGap = 8.dp
+
+        /** footer/spacing/padding-y */
+        val spacingPaddingY = 64.dp
+    }
+
     object Hyperlink {
         /** hyperlink/color/default */
         val colorDefault: ComposeColor
@@ -1235,6 +1272,39 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
     }
 
+    object MediaFrame {
+        /** media-frame/border/radius/default */
+        val borderRadiusDefault = 0.dp
+
+        /** media-frame/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** media-frame/color/default/background/default */
+        val colorDefaultBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFD9D9D9)
+
+        /** media-frame/color/default/border/default */
+        val colorDefaultBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+
+        /** media-frame/spacing/gap */
+        val spacingGap = 16.dp
+
+        /** media-frame/spacing/mobile/padding-x */
+        val spacingMobilePaddingX = 8.dp
+
+        /** media-frame/spacing/mobile/padding-y */
+        val spacingMobilePaddingY = 8.dp
+
+        /** media-frame/spacing/padding-x */
+        val spacingPaddingX = 16.dp
+
+        /** media-frame/spacing/padding-y */
+        val spacingPaddingY = 16.dp
+    }
+
     object Motion {
         /** motion/blur */
         val blur = 2.dp
@@ -1243,6 +1313,21 @@ object SoftwareTokens {
         val color: ComposeColor
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
+
+        /** motion/duration/lg */
+        const val durationLg = 400
+
+        /** motion/duration/md */
+        const val durationMd = 320
+
+        /** motion/duration/sm */
+        const val durationSm = 240
+
+        /** motion/duration/xlg */
+        const val durationXlg = 480
+
+        /** motion/duration/xxlg */
+        const val durationXxlg = 640
 
         /** motion/spread */
         val spread = 0.dp
@@ -1263,13 +1348,10 @@ object SoftwareTokens {
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
 
-        /** navbar/color/border/color/default */
-        val colorBorderColorDefault: ComposeColor
+        /** navbar/color/border/default */
+        val colorBorderDefault: ComposeColor
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
-
-        /** navbar/color/border/width/default */
-        val colorBorderWidthDefault = 1.dp
 
         /** navbar/color/content/active */
         val colorContentActive: ComposeColor
@@ -1297,8 +1379,11 @@ object SoftwareTokens {
         /** navbar/spacing/nav-links/gap */
         val spacingNavLinksGap = 48.dp
 
+        /** navbar/spacing/nav-links/mobile/padding-x */
+        val spacingNavLinksMobilePaddingX = 16.dp
+
         /** navbar/spacing/nav-links/mobile/padding-y */
-        val spacingNavLinksMobilePaddingY = 48.dp
+        val spacingNavLinksMobilePaddingY = 16.dp
 
         /** navbar/spacing/padding-x */
         val spacingPaddingX = 24.dp
@@ -1318,6 +1403,22 @@ object SoftwareTokens {
         val spacingPaddingY = 48.dp
     }
 
+    object SkipLink {
+        /** skip-link/color/default/background/default */
+        val colorDefaultBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFF252525)
+
+        /** skip-link/color/default/content/default */
+        val colorDefaultContentDefault = ComposeColor(0xFFF3F4F4)
+
+        /** skip-link/spacing/padding-x */
+        val spacingPaddingX = 24.dp
+
+        /** skip-link/spacing/padding-y */
+        val spacingPaddingY = 16.dp
+    }
+
     object Spacing {
         /** spacing/0 */
         val _0 = 0.dp
@@ -1325,17 +1426,29 @@ object SoftwareTokens {
         /** spacing/12 */
         val _12 = 12.dp
 
+        /** spacing/120 */
+        val _120 = 120.dp
+
         /** spacing/128 */
         val _128 = 128.dp
 
+        /** spacing/144 */
+        val _144 = 144.dp
+
         /** spacing/16 */
         val _16 = 16.dp
+
+        /** spacing/168 */
+        val _168 = 168.dp
 
         /** spacing/2 */
         val _2 = 2.dp
 
         /** spacing/24 */
         val _24 = 24.dp
+
+        /** spacing/240 */
+        val _240 = 240.dp
 
         /** spacing/32 */
         val _32 = 32.dp
@@ -1351,6 +1464,9 @@ object SoftwareTokens {
 
         /** spacing/64 */
         val _64 = 64.dp
+
+        /** spacing/72 */
+        val _72 = 72.dp
 
         /** spacing/8 */
         val _8 = 8.dp
@@ -1402,6 +1518,53 @@ object SoftwareTokens {
 
         /** spacing/padding/xxsm */
         val paddingXxsm = 2.dp
+    }
+
+    object Switch {
+        /** switch/border/radius/default */
+        val borderRadiusDefault = 9999.dp
+
+        /** switch/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** switch/color/off/border/default */
+        val colorOffBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** switch/color/off/border/hover */
+        val colorOffBorderHover = ComposeColor(0xFF6F7078)
+
+        /** switch/color/off/content/default */
+        val colorOffContentDefault = ComposeColor(0xFF6F7078)
+
+        /** switch/color/on/background/default */
+        val colorOnBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** switch/color/on/border/default */
+        val colorOnBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** switch/color/on/content/default */
+        val colorOnContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** switch/spacing/gap */
+        val spacingGap = 8.dp
+
+        /** switch/spacing/icon/width */
+        val spacingIconWidth = 16.dp
+
+        /** switch/spacing/thumb/inset */
+        val spacingThumbInset = 2.dp
+
+        /** switch/spacing/thumb/width */
+        val spacingThumbWidth = 12.dp
+
+        /** switch/spacing/track/width */
+        val spacingTrackWidth = 32.dp
     }
 
     object Typography {

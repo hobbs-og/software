@@ -175,6 +175,10 @@ async function exportTokens() {
         } else if (v.resolvedType === 'STRING') {
           token.$type = stringType(path);
           token.$value = raw;
+        } else if (v.resolvedType === 'TIMING') {
+          // Figma stores seconds; DTCG durations here are whole milliseconds.
+          token.$type = 'duration';
+          token.$value = { value: Math.round(raw * 1000), unit: 'ms' };
         } else {
           warnings.push(`${label}: ${v.resolvedType} variables have no token type; skipped`);
           continue;

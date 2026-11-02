@@ -1163,6 +1163,24 @@
         }
       }
     },
+    "72": {
+      "$type": "dimension",
+      "$value": {
+        "value": 72,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:16072:3",
+          "collection": "core",
+          "scopes": [
+            "EFFECT_FLOAT",
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
     "80": {
       "$type": "dimension",
       "$value": {
@@ -1201,6 +1219,24 @@
         }
       }
     },
+    "120": {
+      "$type": "dimension",
+      "$value": {
+        "value": 120,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:16072:4",
+          "collection": "core",
+          "scopes": [
+            "EFFECT_FLOAT",
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
     "128": {
       "$type": "dimension",
       "$value": {
@@ -1214,6 +1250,60 @@
           "scopes": [
             "EFFECT_FLOAT",
             "FONT_VARIATIONS",
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "144": {
+      "$type": "dimension",
+      "$value": {
+        "value": 144,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:16072:5",
+          "collection": "core",
+          "scopes": [
+            "EFFECT_FLOAT",
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "168": {
+      "$type": "dimension",
+      "$value": {
+        "value": 168,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:16072:6",
+          "collection": "core",
+          "scopes": [
+            "EFFECT_FLOAT",
+            "GAP",
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "240": {
+      "$type": "dimension",
+      "$value": {
+        "value": 240,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:16072:7",
+          "collection": "core",
+          "scopes": [
+            "EFFECT_FLOAT",
             "GAP",
             "WIDTH_HEIGHT"
           ]

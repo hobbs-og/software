@@ -8353,6 +8353,88 @@
         }
       }
     },
+    "duration": {
+      "lg": {
+        "$type": "duration",
+        "$value": {
+          "value": 400,
+          "unit": "ms"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16076:4",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "md": {
+        "$type": "duration",
+        "$value": {
+          "value": 320,
+          "unit": "ms"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16076:3",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "sm": {
+        "$type": "duration",
+        "$value": {
+          "value": 240,
+          "unit": "ms"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15906:289",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "xlg": {
+        "$type": "duration",
+        "$value": {
+          "value": 480,
+          "unit": "ms"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16076:5",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "xxlg": {
+        "$type": "duration",
+        "$value": {
+          "value": 640,
+          "unit": "ms"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:15906:290",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
     "spread": {
       "$type": "dimension",
       "$value": {

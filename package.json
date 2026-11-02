@@ -9,9 +9,11 @@
     "./grid.css": "./platforms/web/grid.css",
     "./fonts.css": "./platforms/web/fonts.css",
     "./fonts/*": "./platforms/web/fonts/*",
-    "./tokens/*": "./tokens/*"
+    "./tokens/*": "./tokens/*",
+    "./components/*": "./components/web/*"
   },
   "files": [
+    "components/web",
     "platforms/web",
     "tokens"
   ],

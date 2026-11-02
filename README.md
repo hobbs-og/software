@@ -107,6 +107,17 @@ Import `@hobbs-og/software/grid.css` after `tokens.css`. It is generated from th
 - **Grid:** `--columns`, `--container-gutter`, `--section-padding` and `--section-gap` change at 35em (560px) and 60em (960px). Breakpoints use `em` so they move with the user's browser font size.
 - **Font:** every font-family token falls back to the OS system sans-serif, then Helvetica: `"Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif`. Inter is self-hosted, never loaded from the Google Fonts CDN (see Fonts below).
 
+### Components (web)
+
+Shared component CSS lives in `components/web/`, one file per component. Unlike `tokens/` and `platforms/`, these files are written by hand. They read only `tokens.css`, hold no brand or theme of their own, and each header lists what it needs, so a product can take just the components it uses.
+
+```css
+@import "@hobbs-og/software/tokens.css";
+@import "@hobbs-og/software/components/switch.css";
+```
+
+Load them before your own styles, so a product can override anything in the cascade. Motion stays with the product for now, because easing curves have no tokens yet.
+
 ### Fonts
 
 Inter comes from Google Fonts (SIL Open Font License) and is **self-hosted**. Measured 2026-09-17:

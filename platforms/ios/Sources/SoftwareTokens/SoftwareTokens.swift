@@ -20,7 +20,7 @@ public enum SoftwareTokens {
         public static let colorBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
         /// accordion/color/border/default
-        public static let colorBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+        public static let colorBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
 
         /// accordion/color/border/hover
         public static let colorBorderHover = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
@@ -426,23 +426,23 @@ public enum SoftwareTokens {
         /// chip/color/error/content/default
         public static let colorErrorContentDefault = SwiftUI.Color(light: 0xB82F30FF, dark: 0xEFA2B2FF)
 
-        /// chip/color/partial/background/default
-        public static let colorPartialBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+        /// chip/color/pending/background/default
+        public static let colorPendingBackgroundDefault = SwiftUI.Color(light: 0xF9EFBBFF, dark: 0x2C1900FF)
 
-        /// chip/color/partial/border/default
-        public static let colorPartialBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+        /// chip/color/pending/border/default
+        public static let colorPendingBorderDefault = SwiftUI.Color(light: 0x6D3F00FF, dark: 0xDBB305FF)
 
-        /// chip/color/partial/content/default
-        public static let colorPartialContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+        /// chip/color/pending/content/default
+        public static let colorPendingContentDefault = SwiftUI.Color(light: 0x8A5801FF, dark: 0xEFD242FF)
 
         /// chip/color/sent/background/default
         public static let colorSentBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
         /// chip/color/sent/border/default
-        public static let colorSentBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+        public static let colorSentBorderDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// chip/color/sent/content/default
-        public static let colorSentContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+        public static let colorSentContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// chip/color/success/background/default
         public static let colorSuccessBackgroundDefault = SwiftUI.Color(light: 0xDCF3EEFF, dark: 0x03211AFF)
@@ -454,7 +454,7 @@ public enum SoftwareTokens {
         public static let colorSuccessContentDefault = SwiftUI.Color(light: 0x0B7058FF, dark: 0x5DC9AFFF)
 
         /// chip/spacing/default/padding-x
-        public static let spacingDefaultPaddingX: CGFloat = 4
+        public static let spacingDefaultPaddingX: CGFloat = 8
 
         /// chip/spacing/default/padding-y
         public static let spacingDefaultPaddingY: CGFloat = 2
@@ -922,6 +922,35 @@ public enum SoftwareTokens {
         public static let typographyTextTransform = "none"
     }
 
+    public enum Footer {
+        /// footer/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// footer/color/default/border/default
+        public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+
+        /// footer/color/default/content/default
+        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// footer/color/link/content/default
+        public static let colorLinkContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// footer/spacing/content/padding-y
+        public static let spacingContentPaddingY: CGFloat = 64
+
+        /// footer/spacing/gap
+        public static let spacingGap: CGFloat = 24
+
+        /// footer/spacing/icon/width
+        public static let spacingIconWidth: CGFloat = 12
+
+        /// footer/spacing/link/gap
+        public static let spacingLinkGap: CGFloat = 8
+
+        /// footer/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 64
+    }
+
     public enum Hyperlink {
         /// hyperlink/color/default
         public static let colorDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
@@ -930,12 +959,56 @@ public enum SoftwareTokens {
         public static let colorHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
     }
 
+    public enum MediaFrame {
+        /// media-frame/border/radius/default
+        public static let borderRadiusDefault: CGFloat = 0
+
+        /// media-frame/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// media-frame/color/default/background/default
+        public static let colorDefaultBackgroundDefault = SwiftUI.Color(light: 0xD9D9D9FF, dark: 0x42454EFF)
+
+        /// media-frame/color/default/border/default
+        public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+
+        /// media-frame/spacing/gap
+        public static let spacingGap: CGFloat = 16
+
+        /// media-frame/spacing/mobile/padding-x
+        public static let spacingMobilePaddingX: CGFloat = 8
+
+        /// media-frame/spacing/mobile/padding-y
+        public static let spacingMobilePaddingY: CGFloat = 8
+
+        /// media-frame/spacing/padding-x
+        public static let spacingPaddingX: CGFloat = 16
+
+        /// media-frame/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 16
+    }
+
     public enum Motion {
         /// motion/blur
         public static let blur: CGFloat = 2
 
         /// motion/color
         public static let color = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
+
+        /// motion/duration/lg
+        public static let durationLg: TimeInterval = 0.4
+
+        /// motion/duration/md
+        public static let durationMd: TimeInterval = 0.32
+
+        /// motion/duration/sm
+        public static let durationSm: TimeInterval = 0.24
+
+        /// motion/duration/xlg
+        public static let durationXlg: TimeInterval = 0.48
+
+        /// motion/duration/xxlg
+        public static let durationXxlg: TimeInterval = 0.64
 
         /// motion/spread
         public static let spread: CGFloat = 0
@@ -954,11 +1027,8 @@ public enum SoftwareTokens {
         /// navbar/color/background/default
         public static let colorBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
 
-        /// navbar/color/border/color/default
-        public static let colorBorderColorDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
-
-        /// navbar/color/border/width/default
-        public static let colorBorderWidthDefault: CGFloat = 1
+        /// navbar/color/border/default
+        public static let colorBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
 
         /// navbar/color/content/active
         public static let colorContentActive = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
@@ -978,8 +1048,11 @@ public enum SoftwareTokens {
         /// navbar/spacing/nav-links/gap
         public static let spacingNavLinksGap: CGFloat = 48
 
+        /// navbar/spacing/nav-links/mobile/padding-x
+        public static let spacingNavLinksMobilePaddingX: CGFloat = 16
+
         /// navbar/spacing/nav-links/mobile/padding-y
-        public static let spacingNavLinksMobilePaddingY: CGFloat = 48
+        public static let spacingNavLinksMobilePaddingY: CGFloat = 16
 
         /// navbar/spacing/padding-x
         public static let spacingPaddingX: CGFloat = 24
@@ -999,6 +1072,20 @@ public enum SoftwareTokens {
         public static let spacingPaddingY: CGFloat = 48
     }
 
+    public enum SkipLink {
+        /// skip-link/color/default/background/default
+        public static let colorDefaultBackgroundDefault = SwiftUI.Color(light: 0x252525FF, dark: 0x42454EFF)
+
+        /// skip-link/color/default/content/default
+        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0xF3F4F4FF, dark: 0xF3F4F4FF)
+
+        /// skip-link/spacing/padding-x
+        public static let spacingPaddingX: CGFloat = 24
+
+        /// skip-link/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 16
+    }
+
     public enum Spacing {
         /// spacing/0
         public static let _0: CGFloat = 0
@@ -1006,17 +1093,29 @@ public enum SoftwareTokens {
         /// spacing/12
         public static let _12: CGFloat = 12
 
+        /// spacing/120
+        public static let _120: CGFloat = 120
+
         /// spacing/128
         public static let _128: CGFloat = 128
 
+        /// spacing/144
+        public static let _144: CGFloat = 144
+
         /// spacing/16
         public static let _16: CGFloat = 16
+
+        /// spacing/168
+        public static let _168: CGFloat = 168
 
         /// spacing/2
         public static let _2: CGFloat = 2
 
         /// spacing/24
         public static let _24: CGFloat = 24
+
+        /// spacing/240
+        public static let _240: CGFloat = 240
 
         /// spacing/32
         public static let _32: CGFloat = 32
@@ -1032,6 +1131,9 @@ public enum SoftwareTokens {
 
         /// spacing/64
         public static let _64: CGFloat = 64
+
+        /// spacing/72
+        public static let _72: CGFloat = 72
 
         /// spacing/8
         public static let _8: CGFloat = 8
@@ -1083,6 +1185,47 @@ public enum SoftwareTokens {
 
         /// spacing/padding/xxsm
         public static let paddingXxsm: CGFloat = 2
+    }
+
+    public enum Switch {
+        /// switch/border/radius/default
+        public static let borderRadiusDefault: CGFloat = 9999
+
+        /// switch/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// switch/color/off/border/default
+        public static let colorOffBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// switch/color/off/border/hover
+        public static let colorOffBorderHover = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// switch/color/off/content/default
+        public static let colorOffContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// switch/color/on/background/default
+        public static let colorOnBackgroundDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// switch/color/on/border/default
+        public static let colorOnBorderDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// switch/color/on/content/default
+        public static let colorOnContentDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// switch/spacing/gap
+        public static let spacingGap: CGFloat = 8
+
+        /// switch/spacing/icon/width
+        public static let spacingIconWidth: CGFloat = 16
+
+        /// switch/spacing/thumb/inset
+        public static let spacingThumbInset: CGFloat = 2
+
+        /// switch/spacing/thumb/width
+        public static let spacingThumbWidth: CGFloat = 12
+
+        /// switch/spacing/track/width
+        public static let spacingTrackWidth: CGFloat = 32
     }
 
     public enum Typography {

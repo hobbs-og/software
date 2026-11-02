@@ -1,0 +1,43 @@
+/* media-frame: a quiet panel that holds one image, or two side by side. It
+   counts its images, so a second image needs no extra class. Images take their
+   width from the column and keep their own aspect ratio.
+
+   <div class="media-frame">
+     <img src="before.png" alt="">
+     <img src="after.png" alt="">
+   </div>
+
+   Needs: tokens.css */
+
+.media-frame {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  gap: var(--media-frame-spacing-gap);
+  inline-size: 100%;
+  padding: var(--media-frame-spacing-padding-y) var(--media-frame-spacing-padding-x);
+  background: var(--media-frame-color-default-background-default);
+  border: var(--media-frame-border-width-default) solid var(--media-frame-color-default-border-default);
+  border-radius: var(--media-frame-border-radius-default);
+}
+
+.media-frame:not(:has(> img + img)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.media-frame img {
+  border: var(--media-frame-border-width-default) solid var(--media-frame-color-default-border-default);
+  border-radius: var(--media-frame-border-radius-default);
+}
+
+.media-frame > img {
+  display: block;
+  block-size: auto;
+  justify-self: stretch;
+}
+
+@media (max-width: 34.9375em) {
+  .media-frame {
+    padding: var(--media-frame-spacing-mobile-padding-y) var(--media-frame-spacing-mobile-padding-x);
+  }
+}

@@ -1,0 +1,53 @@
+/* footer: copyright at the start, contact at the end, on one baseline, under a
+   rule that spans the grid.
+
+   <footer class="footer">
+     <div class="container footer__inner grid">
+       <p class="span-6">© 2026 Company</p>
+       <p class="footer__contact span-6"><a href="mailto:hello@example.com">hello@example.com</a></p>
+     </div>
+   </footer>
+
+   .container is the product's page gutter.
+
+   Needs: tokens.css, grid.css */
+
+.footer {
+  padding-block: var(--footer-spacing-padding-y);
+}
+
+/* The rule is painted on the content box, not a border, so it spans the grid
+   instead of the padded container. */
+.footer .footer__inner {
+  row-gap: var(--footer-spacing-gap);
+  align-items: baseline;
+  font-family: var(--typography-label-sm-font-family);
+  font-size: var(--typography-label-sm-font-size);
+  line-height: var(--typography-label-sm-line-height);
+  font-weight: var(--typography-label-sm-font-weight);
+  color: var(--footer-color-default-content-default);
+  background: linear-gradient(var(--footer-color-default-border-default), var(--footer-color-default-border-default)) top / 100% var(--footer-border-width-default) no-repeat content-box;
+}
+
+.footer__inner > * {
+  padding-block-start: calc(var(--footer-spacing-content-padding-y) + var(--footer-border-width-default));
+}
+
+.footer__contact {
+  text-align: end;
+}
+
+.footer__contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--footer-spacing-link-gap);
+  color: var(--footer-color-link-content-default);
+  border-block-end: var(--footer-border-width-default) solid currentColor;
+}
+
+.footer__contact a > svg.icon {
+  flex: none;
+  inline-size: var(--footer-spacing-icon-width);
+  aspect-ratio: 1;
+  align-self: center;
+}

@@ -427,10 +427,40 @@
       "note": "sent chip label"
     },
     {
-      "fg": "chip.color.partial.content.default",
-      "bg": "chip.color.partial.background.default",
+      "fg": "chip.color.pending.content.default",
+      "bg": "chip.color.pending.background.default",
       "min": 4.5,
-      "note": "partial chip label"
+      "note": "pending chip label"
+    },
+    {
+      "fg": "switch.color.off.border.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "switch track edge, off"
+    },
+    {
+      "fg": "switch.color.on.content.default",
+      "bg": "switch.color.on.background.default",
+      "min": 3,
+      "note": "switch thumb, on"
+    },
+    {
+      "fg": "skip-link.color.default.content.default",
+      "bg": "skip-link.color.default.background.default",
+      "min": 4.5,
+      "note": "skip link label"
+    },
+    {
+      "fg": "footer.color.default.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "footer text"
+    },
+    {
+      "fg": "footer.color.link.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "footer link"
     },
     {
       "fg": "chip.color.success.content.default",

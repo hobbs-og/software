@@ -1,0 +1,77 @@
+/* switch: a native checkbox with role="switch" and a label.
+   Off: outlined track, thumb at the start. On: filled track, thumb at the end.
+
+   <label class="switch">
+     <span>Dark mode</span>
+     <input type="checkbox" role="switch">
+   </label>
+
+   A swap pair of icons is optional: .switch__icon--off shows while off,
+   .switch__icon--on while on.
+
+   Needs: tokens.css */
+
+.switch {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--switch-spacing-gap);
+  cursor: pointer;
+  font-family: var(--typography-label-sm-font-family);
+  font-size: var(--typography-label-sm-font-size);
+  line-height: var(--typography-label-sm-line-height);
+  font-weight: var(--typography-label-sm-font-weight);
+}
+
+.switch input {
+  appearance: none;
+  position: relative;
+  flex: none;
+  align-self: center;
+  inline-size: var(--switch-spacing-track-width);
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  border: var(--switch-border-width-default) solid var(--switch-color-off-border-default);
+  border-radius: var(--switch-border-radius-default);
+  background: transparent;
+  cursor: pointer;
+}
+
+.switch input::before {
+  content: "";
+  position: absolute;
+  inset-block-start: var(--switch-spacing-thumb-inset);
+  inset-inline-start: var(--switch-spacing-thumb-inset);
+  inline-size: var(--switch-spacing-thumb-width);
+  aspect-ratio: 1;
+  border-radius: var(--switch-border-radius-default);
+  background: var(--switch-color-off-content-default);
+}
+
+.switch input:checked {
+  background: var(--switch-color-on-background-default);
+  border-color: var(--switch-color-on-border-default);
+}
+
+.switch input:checked::before {
+  background: var(--switch-color-on-content-default);
+  translate: calc(var(--switch-spacing-track-width) - var(--switch-spacing-thumb-width) - var(--switch-spacing-thumb-inset) * 2 - var(--switch-border-width-default) * 2) 0;
+}
+
+.switch .icon {
+  inline-size: var(--switch-spacing-icon-width);
+  aspect-ratio: 1;
+  align-self: center;
+}
+
+.switch .switch__icon--on,
+.switch:has(input:checked) .switch__icon--off {
+  display: none;
+}
+
+.switch:has(input:checked) .switch__icon--on {
+  display: block;
+}
+
+.switch:hover input {
+  border-color: var(--switch-color-off-border-hover);
+}

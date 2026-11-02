@@ -1,0 +1,28 @@
+/* skip-link: the first thing a keyboard user reaches. Hidden above the page
+   until it takes focus.
+
+   <a class="skip-link" href="#main">Skip to content</a>
+
+   Needs: tokens.css */
+
+/* :hover is listed so a page's link hover color can't reach the knockout surface. */
+.skip-link,
+.skip-link:hover {
+  position: absolute;
+  inset-inline-start: var(--skip-link-spacing-padding-y);
+  inset-block-start: var(--skip-link-spacing-padding-y);
+  z-index: 100;
+  translate: 0 -200%;
+  padding: var(--skip-link-spacing-padding-y) var(--skip-link-spacing-padding-x);
+  font-family: var(--typography-label-lg-font-family);
+  font-size: var(--typography-label-lg-font-size);
+  line-height: var(--typography-label-lg-line-height);
+  font-weight: var(--typography-label-lg-font-weight);
+  letter-spacing: var(--typography-label-lg-letter-spacing);
+  color: var(--skip-link-color-default-content-default);
+  background: var(--skip-link-color-default-background-default);
+}
+
+.skip-link:focus {
+  translate: 0 0;
+}

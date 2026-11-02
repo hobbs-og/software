@@ -50,6 +50,8 @@ function cssLiteral(token) {
     case 'dimension':
       if (token.value.unit !== 'px') throw new Error(`Unsupported unit ${token.value.unit} on ${token.path.join('.')}`);
       return rem(token.value.value);
+    case 'duration':
+      return `${token.value.value}ms`;
     case 'fontFamily': {
       const family = `"${token.value}"`;
       return [family, ...FONT_FALLBACK.filter((f) => f.replace(/"/g, '') !== token.value)].join(', ');
@@ -280,6 +282,7 @@ function swiftValue(key, ctx) {
       return `SwiftUI.Color(light: 0x${light}, dark: 0x${dark})`;
     }
     case 'dimension': return { decl: 'CGFloat', value: String(t.value.value) };
+    case 'duration': return { decl: 'TimeInterval', value: String(t.value.value / 1000) };
     case 'fontWeight': {
       const w = SWIFT_WEIGHTS[t.value];
       if (!w) throw new Error(`No SwiftUI weight for ${t.value} on ${key}`);
@@ -402,6 +405,7 @@ function kotlinDecl(name, key, indent) {
       const v = t.value.value;
       return `${doc}${indent}val ${n} = ${v < 0 ? `(${v})` : v}.${isTextMetric(key) ? 'sp' : 'dp'}`;
     }
+    case 'duration': return `${doc}${indent}const val ${n} = ${t.value.value}`;
     case 'fontWeight': return `${doc}${indent}val ${n} = FontWeight(${t.value})`;
     case 'number': return `${doc}${indent}const val ${n} = ${t.value}`;
     default: return `${doc}${indent}const val ${n} = ${JSON.stringify(String(t.value))}`;
