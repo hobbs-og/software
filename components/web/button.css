@@ -1,0 +1,151 @@
+/* button: five types by four states.
+   Types: primary (the default), solid, outline, quiet and danger.
+   States: default, hover, focus and disabled. Every type has its own
+   disabled colors, so a disabled danger button still reads as danger.
+
+   <button class="button" type="button">Save</button>
+   <a class="button button--outline" href="/estimates">View estimates</a>
+   <button class="button button--danger" type="button" disabled>Delete</button>
+
+   .button--block makes it full width.
+
+   A type swaps custom properties, never rules. Colors fade between states
+   over the shortest duration token. Easing has no token yet, so the fade
+   uses the browser's default; a product can set its own curve.
+
+   Needs: tokens.css */
+
+.button {
+  --_bg: var(--button-color-primary-background-default);
+  --_text: var(--button-color-primary-content-default);
+  --_border: var(--button-color-primary-border-default);
+  --_bg-hover: var(--button-color-primary-background-hover);
+  --_text-hover: var(--button-color-primary-content-hover);
+  --_border-hover: var(--button-color-primary-border-hover);
+  --_bg-focus: var(--button-color-primary-background-focus);
+  --_text-focus: var(--button-color-primary-content-focus);
+  --_border-focus: var(--button-color-primary-border-focus);
+  --_bg-disabled: var(--button-color-primary-background-disabled);
+  --_text-disabled: var(--button-color-primary-content-disabled);
+  --_border-disabled: var(--button-color-primary-border-disabled);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-spacing-default-gap);
+  min-block-size: var(--button-spacing-default-min-height);
+  padding: var(--button-spacing-default-padding-y) var(--button-spacing-default-padding-x);
+  border: var(--button-border-width-default) solid var(--_border);
+  border-radius: var(--button-border-radius-default);
+  background: var(--_bg);
+  color: var(--_text);
+  font-family: var(--button-typography-font-family);
+  font-size: var(--button-typography-font-size);
+  font-weight: var(--button-typography-font-weight);
+  line-height: var(--button-typography-line-height);
+  letter-spacing: var(--button-typography-letter-spacing);
+  text-transform: var(--button-typography-text-transform);
+  text-decoration: none;
+  /* A <button> centers its text by default; a link styled as a button does
+     not, so a label that wrapped onto two lines sat left in one action and
+     centered in the one beside it. */
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color var(--motion-duration-sm),
+    color var(--motion-duration-sm),
+    border-color var(--motion-duration-sm);
+}
+
+.button:hover {
+  --_bg: var(--_bg-hover);
+  --_text: var(--_text-hover);
+  --_border: var(--_border-hover);
+}
+
+/* The focus ring from the tokens: an inner ring in the page color, then the
+   outer ring. The transparent outline keeps a visible ring in Windows forced
+   colors mode, which drops box shadows. */
+.button:focus-visible {
+  --_bg: var(--_bg-focus);
+  --_text: var(--_text-focus);
+  --_border: var(--_border-focus);
+  outline: var(--spacing-2) solid transparent;
+  box-shadow:
+    var(--button-focus-ring-inner-shadow-x) var(--button-focus-ring-inner-shadow-y) var(--button-focus-ring-inner-shadow-blur) var(--button-focus-ring-inner-shadow-spread) var(--button-focus-ring-inner-shadow-inner-shadow),
+    var(--button-focus-ring-outer-shadow-x) var(--button-focus-ring-outer-shadow-y) var(--button-focus-ring-outer-shadow-blur) var(--button-focus-ring-outer-shadow-spread) var(--button-focus-ring-outer-shadow-outer-shadow);
+}
+
+.button--block {
+  inline-size: 100%;
+}
+
+.button--solid {
+  --_bg: var(--button-color-solid-background-default);
+  --_text: var(--button-color-solid-content-default);
+  --_border: var(--button-color-solid-border-default);
+  --_bg-hover: var(--button-color-solid-background-hover);
+  --_text-hover: var(--button-color-solid-content-hover);
+  --_border-hover: var(--button-color-solid-border-hover);
+  --_bg-focus: var(--button-color-solid-background-focus);
+  --_text-focus: var(--button-color-solid-content-focus);
+  --_border-focus: var(--button-color-solid-border-focus);
+  --_bg-disabled: var(--button-color-solid-background-disabled);
+  --_text-disabled: var(--button-color-solid-content-disabled);
+  --_border-disabled: var(--button-color-solid-border-disabled);
+}
+
+.button--outline {
+  --_bg: var(--button-color-outline-background-default);
+  --_text: var(--button-color-outline-content-default);
+  --_border: var(--button-color-outline-border-default);
+  --_bg-hover: var(--button-color-outline-background-hover);
+  --_text-hover: var(--button-color-outline-content-hover);
+  --_border-hover: var(--button-color-outline-border-hover);
+  --_bg-focus: var(--button-color-outline-background-focus);
+  --_text-focus: var(--button-color-outline-content-focus);
+  --_border-focus: var(--button-color-outline-border-focus);
+  --_bg-disabled: var(--button-color-outline-background-disabled);
+  --_text-disabled: var(--button-color-outline-content-disabled);
+  --_border-disabled: var(--button-color-outline-border-disabled);
+}
+
+.button--quiet {
+  --_bg: var(--button-color-quiet-background-default);
+  --_text: var(--button-color-quiet-content-default);
+  --_border: var(--button-color-quiet-border-default);
+  --_bg-hover: var(--button-color-quiet-background-hover);
+  --_text-hover: var(--button-color-quiet-content-hover);
+  --_border-hover: var(--button-color-quiet-border-hover);
+  --_bg-focus: var(--button-color-quiet-background-focus);
+  --_text-focus: var(--button-color-quiet-content-focus);
+  --_border-focus: var(--button-color-quiet-border-focus);
+  --_bg-disabled: var(--button-color-quiet-background-disabled);
+  --_text-disabled: var(--button-color-quiet-content-disabled);
+  --_border-disabled: var(--button-color-quiet-border-disabled);
+}
+
+.button--danger {
+  --_bg: var(--button-color-danger-background-default);
+  --_text: var(--button-color-danger-content-default);
+  --_border: var(--button-color-danger-border-default);
+  --_bg-hover: var(--button-color-danger-background-hover);
+  --_text-hover: var(--button-color-danger-content-hover);
+  --_border-hover: var(--button-color-danger-border-hover);
+  --_bg-focus: var(--button-color-danger-background-focus);
+  --_text-focus: var(--button-color-danger-content-focus);
+  --_border-focus: var(--button-color-danger-border-focus);
+  --_bg-disabled: var(--button-color-danger-background-disabled);
+  --_text-disabled: var(--button-color-danger-content-disabled);
+  --_border-disabled: var(--button-color-danger-border-disabled);
+}
+
+/* Disabled wins over every state: it comes after .button:hover at the same
+   specificity, so it overrides the hover colors too. */
+.button:disabled,
+.button[aria-disabled='true'] {
+  --_bg: var(--_bg-disabled);
+  --_text: var(--_text-disabled);
+  --_border: var(--_border-disabled);
+  cursor: not-allowed;
+}

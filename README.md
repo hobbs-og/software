@@ -116,7 +116,7 @@ Shared component CSS lives in `components/web/`, one file per component. Unlike 
 @import "@hobbs-og/software/components/switch.css";
 ```
 
-Load them before your own styles, so a product can override anything in the cascade. Motion stays with the product for now, because easing curves have no tokens yet.
+Load them before your own styles, so a product can override anything in the cascade. A component that fades between states uses a `motion/duration` token and the browser's default easing, because easing curves have no tokens yet. Any other motion stays with the product.
 
 ### Fonts
 
