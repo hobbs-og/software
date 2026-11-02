@@ -4843,7 +4843,16 @@
           },
           "knockout-hover": {
             "$type": "color",
-            "$value": "{color.grayscale.black}",
+            "$value": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8392,
+                0.8275,
+                0.8196
+              ],
+              "alpha": 1,
+              "hex": "#d6d3d1"
+            },
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:15973:112",
