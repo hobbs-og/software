@@ -1,0 +1,101 @@
+/* feature-list: a header, then one featured feature-row and the rest in a
+   list. Below 60em every card runs full width, one under the next. From
+   60em the list cards alternate sides, starting on the right, and each
+   starts on its neighbor's last row, so a card's top lines up with the
+   fact lists beside it.
+
+   <section class="feature-list">
+     <div class="container feature-list__inner">
+       <div class="grid feature-list__header">…</div>
+       <div class="feature-list__items">
+         <div class="grid feature-list__featured">
+           <article class="feature-row feature-row--lead">…</article>
+         </div>
+         <div class="grid feature-list__list">
+           <article class="feature-row">…</article>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   Each list card is three rows (media, content, body) on the list's own
+   rows through subgrid. Rows are written out for 12 cards; add a line per
+   card past that. Cards are counted "of .feature-row", so another block in
+   the list can't flip which side a card sits on.
+
+   Needs: tokens.css, grid.css, feature-row.css */
+
+.feature-list__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-list-spacing-gap);
+}
+
+.feature-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-list-spacing-items-gap);
+}
+
+.feature-list .feature-list__list {
+  row-gap: var(--feature-list-spacing-list-gap);
+  align-items: start;
+}
+
+:is(.feature-list__featured, .feature-list__list) > .feature-row {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 60em) {
+  .feature-list__items {
+    gap: var(--feature-list-spacing-items-large-gap);
+  }
+
+  .feature-list .feature-list__list {
+    row-gap: var(--feature-list-spacing-list-large-gap);
+  }
+
+  .feature-list__list > .feature-row {
+    grid-column: 1 / span 6;
+    grid-template-rows: subgrid;
+    row-gap: var(--feature-list-spacing-list-large-gap);
+    align-items: start;
+  }
+
+  /* The list's row gap already sits under the image, so the media's own
+     clearance stands in for it. */
+  .feature-list__list > .feature-row > .feature-row__media {
+    margin-block-end: calc(var(--feature-list-spacing-list-large-gap) * -1);
+  }
+
+  .feature-list__list > .feature-row > .feature-row__body {
+    padding-block-start: 0;
+  }
+
+  .feature-list__list > .feature-row:nth-child(odd of .feature-row) {
+    grid-column: 7 / span 6;
+  }
+
+  /* Right-column cards: the third list and the CTA sit under the second
+     list, so the card's lower edge reads from the outer module. */
+  .feature-list__list > .feature-row:nth-child(odd of .feature-row) .feature-row__spec:nth-child(3) {
+    grid-column: 2;
+  }
+
+  .feature-list__list > .feature-row:nth-child(odd of .feature-row) .hyperlink--cta {
+    margin-inline-start: calc(50% + var(--container-gutter) / 2);
+  }
+
+  .feature-list__list > .feature-row:nth-child(1 of .feature-row) { grid-row: 1 / span 3; }
+  .feature-list__list > .feature-row:nth-child(2 of .feature-row) { grid-row: 3 / span 3; }
+  .feature-list__list > .feature-row:nth-child(3 of .feature-row) { grid-row: 5 / span 3; }
+  .feature-list__list > .feature-row:nth-child(4 of .feature-row) { grid-row: 7 / span 3; }
+  .feature-list__list > .feature-row:nth-child(5 of .feature-row) { grid-row: 9 / span 3; }
+  .feature-list__list > .feature-row:nth-child(6 of .feature-row) { grid-row: 11 / span 3; }
+  .feature-list__list > .feature-row:nth-child(7 of .feature-row) { grid-row: 13 / span 3; }
+  .feature-list__list > .feature-row:nth-child(8 of .feature-row) { grid-row: 15 / span 3; }
+  .feature-list__list > .feature-row:nth-child(9 of .feature-row) { grid-row: 17 / span 3; }
+  .feature-list__list > .feature-row:nth-child(10 of .feature-row) { grid-row: 19 / span 3; }
+  .feature-list__list > .feature-row:nth-child(11 of .feature-row) { grid-row: 21 / span 3; }
+  .feature-list__list > .feature-row:nth-child(12 of .feature-row) { grid-row: 23 / span 3; }
+}

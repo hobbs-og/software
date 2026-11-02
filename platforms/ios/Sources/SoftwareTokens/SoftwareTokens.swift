@@ -823,9 +823,89 @@ public enum SoftwareTokens {
         public static let xxsmY: CGFloat = 2
     }
 
+    public enum FeatureList {
+        /// feature-list/spacing/gap
+        public static let spacingGap: CGFloat = 120
+
+        /// feature-list/spacing/items/gap
+        public static let spacingItemsGap: CGFloat = 240
+
+        /// feature-list/spacing/items/large/gap
+        public static let spacingItemsLargeGap: CGFloat = 168
+
+        /// feature-list/spacing/list/gap
+        public static let spacingListGap: CGFloat = 240
+
+        /// feature-list/spacing/list/large/gap
+        public static let spacingListLargeGap: CGFloat = 48
+    }
+
     public enum FeatureRow {
+        /// feature-row/color/bullet/background/default
+        public static let colorBulletBackgroundDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x254EDBFF)
+
+        /// feature-row/color/detail/content/default
+        public static let colorDetailContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// feature-row/color/lead/content/default
+        public static let colorLeadContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// feature-row/color/meta/content/default
+        public static let colorMetaContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// feature-row/color/number/content/default
+        public static let colorNumberContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// feature-row/color/spec-label/content/default
+        public static let colorSpecLabelContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// feature-row/color/spec/content/default
+        public static let colorSpecContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// feature-row/color/title/content/default
+        public static let colorTitleContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// feature-row/color/title/content/hover
+        public static let colorTitleContentHover = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// feature-row/spacing/body/gap
+        public static let spacingBodyGap: CGFloat = 24
+
+        /// feature-row/spacing/body/padding-y
+        public static let spacingBodyPaddingY: CGFloat = 24
+
+        /// feature-row/spacing/bullet/offset
+        public static let spacingBulletOffset: CGFloat = 2
+
         /// feature-row/spacing/bullet/width
         public static let spacingBulletWidth: CGFloat = 4
+
+        /// feature-row/spacing/content/gap
+        public static let spacingContentGap: CGFloat = 8
+
+        /// feature-row/spacing/lead/body/padding-y
+        public static let spacingLeadBodyPaddingY: CGFloat = 32
+
+        /// feature-row/spacing/media/padding-y
+        public static let spacingMediaPaddingY: CGFloat = 16
+
+        /// feature-row/spacing/meta/gap-x
+        public static let spacingMetaGapX: CGFloat = 24
+
+        /// feature-row/spacing/meta/gap-y
+        public static let spacingMetaGapY: CGFloat = 4
+
+        /// feature-row/spacing/spec/gap
+        public static let spacingSpecGap: CGFloat = 8
+
+        /// feature-row/spacing/spec/item/gap
+        public static let spacingSpecItemGap: CGFloat = 8
+
+        /// feature-row/spacing/spec/list/gap
+        public static let spacingSpecListGap: CGFloat = 2
+
+        /// feature-row/spacing/specs/gap-y
+        public static let spacingSpecsGapY: CGFloat = 24
     }
 
     public enum Field {

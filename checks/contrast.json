@@ -529,6 +529,54 @@
       "note": "contact link label"
     },
     {
+      "fg": "feature-row.color.meta.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row meta line"
+    },
+    {
+      "fg": "feature-row.color.number.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row number"
+    },
+    {
+      "fg": "feature-row.color.title.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row title"
+    },
+    {
+      "fg": "feature-row.color.title.content.hover",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "feature-row title on hover, large text"
+    },
+    {
+      "fg": "feature-row.color.lead.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row lead"
+    },
+    {
+      "fg": "feature-row.color.detail.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row detail"
+    },
+    {
+      "fg": "feature-row.color.spec-label.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row fact list label"
+    },
+    {
+      "fg": "feature-row.color.spec.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "feature-row fact list item"
+    },
+    {
       "fg": "chip.color.success.content.default",
       "bg": "chip.color.success.background.default",
       "min": 4.5,

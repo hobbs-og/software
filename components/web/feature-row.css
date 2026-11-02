@@ -1,0 +1,278 @@
+/* feature-row: one piece of work. Media on top, then a summary, then fact
+   lists and a link. The link's hit area covers the whole card.
+
+   <article class="feature-row">
+     <div class="feature-row__media">
+       <img src="…" alt="…">
+     </div>
+     <div class="feature-row__content">
+       <p class="feature-row__meta"><span class="feature-row__number">02 / 07</span><span>Fintech</span></p>
+       <h3 class="feature-row__title">Terafina</h3>
+       <p class="feature-row__lead">One sentence on the problem.</p>
+       <p class="feature-row__detail">One sentence on what changed.</p>
+     </div>
+     <div class="feature-row__body">
+       <dl class="feature-row__specs">
+         <div class="feature-row__spec"><dt>Focus</dt><dd><ul><li>Design tokens</li></ul></dd></div>
+       </dl>
+       <a class="hyperlink hyperlink--cta" href="…">View case study</a>
+     </div>
+   </article>
+
+   feature-row--lead spans all 12 columns from 60em: image across nine,
+   text from column 4, three fact lists across.
+
+   Device presets go on __media with __media--devices, one <img
+   class="feature-row__layer"> per device, back to front:
+   laptop-plus-tablet (laptop, tablet, phone), laptop-plus-phones (laptop,
+   two phones), laptop-pair (two laptops) and phone-fan (three or four
+   phones). A preset sets each layer's width, side and lift as a share of
+   the box. Shadow, depth blur and motion belong to the product, so a
+   layer's filter is left alone.
+
+   Needs: tokens.css, grid.css, hyperlink.css */
+
+.feature-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 0;
+  min-inline-size: 0;
+}
+
+.feature-row__media {
+  display: grid;
+  padding-block-end: var(--feature-row-spacing-media-padding-y);
+}
+
+/* Images take no width of their own: they stretch to the column. */
+.feature-row__media > img {
+  grid-area: 1 / 1;
+  justify-self: stretch;
+}
+
+/* Layers share one baseline. Each preset sets a layer's width, side and
+   lift; layer order is depth, so a layer's slot is its position. */
+.feature-row__media--devices > .feature-row__layer {
+  align-self: end;
+  inline-size: var(--layer-width);
+  margin-block-end: var(--layer-lift, 0);
+  margin-inline-start: var(--layer-start, 0);
+  margin-inline-end: var(--layer-end, 0);
+  justify-self: var(--layer-justify, start);
+}
+
+/* Each composite runs edge to edge of its box. Widths, offsets and lifts
+   are shares of the box width, so the composition scales with it. */
+:is(.feature-row__media--laptop-plus-tablet, .feature-row__media--laptop-plus-phones) > .feature-row__layer:nth-child(1) {
+  --layer-width: 100%; --layer-lift: 6%;
+}
+.feature-row__media--laptop-plus-tablet > .feature-row__layer:nth-child(2) {
+  --layer-width: 42%; --layer-justify: end; --layer-end: 0%;
+}
+.feature-row__media--laptop-plus-tablet > .feature-row__layer:nth-child(3) {
+  --layer-width: 20%; --layer-lift: calc(6% - var(--spacing-24));
+}
+.feature-row__media--laptop-plus-phones > .feature-row__layer:nth-child(2) {
+  --layer-width: 17%; --layer-justify: end; --layer-end: 0%;
+}
+.feature-row__media--laptop-plus-phones > .feature-row__layer:nth-child(3) {
+  --layer-width: 20%; --layer-justify: end; --layer-end: 24%; --layer-lift: calc(6% - var(--spacing-24));
+}
+
+.feature-row__media--laptop-pair > .feature-row__layer:nth-child(1) {
+  --layer-width: 65%; --layer-lift: 22%;
+}
+.feature-row__media--laptop-pair > .feature-row__layer:nth-child(2) {
+  --layer-width: 72.5%; --layer-start: 27.5%;
+}
+
+/* Phones alternate sides and grow toward the front. A fourth phone
+   switches the fan to the four-phone slots. */
+.feature-row__media--phone-fan > .feature-row__layer:nth-child(1) {
+  --layer-width: calc(20% / 0.76); --layer-start: 0%; --layer-lift: calc(9.6% / 0.76);
+}
+.feature-row__media--phone-fan > .feature-row__layer:nth-child(2) {
+  --layer-width: calc(22.4% / 0.76); --layer-justify: end; --layer-end: 0%; --layer-lift: calc(4.8% / 0.76);
+}
+.feature-row__media--phone-fan > .feature-row__layer:nth-child(3) {
+  --layer-width: calc(25.6% / 0.76); --layer-start: calc(22.4% / 0.76);
+}
+.feature-row__media--phone-fan:has(> .feature-row__layer:nth-child(4)) > .feature-row__layer:nth-child(1) {
+  --layer-width: calc(17.6% / 0.76); --layer-lift: calc(10.4% / 0.76);
+}
+.feature-row__media--phone-fan:has(> .feature-row__layer:nth-child(4)) > .feature-row__layer:nth-child(2) {
+  --layer-width: calc(20% / 0.76); --layer-lift: calc(5.6% / 0.76);
+}
+.feature-row__media--phone-fan:has(> .feature-row__layer:nth-child(4)) > .feature-row__layer:nth-child(3) {
+  --layer-width: calc(22.4% / 0.76); --layer-start: calc(13.6% / 0.76); --layer-lift: calc(2.4% / 0.76);
+}
+.feature-row__media--phone-fan:has(> .feature-row__layer:nth-child(4)) > .feature-row__layer:nth-child(4) {
+  --layer-width: calc(24.8% / 0.76); --layer-justify: end; --layer-end: calc(17.6% / 0.76);
+}
+
+.feature-row__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-row-spacing-content-gap);
+}
+
+.feature-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--feature-row-spacing-meta-gap-y) var(--feature-row-spacing-meta-gap-x);
+  font-family: var(--typography-meta-sm-font-family);
+  font-size: var(--typography-meta-sm-font-size);
+  line-height: var(--typography-meta-sm-line-height);
+  font-weight: var(--typography-meta-sm-font-weight);
+  letter-spacing: var(--typography-meta-sm-letter-spacing);
+  text-transform: var(--typography-meta-sm-text-transform);
+  color: var(--feature-row-color-meta-content-default);
+}
+
+.feature-row__number {
+  color: var(--feature-row-color-number-content-default);
+}
+
+.feature-row__title {
+  font-family: var(--typography-headline-default-font-family);
+  font-size: var(--typography-headline-default-font-size);
+  line-height: var(--typography-headline-default-line-height);
+  font-weight: var(--typography-headline-default-font-weight);
+  letter-spacing: var(--typography-headline-default-letter-spacing);
+  text-transform: var(--typography-headline-default-text-transform);
+  text-wrap: balance;
+  color: var(--feature-row-color-title-content-default);
+}
+
+.feature-row:is(:hover, :focus-within) .feature-row__title {
+  color: var(--feature-row-color-title-content-hover);
+}
+
+.feature-row__lead {
+  font-family: var(--typography-title-default-font-family);
+  font-size: var(--typography-title-default-font-size);
+  line-height: var(--typography-title-default-line-height);
+  font-weight: var(--typography-title-default-font-weight);
+  letter-spacing: var(--typography-title-default-letter-spacing);
+  color: var(--feature-row-color-lead-content-default);
+  text-wrap: balance;
+}
+
+.feature-row__detail {
+  font-size: var(--typography-body-sm-font-size);
+  line-height: var(--typography-body-sm-line-height);
+  font-weight: var(--typography-body-sm-font-weight);
+  color: var(--feature-row-color-detail-content-default);
+  text-wrap: pretty;
+}
+
+.feature-row__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-row-spacing-body-gap);
+  padding-block-start: var(--feature-row-spacing-body-padding-y);
+}
+
+/* Two lists per row with the gutter between them, so in a 6-column card
+   each list sits on one 3-column module. The third wraps under the first. */
+.feature-row__specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--feature-row-spacing-specs-gap-y) var(--container-gutter);
+}
+
+.feature-row__spec {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-row-spacing-spec-gap);
+  min-inline-size: 0;
+}
+
+.feature-row__spec dt {
+  font-family: var(--typography-meta-sm-font-family);
+  font-size: var(--typography-meta-sm-font-size);
+  line-height: var(--typography-meta-sm-line-height);
+  font-weight: var(--typography-meta-sm-font-weight);
+  letter-spacing: var(--typography-meta-sm-letter-spacing);
+  text-transform: var(--typography-meta-sm-text-transform);
+  color: var(--feature-row-color-spec-label-content-default);
+}
+
+.feature-row__spec ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-row-spacing-spec-list-gap);
+  padding: 0;
+  list-style: none;
+  font-size: var(--typography-body-sm-font-size);
+  line-height: var(--typography-body-sm-line-height);
+  color: var(--feature-row-color-spec-content-default);
+}
+
+.feature-row__spec li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--feature-row-spacing-spec-item-gap);
+}
+
+/* A square bullet, lifted onto the x-height. */
+.feature-row__spec li::before {
+  content: "";
+  flex: none;
+  inline-size: var(--feature-row-spacing-bullet-width);
+  aspect-ratio: 1;
+  background: var(--feature-row-color-bullet-background-default);
+  translate: 0 calc(var(--feature-row-spacing-bullet-offset) * -1);
+}
+
+.feature-row :is(.hyperlink--cta, .feature-row__cta) {
+  align-self: flex-start;
+}
+
+/* The whole card is one link: the CTA's hit area stretches over it. */
+.feature-row :is(.hyperlink--cta, .feature-row__cta)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* On card hover the CTA acts hovered: its color, and its arrow nudges up
+   and right. */
+.feature-row:is(:hover, :focus-within) .hyperlink--cta {
+  color: var(--hyperlink-color-cta-content-hover);
+}
+
+.feature-row:is(:hover, :focus-within) .hyperlink--cta .icon {
+  translate: var(--hyperlink-spacing-cta-icon-offset) calc(var(--hyperlink-spacing-cta-icon-offset) * -1);
+}
+
+@media (min-width: 60em) {
+  .feature-row--lead {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+
+  .feature-row--lead > .feature-row__media {
+    grid-column: 1 / span 9;
+  }
+
+  .feature-row--lead > .feature-row__content {
+    grid-column: 4 / span 6;
+  }
+
+  /* Three lists across columns 4–12, one per 3-column module. */
+  .feature-row--lead > .feature-row__body {
+    grid-column: 4 / -1;
+    padding-block-start: var(--feature-row-spacing-lead-body-padding-y);
+  }
+
+  .feature-row--lead .feature-row__lead {
+    font-size: var(--typography-title-lg-font-size);
+    line-height: var(--typography-title-lg-line-height);
+  }
+
+  .feature-row--lead .feature-row__specs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

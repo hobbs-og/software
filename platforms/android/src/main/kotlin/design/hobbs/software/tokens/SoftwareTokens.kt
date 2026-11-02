@@ -1096,9 +1096,105 @@ object SoftwareTokens {
         val xxsmY = 2.dp
     }
 
+    object FeatureList {
+        /** feature-list/spacing/gap */
+        val spacingGap = 120.dp
+
+        /** feature-list/spacing/items/gap */
+        val spacingItemsGap = 240.dp
+
+        /** feature-list/spacing/items/large/gap */
+        val spacingItemsLargeGap = 168.dp
+
+        /** feature-list/spacing/list/gap */
+        val spacingListGap = 240.dp
+
+        /** feature-list/spacing/list/large/gap */
+        val spacingListLargeGap = 48.dp
+    }
+
     object FeatureRow {
+        /** feature-row/color/bullet/background/default */
+        val colorBulletBackgroundDefault = ComposeColor(0xFF254EDB)
+
+        /** feature-row/color/detail/content/default */
+        val colorDetailContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** feature-row/color/lead/content/default */
+        val colorLeadContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** feature-row/color/meta/content/default */
+        val colorMetaContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** feature-row/color/number/content/default */
+        val colorNumberContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** feature-row/color/spec-label/content/default */
+        val colorSpecLabelContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** feature-row/color/spec/content/default */
+        val colorSpecContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** feature-row/color/title/content/default */
+        val colorTitleContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** feature-row/color/title/content/hover */
+        val colorTitleContentHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** feature-row/spacing/body/gap */
+        val spacingBodyGap = 24.dp
+
+        /** feature-row/spacing/body/padding-y */
+        val spacingBodyPaddingY = 24.dp
+
+        /** feature-row/spacing/bullet/offset */
+        val spacingBulletOffset = 2.dp
+
         /** feature-row/spacing/bullet/width */
         val spacingBulletWidth = 4.dp
+
+        /** feature-row/spacing/content/gap */
+        val spacingContentGap = 8.dp
+
+        /** feature-row/spacing/lead/body/padding-y */
+        val spacingLeadBodyPaddingY = 32.dp
+
+        /** feature-row/spacing/media/padding-y */
+        val spacingMediaPaddingY = 16.dp
+
+        /** feature-row/spacing/meta/gap-x */
+        val spacingMetaGapX = 24.dp
+
+        /** feature-row/spacing/meta/gap-y */
+        val spacingMetaGapY = 4.dp
+
+        /** feature-row/spacing/spec/gap */
+        val spacingSpecGap = 8.dp
+
+        /** feature-row/spacing/spec/item/gap */
+        val spacingSpecItemGap = 8.dp
+
+        /** feature-row/spacing/spec/list/gap */
+        val spacingSpecListGap = 2.dp
+
+        /** feature-row/spacing/specs/gap-y */
+        val spacingSpecsGapY = 24.dp
     }
 
     object Field {
