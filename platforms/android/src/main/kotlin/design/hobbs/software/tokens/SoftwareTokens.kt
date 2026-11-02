@@ -1096,6 +1096,11 @@ object SoftwareTokens {
         val xxsmY = 2.dp
     }
 
+    object FeatureRow {
+        /** feature-row/spacing/bullet/width */
+        val spacingBulletWidth = 4.dp
+    }
+
     object Field {
         /** field/border/radius/default */
         val borderRadiusDefault = 4.dp

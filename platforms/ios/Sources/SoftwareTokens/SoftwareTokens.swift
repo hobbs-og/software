@@ -823,6 +823,11 @@ public enum SoftwareTokens {
         public static let xxsmY: CGFloat = 2
     }
 
+    public enum FeatureRow {
+        /// feature-row/spacing/bullet/width
+        public static let spacingBulletWidth: CGFloat = 4
+    }
+
     public enum Field {
         /// field/border/radius/default
         public static let borderRadiusDefault: CGFloat = 4

@@ -261,6 +261,7 @@
   --elevation-xxsm-spread: 0;
   --elevation-xxsm-x: 0;
   --elevation-xxsm-y: 0.125rem;
+  --feature-row-spacing-bullet-width: var(--spacing-4);
   --field-border-radius-default: var(--border-radius-xsm);
   --field-border-radius-read-only: var(--border-radius-none);
   --field-border-radius-search: var(--border-radius-round);

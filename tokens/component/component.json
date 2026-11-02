@@ -2208,6 +2208,25 @@
       }
     }
   },
+  "feature-row": {
+    "spacing": {
+      "bullet": {
+        "width": {
+          "$type": "dimension",
+          "$value": "{spacing.4}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:278:3",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
   "field": {
     "border": {
       "radius": {
