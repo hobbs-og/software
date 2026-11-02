@@ -681,6 +681,41 @@ public enum SoftwareTokens {
         public static let elevationShadow = SwiftUI.Color(light: 0x00000066, dark: 0x000000CC)
     }
 
+    public enum Contact {
+        /// contact/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// contact/color/default/border/default
+        public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+
+        /// contact/color/default/content/default
+        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// contact/color/label/content/default
+        public static let colorLabelContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// contact/color/title/content/accent
+        public static let colorTitleContentAccent = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// contact/color/title/content/default
+        public static let colorTitleContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// contact/spacing/column/min-width
+        public static let spacingColumnMinWidth: CGFloat = 240
+
+        /// contact/spacing/gap
+        public static let spacingGap: CGFloat = 24
+
+        /// contact/spacing/link/gap
+        public static let spacingLinkGap: CGFloat = 8
+
+        /// contact/spacing/links/padding-y
+        public static let spacingLinksPaddingY: CGFloat = 48
+
+        /// contact/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 64
+    }
+
     public enum Elevation {
         /// elevation/lg/blur
         public static let lgBlur: CGFloat = 48
@@ -1277,6 +1312,38 @@ public enum SoftwareTokens {
 
         /// spacing/padding/xxsm
         public static let paddingXxsm: CGFloat = 2
+    }
+
+    public enum StatBand {
+        /// stat-band/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// stat-band/color/label/content/default
+        public static let colorLabelContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// stat-band/color/meta/content/default
+        public static let colorMetaContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// stat-band/color/rule/border/default
+        public static let colorRuleBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// stat-band/color/value/content/default
+        public static let colorValueContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// stat-band/spacing/figure/gap
+        public static let spacingFigureGap: CGFloat = 8
+
+        /// stat-band/spacing/gap
+        public static let spacingGap: CGFloat = 48
+
+        /// stat-band/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 64
+
+        /// stat-band/spacing/stat/gap
+        public static let spacingStatGap: CGFloat = 24
+
+        /// stat-band/spacing/stat/padding-x
+        public static let spacingStatPaddingX: CGFloat = 16
     }
 
     public enum Switch {

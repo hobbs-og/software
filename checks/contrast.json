@@ -493,6 +493,42 @@
       "note": "sheet grab handle"
     },
     {
+      "fg": "stat-band.color.value.content.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "stat value, large text"
+    },
+    {
+      "fg": "stat-band.color.label.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "stat label"
+    },
+    {
+      "fg": "contact.color.title.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "contact title"
+    },
+    {
+      "fg": "contact.color.title.content.accent",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "contact title accent, large text"
+    },
+    {
+      "fg": "contact.color.default.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "contact copy"
+    },
+    {
+      "fg": "contact.color.label.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "contact link label"
+    },
+    {
       "fg": "chip.color.success.content.default",
       "bg": "chip.color.success.background.default",
       "min": 4.5,

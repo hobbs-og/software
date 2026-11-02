@@ -930,6 +930,51 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xCC000000) else ComposeColor(0x66000000)
     }
 
+    object Contact {
+        /** contact/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** contact/color/default/border/default */
+        val colorDefaultBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+
+        /** contact/color/default/content/default */
+        val colorDefaultContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** contact/color/label/content/default */
+        val colorLabelContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** contact/color/title/content/accent */
+        val colorTitleContentAccent: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** contact/color/title/content/default */
+        val colorTitleContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** contact/spacing/column/min-width */
+        val spacingColumnMinWidth = 240.dp
+
+        /** contact/spacing/gap */
+        val spacingGap = 24.dp
+
+        /** contact/spacing/link/gap */
+        val spacingLinkGap = 8.dp
+
+        /** contact/spacing/links/padding-y */
+        val spacingLinksPaddingY = 48.dp
+
+        /** contact/spacing/padding-y */
+        val spacingPaddingY = 64.dp
+    }
+
     object Elevation {
         /** elevation/lg/blur */
         val lgBlur = 48.dp
@@ -1624,6 +1669,44 @@ object SoftwareTokens {
 
         /** spacing/padding/xxsm */
         val paddingXxsm = 2.dp
+    }
+
+    object StatBand {
+        /** stat-band/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** stat-band/color/label/content/default */
+        val colorLabelContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** stat-band/color/meta/content/default */
+        val colorMetaContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** stat-band/color/rule/border/default */
+        val colorRuleBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** stat-band/color/value/content/default */
+        val colorValueContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** stat-band/spacing/figure/gap */
+        val spacingFigureGap = 8.dp
+
+        /** stat-band/spacing/gap */
+        val spacingGap = 48.dp
+
+        /** stat-band/spacing/padding-y */
+        val spacingPaddingY = 64.dp
+
+        /** stat-band/spacing/stat/gap */
+        val spacingStatGap = 24.dp
+
+        /** stat-band/spacing/stat/padding-x */
+        val spacingStatPaddingX = 16.dp
     }
 
     object Switch {

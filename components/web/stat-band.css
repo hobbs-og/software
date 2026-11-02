@@ -1,0 +1,84 @@
+/* stat-band: a row of numbers with what they mean, each on a vertical rule.
+   The label comes first in the markup's reading order after the figure, and
+   column-reverse puts it at the top.
+
+   <div class="stat-band">
+     <div class="container">
+       <div class="grid stat-band__grid">
+         <div class="stat span-4">
+           <div class="stat__figure">
+             <p class="stat__value">20+</p>
+             <p class="stat__meta">Supporting line.</p>
+           </div>
+           <p class="stat__label">What it counts</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   Needs: tokens.css, grid.css */
+
+.stat-band .stat-band__grid {
+  row-gap: var(--stat-band-spacing-gap);
+  align-items: start;
+  padding-block: var(--stat-band-spacing-padding-y);
+}
+
+.stat {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: var(--stat-band-spacing-stat-gap);
+  padding-inline-start: var(--stat-band-spacing-stat-padding-x);
+}
+
+.stat::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  border-inline-start: var(--stat-band-border-width-default) solid var(--stat-band-color-rule-border-default);
+  transform-origin: top;
+}
+
+/* Labels wrap when they need to. A long word overhangs its column rather than
+   breaking in half. */
+.stat__label {
+  font-family: var(--typography-label-sm-font-family);
+  font-size: var(--typography-label-sm-font-size);
+  line-height: var(--typography-label-sm-line-height);
+  font-weight: var(--typography-label-sm-font-weight);
+  color: var(--stat-band-color-label-content-default);
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+
+.stat__figure {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stat-band-spacing-figure-gap);
+}
+
+/* Trims the line box to the baseline, so the gap to the supporting line starts
+   at the number. */
+.stat__value {
+  text-box: trim-end text alphabetic;
+  font-family: var(--typography-headline-lg-font-family);
+  font-size: var(--typography-headline-lg-font-size);
+  line-height: var(--typography-headline-lg-line-height);
+  font-weight: var(--typography-headline-lg-font-weight);
+  letter-spacing: var(--typography-headline-lg-letter-spacing);
+  color: var(--stat-band-color-value-content-default);
+}
+
+.stat__meta {
+  font-family: var(--typography-meta-default-font-family);
+  font-size: var(--typography-meta-default-font-size);
+  line-height: var(--typography-meta-default-line-height);
+  font-weight: var(--typography-meta-default-font-weight);
+  letter-spacing: var(--typography-meta-default-letter-spacing);
+  text-transform: var(--typography-meta-default-text-transform);
+  color: var(--stat-band-color-meta-content-default);
+  text-wrap: pretty;
+}

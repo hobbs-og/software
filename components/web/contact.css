@@ -1,0 +1,88 @@
+/* contact: a heading with supporting copy and links, under a rule that spans
+   the grid.
+
+   <div class="grid contact">
+     <h2 class="contact__title">Let's talk <span class="contact__title-accent">soon.</span></h2>
+     <div class="contact__support">
+       <p>Email is the fastest way to reach me.</p>
+     </div>
+     <ul class="contact__links" role="list">
+       <li><a href="/cv"><span class="contact__link-label">CV</span><span>Resume</span></a></li>
+     </ul>
+   </div>
+
+   Needs: tokens.css, grid.css */
+
+.grid.contact {
+  row-gap: var(--contact-spacing-gap);
+  padding-block-start: var(--contact-spacing-padding-y);
+  border-block-start: var(--contact-border-width-default) solid var(--contact-color-default-border-default);
+}
+
+.contact > * {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.contact__title {
+  font-family: var(--typography-headline-lg-font-family);
+  font-size: var(--typography-headline-lg-font-size);
+  line-height: var(--typography-headline-lg-line-height);
+  font-weight: var(--typography-headline-lg-font-weight);
+  letter-spacing: var(--typography-headline-lg-letter-spacing);
+  color: var(--contact-color-title-content-default);
+  text-wrap: balance;
+}
+
+.contact__title-accent {
+  color: var(--contact-color-title-content-accent);
+}
+
+.contact__support,
+.contact__links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--contact-spacing-column-min-width)), 1fr));
+  gap: var(--contact-spacing-gap) var(--container-gutter);
+  padding: 0;
+  list-style: none;
+}
+
+.contact__support {
+  align-items: first baseline;
+}
+
+.contact__support > * {
+  margin: 0;
+  color: var(--contact-color-default-content-default);
+  text-wrap: pretty;
+}
+
+.contact__links {
+  padding-block-start: var(--contact-spacing-links-padding-y);
+}
+
+.contact__links a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--contact-spacing-link-gap);
+}
+
+.contact__link-label {
+  font-family: var(--typography-label-sm-font-family);
+  font-size: var(--typography-label-sm-font-size);
+  line-height: var(--typography-label-sm-line-height);
+  font-weight: var(--typography-label-sm-font-weight);
+  color: var(--contact-color-label-content-default);
+}
+
+@media (min-width: 60em) {
+  .contact__title {
+    grid-column: 1 / span 6;
+  }
+
+  .contact__support,
+  .contact__links {
+    grid-column: 4 / span 6;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

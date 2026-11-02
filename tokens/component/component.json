@@ -2029,6 +2029,185 @@
       }
     }
   },
+  "contact": {
+    "border": {
+      "width": {
+        "default": {
+          "$type": "dimension",
+          "$value": "{border.width.default}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:21",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "color": {
+      "default": {
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.border.subtle}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:16",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "STROKE_COLOR"
+                ]
+              }
+            }
+          }
+        },
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.default}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:17",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "label": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.subtle}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:20",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "title": {
+        "content": {
+          "accent": {
+            "$type": "color",
+            "$value": "{color.content.headline-brand}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:19",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.headline}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:18",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "column": {
+        "min-width": {
+          "$type": "dimension",
+          "$value": "{spacing.240}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:27",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.lg}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:273:23",
+            "collection": "Tier 3 | components",
+            "scopes": [
+              "GAP"
+            ]
+          }
+        }
+      },
+      "link": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.sm}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:25",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        }
+      },
+      "links": {
+        "padding-y": {
+          "$type": "dimension",
+          "$value": "{spacing.48}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:24",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP",
+                "WIDTH_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$value": "{spacing.64}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:273:22",
+            "collection": "Tier 3 | components",
+            "scopes": [
+              "GAP",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      }
+    }
+  },
   "field": {
     "border": {
       "radius": {
@@ -3723,6 +3902,171 @@
               "GAP",
               "WIDTH_HEIGHT"
             ]
+          }
+        }
+      }
+    }
+  },
+  "stat-band": {
+    "border": {
+      "width": {
+        "default": {
+          "$type": "dimension",
+          "$value": "{border.width.default}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:9",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "color": {
+      "label": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.subtle}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:3",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "meta": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.subtle}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:8",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "rule": {
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.border.strong}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:2",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "STROKE_COLOR"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "value": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.headline-brand}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:273:7",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "figure": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.sm}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:15",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.xlg}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:273:12",
+            "collection": "Tier 3 | components",
+            "scopes": [
+              "GAP"
+            ]
+          }
+        }
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$value": "{spacing.64}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:273:10",
+            "collection": "Tier 3 | components",
+            "scopes": [
+              "GAP",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "stat": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.lg}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:13",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        },
+        "padding-x": {
+          "$type": "dimension",
+          "$value": "{spacing.padding.md}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:273:14",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP",
+                "WIDTH_HEIGHT"
+              ]
+            }
           }
         }
       }
