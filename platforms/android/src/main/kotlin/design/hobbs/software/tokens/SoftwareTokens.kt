@@ -1261,6 +1261,19 @@ object SoftwareTokens {
     }
 
     object Hyperlink {
+        /** hyperlink/border/width/cta */
+        val borderWidthCta = 2.dp
+
+        /** hyperlink/color/cta/content/default */
+        val colorCtaContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** hyperlink/color/cta/content/hover */
+        val colorCtaContentHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
         /** hyperlink/color/default */
         val colorDefault: ComposeColor
             @Composable @ReadOnlyComposable
@@ -1270,6 +1283,18 @@ object SoftwareTokens {
         val colorHover: ComposeColor
             @Composable @ReadOnlyComposable
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF2B59EB)
+
+        /** hyperlink/spacing/cta/gap */
+        val spacingCtaGap = 12.dp
+
+        /** hyperlink/spacing/cta/icon/offset */
+        val spacingCtaIconOffset = 4.dp
+
+        /** hyperlink/spacing/cta/icon/width */
+        val spacingCtaIconWidth = 12.dp
+
+        /** hyperlink/spacing/cta/padding-y */
+        val spacingCtaPaddingY = 16.dp
     }
 
     object MediaFrame {

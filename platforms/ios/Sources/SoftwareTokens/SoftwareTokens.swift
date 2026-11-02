@@ -952,11 +952,32 @@ public enum SoftwareTokens {
     }
 
     public enum Hyperlink {
+        /// hyperlink/border/width/cta
+        public static let borderWidthCta: CGFloat = 2
+
+        /// hyperlink/color/cta/content/default
+        public static let colorCtaContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// hyperlink/color/cta/content/hover
+        public static let colorCtaContentHover = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
         /// hyperlink/color/default
         public static let colorDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
 
         /// hyperlink/color/hover
         public static let colorHover = SwiftUI.Color(light: 0x2B59EBFF, dark: 0x84A9FFFF)
+
+        /// hyperlink/spacing/cta/gap
+        public static let spacingCtaGap: CGFloat = 12
+
+        /// hyperlink/spacing/cta/icon/offset
+        public static let spacingCtaIconOffset: CGFloat = 4
+
+        /// hyperlink/spacing/cta/icon/width
+        public static let spacingCtaIconWidth: CGFloat = 12
+
+        /// hyperlink/spacing/cta/padding-y
+        public static let spacingCtaPaddingY: CGFloat = 16
     }
 
     public enum MediaFrame {

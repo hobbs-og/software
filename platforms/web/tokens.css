@@ -304,8 +304,15 @@
   --footer-spacing-icon-width: var(--spacing-12);
   --footer-spacing-link-gap: var(--spacing-gap-sm);
   --footer-spacing-padding-y: var(--spacing-64);
+  --hyperlink-border-width-cta: var(--border-width-sm);
+  --hyperlink-color-cta-content-default: var(--color-content-emphasized);
+  --hyperlink-color-cta-content-hover: var(--color-content-brand);
   --hyperlink-color-default: var(--color-content-link);
   --hyperlink-color-hover: var(--color-content-link-hover);
+  --hyperlink-spacing-cta-gap: var(--spacing-12);
+  --hyperlink-spacing-cta-icon-offset: var(--spacing-4);
+  --hyperlink-spacing-cta-icon-width: var(--spacing-12);
+  --hyperlink-spacing-cta-padding-y: var(--spacing-padding-md);
   --media-frame-border-radius-default: var(--border-radius-none);
   --media-frame-border-width-default: var(--border-width-default);
   --media-frame-color-default-background-default: var(--color-background-subtle-hover);

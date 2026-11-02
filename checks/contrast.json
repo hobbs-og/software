@@ -463,6 +463,18 @@
       "note": "footer link"
     },
     {
+      "fg": "hyperlink.color.cta.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "call to action"
+    },
+    {
+      "fg": "hyperlink.color.cta.content.hover",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "call to action, hover"
+    },
+    {
       "fg": "chip.color.success.content.default",
       "bg": "chip.color.success.background.default",
       "min": 4.5,

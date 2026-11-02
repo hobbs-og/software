@@ -2794,7 +2794,56 @@
     }
   },
   "hyperlink": {
+    "border": {
+      "width": {
+        "cta": {
+          "$type": "dimension",
+          "$value": "{border.width.sm}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:263:29",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "STROKE_FLOAT"
+              ]
+            }
+          }
+        }
+      }
+    },
     "color": {
+      "cta": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.emphasized}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:263:2",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.content.brand}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:263:27",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "SHAPE_FILL",
+                  "TEXT_FILL"
+                ]
+              }
+            }
+          }
+        }
+      },
       "default": {
         "$type": "color",
         "$value": "{color.content.link}",
@@ -2818,6 +2867,65 @@
             "scopes": [
               "ALL_SCOPES"
             ]
+          }
+        }
+      }
+    },
+    "spacing": {
+      "cta": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.12}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:263:30",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP"
+              ]
+            }
+          }
+        },
+        "icon": {
+          "offset": {
+            "$type": "dimension",
+            "$value": "{spacing.4}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:263:33",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "WIDTH_HEIGHT"
+                ]
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": "{spacing.12}",
+            "$extensions": {
+              "com.figma": {
+                "variableId": "VariableID:263:32",
+                "collection": "Tier 3 | components",
+                "scopes": [
+                  "WIDTH_HEIGHT"
+                ]
+              }
+            }
+          }
+        },
+        "padding-y": {
+          "$type": "dimension",
+          "$value": "{spacing.padding.md}",
+          "$extensions": {
+            "com.figma": {
+              "variableId": "VariableID:263:31",
+              "collection": "Tier 3 | components",
+              "scopes": [
+                "GAP",
+                "WIDTH_HEIGHT"
+              ]
+            }
           }
         }
       }

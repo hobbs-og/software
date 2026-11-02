@@ -1,0 +1,49 @@
+/* hyperlink: a link in a run of text, and a call to action.
+
+   <a class="hyperlink" href="/terms">Terms</a>
+
+   The CTA stands on its own, with an underline and an optional arrow that
+   nudges on hover. Both show by default, so it looks the same wherever it sits.
+
+   <a class="hyperlink hyperlink--cta" href="/work">
+     View case study
+     <svg class="icon" aria-hidden="true">…</svg>
+   </a>
+
+   Needs: tokens.css */
+
+.hyperlink {
+  color: var(--hyperlink-color-default);
+}
+
+.hyperlink:hover {
+  color: var(--hyperlink-color-hover);
+}
+
+.hyperlink--cta {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: var(--hyperlink-spacing-cta-gap);
+  padding-block: var(--hyperlink-spacing-cta-padding-y);
+  font-family: var(--typography-label-lg-font-family);
+  font-size: var(--typography-label-lg-font-size);
+  line-height: var(--typography-label-lg-line-height);
+  font-weight: var(--typography-label-lg-font-weight);
+  letter-spacing: var(--typography-label-lg-letter-spacing);
+  color: var(--hyperlink-color-cta-content-default);
+  background: linear-gradient(currentColor, currentColor) left bottom / 100% var(--hyperlink-border-width-cta) no-repeat;
+}
+
+.hyperlink--cta:is(:hover, :focus-visible) {
+  color: var(--hyperlink-color-cta-content-hover);
+}
+
+.hyperlink--cta .icon {
+  inline-size: var(--hyperlink-spacing-cta-icon-width);
+  aspect-ratio: 1;
+}
+
+.hyperlink--cta:is(:hover, :focus-visible) .icon {
+  translate: var(--hyperlink-spacing-cta-icon-offset) calc(var(--hyperlink-spacing-cta-icon-offset) * -1);
+}
