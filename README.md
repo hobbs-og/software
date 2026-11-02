@@ -111,7 +111,10 @@ Import `@hobbs-og/software/grid.css` after `tokens.css`. It is generated from th
 
 Shared component CSS lives in `components/web/`, one file per component. Unlike `tokens/` and `platforms/`, these files are written by hand. They read only `tokens.css`, hold no brand or theme of their own, and each header lists what it needs, so a product can take just the components it uses.
 
+Every component needs `reset.css` first. It sets border-box sizing and caps images at their column, which the components assume.
+
 ```css
+@import "@hobbs-og/software/components/reset.css";
 @import "@hobbs-og/software/tokens.css";
 @import "@hobbs-og/software/components/switch.css";
 ```

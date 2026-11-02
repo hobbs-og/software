@@ -13,7 +13,7 @@
    over the shortest duration token. Easing has no token yet, so the fade
    uses the browser's default; a product can set its own curve.
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .button {
   --_bg: var(--button-color-primary-background-default);

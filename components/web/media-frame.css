@@ -7,7 +7,7 @@
      <img src="after.png" alt="">
    </div>
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .media-frame {
   display: grid;

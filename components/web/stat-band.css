@@ -16,7 +16,7 @@
      </div>
    </div>
 
-   Needs: tokens.css, grid.css */
+   Needs: reset.css, tokens.css, grid.css */
 
 .stat-band .stat-band__grid {
   row-gap: var(--stat-band-spacing-gap);

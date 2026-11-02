@@ -11,7 +11,7 @@
      </ul>
    </div>
 
-   Needs: tokens.css, grid.css */
+   Needs: reset.css, tokens.css, grid.css */
 
 .grid.contact {
   row-gap: var(--contact-spacing-gap);

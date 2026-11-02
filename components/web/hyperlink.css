@@ -10,7 +10,7 @@
      <svg class="icon" aria-hidden="true">…</svg>
    </a>
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .hyperlink {
   color: var(--hyperlink-color-default);

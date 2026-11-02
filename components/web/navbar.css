@@ -12,7 +12,7 @@
 
    A product adds its own logo, and its own phone menu inside the header.
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .navbar {
   background-color: var(--navbar-color-background-default);

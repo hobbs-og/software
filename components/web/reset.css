@@ -1,0 +1,20 @@
+/* reset: the two element rules every shared component assumes. Load it
+   first, before tokens.css and the components.
+
+   Boxes size from their border edge, so a component that sets a width and
+   padding stays inside its column. Images take their width from the
+   column and keep their aspect ratio.
+
+   Needs: nothing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}

@@ -9,7 +9,7 @@
    A swap pair of icons is optional: .switch__icon--off shows while off,
    .switch__icon--on while on.
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .switch {
   display: inline-flex;

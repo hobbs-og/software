@@ -18,7 +18,7 @@
    The sheet is opaque, so text contrast never depends on the scrim behind it.
    A product adds the script that opens it, and its own transitions.
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .sheet {
   margin: 0;

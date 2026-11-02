@@ -10,7 +10,7 @@
 
    .container is the product's page gutter.
 
-   Needs: tokens.css, grid.css */
+   Needs: reset.css, tokens.css, grid.css */
 
 .footer {
   padding-block: var(--footer-spacing-padding-y);

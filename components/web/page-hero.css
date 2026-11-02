@@ -31,7 +31,7 @@
    line. The title icon is optional and sits on the title's last line.
    Specs and media reuse feature-row's fact lists and device presets.
 
-   Needs: tokens.css, grid.css, feature-row.css */
+   Needs: reset.css, tokens.css, grid.css, feature-row.css */
 
 .page-hero {
   padding-block-start: var(--page-hero-spacing-padding-y);

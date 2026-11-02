@@ -30,7 +30,7 @@
    the box. Shadow, depth blur and motion belong to the product, so a
    layer's filter is left alone.
 
-   Needs: tokens.css, grid.css, hyperlink.css */
+   Needs: reset.css, tokens.css, grid.css, hyperlink.css */
 
 .feature-row {
   position: relative;

@@ -25,7 +25,7 @@
    The heading icon is optional and sits on the heading's last line; the
    note icon hangs in the margin from 35em.
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .content-section {
   display: flex;

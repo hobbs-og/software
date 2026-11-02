@@ -3,7 +3,7 @@
 
    <a class="skip-link" href="#main">Skip to content</a>
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 /* :hover is listed so a page's link hover color can't reach the knockout surface. */
 .skip-link,

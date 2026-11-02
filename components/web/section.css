@@ -6,7 +6,7 @@
      …
    </section>
 
-   Needs: tokens.css */
+   Needs: reset.css, tokens.css */
 
 .section {
   display: flex;

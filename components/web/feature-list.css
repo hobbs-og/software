@@ -23,7 +23,7 @@
    card past that. Cards are counted "of .feature-row", so another block in
    the list can't flip which side a card sits on.
 
-   Needs: tokens.css, grid.css, feature-row.css */
+   Needs: reset.css, tokens.css, grid.css, feature-row.css */
 
 .feature-list__inner {
   display: flex;
