@@ -451,7 +451,7 @@ public enum SoftwareTokens {
         public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
 
         /// chip/color/default/content/default
-        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+        public static let colorDefaultContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
 
         /// chip/color/draft/background/default
         public static let colorDraftBackgroundDefault = SwiftUI.Color(light: 0xECEEFCFF, dark: 0x15193FFF)

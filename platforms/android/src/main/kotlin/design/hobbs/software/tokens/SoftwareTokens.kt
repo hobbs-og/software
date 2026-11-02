@@ -592,7 +592,7 @@ object SoftwareTokens {
         /** chip/color/default/content/default */
         val colorDefaultContentDefault: ComposeColor
             @Composable @ReadOnlyComposable
-            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
 
         /** chip/color/draft/background/default */
         val colorDraftBackgroundDefault: ComposeColor

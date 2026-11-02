@@ -1919,7 +1919,7 @@
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.default}",
+            "$value": "{color.border.strong}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:61:495",
@@ -1934,7 +1934,7 @@
         "content": {
           "default": {
             "$type": "color",
-            "$value": "{color.content.default}",
+            "$value": "{color.content.emphasized}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:61:531",
@@ -3005,7 +3005,7 @@
       "border": {
         "default": {
           "$type": "color",
-          "$value": "{color.border.default}",
+          "$value": "{color.border.strong}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:10:109",
@@ -4282,7 +4282,7 @@
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.default}",
+            "$value": "{color.border.strong}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:270:17",
@@ -4758,7 +4758,7 @@
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.default}",
+            "$value": "{color.border.strong}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:252:9",
@@ -4786,7 +4786,7 @@
         "content": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.default}",
+            "$value": "{color.border.strong}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:252:16",

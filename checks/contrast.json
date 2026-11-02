@@ -1,5 +1,5 @@
 {
-  "$description": "Foreground/background pairs that must meet WCAG 2.1 AA in every brand and theme. 4.5 = text (1.4.3). 3 = large text, UI boundaries and focus indicators (1.4.11). Disabled states are exempt (1.4.3). Add a pair whenever a component puts two colors together.",
+  "$description": "Foreground/background pairs that must meet WCAG 2.1 AA in every brand and theme. 4.5 = text (1.4.3). 3 = large text, UI boundaries and focus indicators (1.4.11). Disabled states are exempt (1.4.3). So is color.border.default: it draws dividers, which are decoration, and controls take color.border.strong (Mark, 2026-11-02). Add a pair whenever a component puts two colors together.",
   "$brandThemes": "Themes a brand ships. A brand left out is checked in every theme. Mark, 2026-09-22: Rhinestone is light only.",
   "brandThemes": {
     "rhinestone": [
@@ -138,9 +138,16 @@
       "min": 4.5
     },
     {
-      "fg": "color.border.default",
+      "fg": "chip.color.default.border.default",
+      "bg": "chip.color.default.background.default",
+      "min": 3,
+      "note": "default chip edge"
+    },
+    {
+      "fg": "switch.color.off.content.default",
       "bg": "color.background.default",
-      "min": 3
+      "min": 3,
+      "note": "switch thumb, off"
     },
     {
       "fg": "color.border.brand",

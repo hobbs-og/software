@@ -4986,7 +4986,7 @@
             },
             "error-knockout": {
               "$type": "color",
-              "$value": "{color.utility.red.600}",
+              "$value": "{color.utility.red.400}",
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:122",
@@ -5008,7 +5008,7 @@
             },
             "info-knockout": {
               "$type": "color",
-              "$value": "{color.utility.blue.600}",
+              "$value": "{color.utility.blue.400}",
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:134",
@@ -5039,7 +5039,7 @@
             },
             "success-knockout": {
               "$type": "color",
-              "$value": "{color.utility.green.600}",
+              "$value": "{color.utility.green.400}",
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:130",
@@ -5070,7 +5070,7 @@
             },
             "warning-knockout": {
               "$type": "color",
-              "$value": "{color.utility.yellow.600}",
+              "$value": "{color.utility.yellow.400}",
               "$extensions": {
                 "com.figma": {
                   "variableId": "VariableID:15973:126",
