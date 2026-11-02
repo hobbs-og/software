@@ -1,0 +1,178 @@
+/* sheet: a panel over the page, on a native <dialog>. It slides in from the
+   trailing edge, and rises from the bottom below 48em with a grab handle.
+
+   <dialog class="sheet" aria-label="Details">
+     <div class="sheet__chrome">
+       <span class="sheet__handle" aria-hidden="true"></span>
+       <button class="sheet__control sheet__back" type="button">
+         <svg class="icon" aria-hidden="true">…</svg>
+         <span class="sheet__back-label">Back</span>
+       </button>
+       <button class="sheet__control sheet__close" type="button" aria-label="Close">
+         <svg class="icon" aria-hidden="true">…</svg>
+       </button>
+     </div>
+     <div class="sheet__body" tabindex="-1">…</div>
+   </dialog>
+
+   The sheet is opaque, so text contrast never depends on the scrim behind it.
+   A product adds the script that opens it, and its own transitions.
+
+   Needs: tokens.css */
+
+.sheet {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  inline-size: auto;
+  block-size: auto;
+  max-inline-size: none;
+  max-block-size: none;
+  background:
+    linear-gradient(var(--sheet-color-default-background-raised), var(--sheet-color-default-background-raised)),
+    var(--sheet-color-default-background-default);
+  color: inherit;
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  will-change: transform;
+  inset-block: 0;
+  inset-inline-start: var(--sheet-spacing-peek);
+  inset-inline-end: 0;
+  transform: translateX(100%);
+}
+
+.sheet[open] {
+  display: flex;
+  flex-direction: column;
+  transform: none;
+}
+
+@starting-style {
+  .sheet[open] {
+    transform: translateX(100%);
+  }
+}
+
+.sheet::backdrop {
+  background: var(--sheet-color-scrim-background-default);
+  backdrop-filter: blur(var(--sheet-spacing-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--sheet-spacing-backdrop-blur));
+  opacity: 0;
+}
+
+.sheet[open]::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  .sheet[open]::backdrop {
+    opacity: 0;
+  }
+}
+
+.sheet__chrome {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sheet-spacing-chrome-gap);
+  padding: var(--sheet-spacing-chrome-padding-y) var(--sheet-spacing-chrome-padding-x);
+  background:
+    linear-gradient(var(--sheet-color-default-background-raised), var(--sheet-color-default-background-raised)),
+    var(--sheet-color-default-background-default);
+  border-block-end: var(--sheet-border-width-default) solid var(--sheet-color-default-border-default);
+}
+
+.sheet__handle {
+  display: none;
+}
+
+.sheet__body {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sheet__body:focus {
+  outline: none;
+}
+
+.sheet__control {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sheet-spacing-control-gap);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--sheet-color-control-content-default);
+  font: inherit;
+  font-size: var(--typography-body-default-font-size);
+  line-height: var(--typography-body-default-line-height);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sheet__control:is(:hover, :active) {
+  color: var(--sheet-color-control-content-hover);
+}
+
+/* The arrow holds still and the label slides, like the sheet starting to close. */
+.sheet__back-label {
+  display: inline-block;
+}
+
+.sheet__back:is(:hover, :focus-visible) .sheet__back-label {
+  transform: translateX(var(--sheet-spacing-control-shift));
+}
+
+@media (max-width: 47.9375em) {
+  .sheet {
+    inset-block-start: var(--sheet-spacing-peek);
+    inset-block-end: 0;
+    inset-inline: 0;
+    inline-size: auto;
+    transform: translateY(100%);
+    border-start-start-radius: var(--sheet-border-radius-default);
+    border-start-end-radius: var(--sheet-border-radius-default);
+  }
+
+  @starting-style {
+    .sheet[open] {
+      transform: translateY(100%);
+    }
+  }
+
+  .sheet__chrome {
+    position: relative;
+    justify-content: flex-end;
+    padding: var(--sheet-spacing-chrome-mobile-padding-y) var(--sheet-spacing-chrome-mobile-padding-x);
+    touch-action: none;
+  }
+
+  .sheet__handle {
+    display: block;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    transform: translate(-50%, -50%);
+    inline-size: var(--sheet-spacing-handle-width);
+    border-block-start: var(--sheet-spacing-handle-thickness) solid var(--sheet-color-handle-border-default);
+    border-radius: var(--sheet-border-radius-handle);
+  }
+
+  .sheet__close {
+    justify-content: center;
+    min-inline-size: var(--sheet-spacing-control-min-size);
+    min-block-size: var(--sheet-spacing-control-min-size);
+  }
+
+  /* Phones close by the X or a swipe down, so Back goes. */
+  .sheet__back {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+/* section: a block of a page, and the small label that names it. Children
+   stack with gap.
+
+   <section class="section">
+     <p class="section-label">Work</p>
+     …
+   </section>
+
+   Needs: tokens.css */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-spacing-gap);
+  padding: var(--section-spacing-padding-y) var(--section-spacing-padding-x);
+}
+
+.section-label {
+  font-family: var(--typography-label-sm-font-family);
+  font-size: var(--typography-label-sm-font-size);
+  line-height: var(--typography-label-sm-line-height);
+  font-weight: var(--typography-label-sm-font-weight);
+  color: var(--section-color-label-content-default);
+}

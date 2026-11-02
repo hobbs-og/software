@@ -1083,6 +1083,9 @@ public enum SoftwareTokens {
     }
 
     public enum Section {
+        /// section/color/label/content/default
+        public static let colorLabelContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
         /// section/spacing/gap
         public static let spacingGap: CGFloat = 24
 
@@ -1091,6 +1094,74 @@ public enum SoftwareTokens {
 
         /// section/spacing/padding-y
         public static let spacingPaddingY: CGFloat = 48
+    }
+
+    public enum Sheet {
+        /// sheet/border/radius/default
+        public static let borderRadiusDefault: CGFloat = 8
+
+        /// sheet/border/radius/handle
+        public static let borderRadiusHandle: CGFloat = 9999
+
+        /// sheet/border/width/default
+        public static let borderWidthDefault: CGFloat = 1
+
+        /// sheet/color/control/content/default
+        public static let colorControlContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// sheet/color/control/content/hover
+        public static let colorControlContentHover = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// sheet/color/default/background/default
+        public static let colorDefaultBackgroundDefault = SwiftUI.Color(light: 0xFFFFFFFF, dark: 0x0D0F16FF)
+
+        /// sheet/color/default/background/raised
+        public static let colorDefaultBackgroundRaised = SwiftUI.Color(light: 0xFFFFFF1A, dark: 0xFFFFFF1A)
+
+        /// sheet/color/default/border/default
+        public static let colorDefaultBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+
+        /// sheet/color/handle/border/default
+        public static let colorHandleBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// sheet/color/scrim/background/default
+        public static let colorScrimBackgroundDefault = SwiftUI.Color(light: 0x000000CC, dark: 0x000000CC)
+
+        /// sheet/spacing/backdrop/blur
+        public static let spacingBackdropBlur: CGFloat = 8
+
+        /// sheet/spacing/chrome/gap
+        public static let spacingChromeGap: CGFloat = 16
+
+        /// sheet/spacing/chrome/mobile/padding-x
+        public static let spacingChromeMobilePaddingX: CGFloat = 8
+
+        /// sheet/spacing/chrome/mobile/padding-y
+        public static let spacingChromeMobilePaddingY: CGFloat = 8
+
+        /// sheet/spacing/chrome/padding-x
+        public static let spacingChromePaddingX: CGFloat = 48
+
+        /// sheet/spacing/chrome/padding-y
+        public static let spacingChromePaddingY: CGFloat = 24
+
+        /// sheet/spacing/control/gap
+        public static let spacingControlGap: CGFloat = 8
+
+        /// sheet/spacing/control/min-size
+        public static let spacingControlMinSize: CGFloat = 48
+
+        /// sheet/spacing/control/shift
+        public static let spacingControlShift: CGFloat = 8
+
+        /// sheet/spacing/handle/thickness
+        public static let spacingHandleThickness: CGFloat = 4
+
+        /// sheet/spacing/handle/width
+        public static let spacingHandleWidth: CGFloat = 40
+
+        /// sheet/spacing/peek
+        public static let spacingPeek: CGFloat = 64
     }
 
     public enum SkipLink {

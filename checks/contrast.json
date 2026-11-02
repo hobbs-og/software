@@ -475,6 +475,24 @@
       "note": "call to action, hover"
     },
     {
+      "fg": "section.color.label.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "section label"
+    },
+    {
+      "fg": "sheet.color.control.content.default",
+      "bg": "sheet.color.default.background.default",
+      "min": 4.5,
+      "note": "sheet control"
+    },
+    {
+      "fg": "sheet.color.handle.border.default",
+      "bg": "sheet.color.default.background.default",
+      "min": 3,
+      "note": "sheet grab handle"
+    },
+    {
       "fg": "chip.color.success.content.default",
       "bg": "chip.color.success.background.default",
       "min": 4.5,

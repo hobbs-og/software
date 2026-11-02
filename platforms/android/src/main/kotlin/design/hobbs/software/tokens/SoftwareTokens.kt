@@ -1418,6 +1418,11 @@ object SoftwareTokens {
     }
 
     object Section {
+        /** section/color/label/content/default */
+        val colorLabelContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
         /** section/spacing/gap */
         val spacingGap = 24.dp
 
@@ -1426,6 +1431,82 @@ object SoftwareTokens {
 
         /** section/spacing/padding-y */
         val spacingPaddingY = 48.dp
+    }
+
+    object Sheet {
+        /** sheet/border/radius/default */
+        val borderRadiusDefault = 8.dp
+
+        /** sheet/border/radius/handle */
+        val borderRadiusHandle = 9999.dp
+
+        /** sheet/border/width/default */
+        val borderWidthDefault = 1.dp
+
+        /** sheet/color/control/content/default */
+        val colorControlContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** sheet/color/control/content/hover */
+        val colorControlContentHover: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** sheet/color/default/background/default */
+        val colorDefaultBackgroundDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF0D0F16) else ComposeColor(0xFFFFFFFF)
+
+        /** sheet/color/default/background/raised */
+        val colorDefaultBackgroundRaised = ComposeColor(0x1AFFFFFF)
+
+        /** sheet/color/default/border/default */
+        val colorDefaultBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+
+        /** sheet/color/handle/border/default */
+        val colorHandleBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** sheet/color/scrim/background/default */
+        val colorScrimBackgroundDefault = ComposeColor(0xCC000000)
+
+        /** sheet/spacing/backdrop/blur */
+        val spacingBackdropBlur = 8.dp
+
+        /** sheet/spacing/chrome/gap */
+        val spacingChromeGap = 16.dp
+
+        /** sheet/spacing/chrome/mobile/padding-x */
+        val spacingChromeMobilePaddingX = 8.dp
+
+        /** sheet/spacing/chrome/mobile/padding-y */
+        val spacingChromeMobilePaddingY = 8.dp
+
+        /** sheet/spacing/chrome/padding-x */
+        val spacingChromePaddingX = 48.dp
+
+        /** sheet/spacing/chrome/padding-y */
+        val spacingChromePaddingY = 24.dp
+
+        /** sheet/spacing/control/gap */
+        val spacingControlGap = 8.dp
+
+        /** sheet/spacing/control/min-size */
+        val spacingControlMinSize = 48.dp
+
+        /** sheet/spacing/control/shift */
+        val spacingControlShift = 8.dp
+
+        /** sheet/spacing/handle/thickness */
+        val spacingHandleThickness = 4.dp
+
+        /** sheet/spacing/handle/width */
+        val spacingHandleWidth = 40.dp
+
+        /** sheet/spacing/peek */
+        val spacingPeek = 64.dp
     }
 
     object SkipLink {
