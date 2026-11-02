@@ -1041,6 +1041,67 @@ object SoftwareTokens {
         val spacingPaddingY = 64.dp
     }
 
+    object ContentSection {
+        /** content-section/border/width/heading */
+        val borderWidthHeading = 4.dp
+
+        /** content-section/border/width/rule */
+        val borderWidthRule = 1.dp
+
+        /** content-section/color/body/content/default */
+        val colorBodyContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** content-section/color/heading/border/default */
+        val colorHeadingBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** content-section/color/heading/content/default */
+        val colorHeadingContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** content-section/color/icon/content/default */
+        val colorIconContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** content-section/color/rule/border/default */
+        val colorRuleBorderDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF42454E) else ComposeColor(0xFFC5C6C9)
+
+        /** content-section/spacing/columns/gap-y */
+        val spacingColumnsGapY = 24.dp
+
+        /** content-section/spacing/columns/width */
+        val spacingColumnsWidth = 240.dp
+
+        /** content-section/spacing/gap */
+        val spacingGap = 48.dp
+
+        /** content-section/spacing/head/gap */
+        val spacingHeadGap = 64.dp
+
+        /** content-section/spacing/head/padding-y */
+        val spacingHeadPaddingY = 64.dp
+
+        /** content-section/spacing/heading/padding-y */
+        val spacingHeadingPaddingY = 64.dp
+
+        /** content-section/spacing/note-icon/gap */
+        val spacingNoteIconGap = 8.dp
+
+        /** content-section/spacing/note-icon/width */
+        val spacingNoteIconWidth = 12.dp
+
+        /** content-section/spacing/note/gap */
+        val spacingNoteGap = 8.dp
+
+        /** content-section/spacing/title/gap */
+        val spacingTitleGap = 48.dp
+    }
+
     object Elevation {
         /** elevation/lg/blur */
         val lgBlur = 48.dp
@@ -1627,6 +1688,86 @@ object SoftwareTokens {
 
         /** navbar/spacing/padding-y */
         val spacingPaddingY = 16.dp
+    }
+
+    object PageHero {
+        /** page-hero/border/width/band */
+        val borderWidthBand = 1.dp
+
+        /** page-hero/border/width/title */
+        val borderWidthTitle = 4.dp
+
+        /** page-hero/color/band/border/default */
+        val colorBandBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** page-hero/color/brief/content/default */
+        val colorBriefContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFC5C6C9) else ComposeColor(0xFF42454E)
+
+        /** page-hero/color/icon/content/default */
+        val colorIconContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** page-hero/color/lead/content/default */
+        val colorLeadContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** page-hero/color/meta/content/default */
+        val colorMetaContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF8C8F9B) else ComposeColor(0xFF6F7078)
+
+        /** page-hero/color/number/content/default */
+        val colorNumberContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF6690FF) else ComposeColor(0xFF254EDB)
+
+        /** page-hero/color/title/border/default */
+        val colorTitleBorderDefault = ComposeColor(0xFF6F7078)
+
+        /** page-hero/color/title/content/default */
+        val colorTitleContentDefault: ComposeColor
+            @Composable @ReadOnlyComposable
+            get() = if (isSoftwareDarkTheme()) ComposeColor(0xFFF3F4F4) else ComposeColor(0xFF0D0F16)
+
+        /** page-hero/spacing/band-item/gap */
+        val spacingBandItemGap = 4.dp
+
+        /** page-hero/spacing/band-item/padding-y */
+        val spacingBandItemPaddingY = 12.dp
+
+        /** page-hero/spacing/band/gap-y */
+        val spacingBandGapY = 24.dp
+
+        /** page-hero/spacing/body/gap */
+        val spacingBodyGap = 24.dp
+
+        /** page-hero/spacing/gap */
+        val spacingGap = 96.dp
+
+        /** page-hero/spacing/heading/gap */
+        val spacingHeadingGap = 168.dp
+
+        /** page-hero/spacing/intro/gap */
+        val spacingIntroGap = 48.dp
+
+        /** page-hero/spacing/padding-y */
+        val spacingPaddingY = 48.dp
+
+        /** page-hero/spacing/specs/gap-y */
+        val spacingSpecsGapY = 40.dp
+
+        /** page-hero/spacing/summary/gap */
+        val spacingSummaryGap = 8.dp
+
+        /** page-hero/spacing/title/gap */
+        val spacingTitleGap = 48.dp
+
+        /** page-hero/spacing/title/padding-y */
+        val spacingTitlePaddingY = 40.dp
     }
 
     object Section {

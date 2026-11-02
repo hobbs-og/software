@@ -770,6 +770,59 @@ public enum SoftwareTokens {
         public static let spacingPaddingY: CGFloat = 64
     }
 
+    public enum ContentSection {
+        /// content-section/border/width/heading
+        public static let borderWidthHeading: CGFloat = 4
+
+        /// content-section/border/width/rule
+        public static let borderWidthRule: CGFloat = 1
+
+        /// content-section/color/body/content/default
+        public static let colorBodyContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// content-section/color/heading/border/default
+        public static let colorHeadingBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// content-section/color/heading/content/default
+        public static let colorHeadingContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// content-section/color/icon/content/default
+        public static let colorIconContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// content-section/color/rule/border/default
+        public static let colorRuleBorderDefault = SwiftUI.Color(light: 0xC5C6C9FF, dark: 0x42454EFF)
+
+        /// content-section/spacing/columns/gap-y
+        public static let spacingColumnsGapY: CGFloat = 24
+
+        /// content-section/spacing/columns/width
+        public static let spacingColumnsWidth: CGFloat = 240
+
+        /// content-section/spacing/gap
+        public static let spacingGap: CGFloat = 48
+
+        /// content-section/spacing/head/gap
+        public static let spacingHeadGap: CGFloat = 64
+
+        /// content-section/spacing/head/padding-y
+        public static let spacingHeadPaddingY: CGFloat = 64
+
+        /// content-section/spacing/heading/padding-y
+        public static let spacingHeadingPaddingY: CGFloat = 64
+
+        /// content-section/spacing/note-icon/gap
+        public static let spacingNoteIconGap: CGFloat = 8
+
+        /// content-section/spacing/note-icon/width
+        public static let spacingNoteIconWidth: CGFloat = 12
+
+        /// content-section/spacing/note/gap
+        public static let spacingNoteGap: CGFloat = 8
+
+        /// content-section/spacing/title/gap
+        public static let spacingTitleGap: CGFloat = 48
+    }
+
     public enum Elevation {
         /// elevation/lg/blur
         public static let lgBlur: CGFloat = 48
@@ -1254,6 +1307,74 @@ public enum SoftwareTokens {
 
         /// navbar/spacing/padding-y
         public static let spacingPaddingY: CGFloat = 16
+    }
+
+    public enum PageHero {
+        /// page-hero/border/width/band
+        public static let borderWidthBand: CGFloat = 1
+
+        /// page-hero/border/width/title
+        public static let borderWidthTitle: CGFloat = 4
+
+        /// page-hero/color/band/border/default
+        public static let colorBandBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// page-hero/color/brief/content/default
+        public static let colorBriefContentDefault = SwiftUI.Color(light: 0x42454EFF, dark: 0xC5C6C9FF)
+
+        /// page-hero/color/icon/content/default
+        public static let colorIconContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// page-hero/color/lead/content/default
+        public static let colorLeadContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// page-hero/color/meta/content/default
+        public static let colorMetaContentDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x8C8F9BFF)
+
+        /// page-hero/color/number/content/default
+        public static let colorNumberContentDefault = SwiftUI.Color(light: 0x254EDBFF, dark: 0x6690FFFF)
+
+        /// page-hero/color/title/border/default
+        public static let colorTitleBorderDefault = SwiftUI.Color(light: 0x6F7078FF, dark: 0x6F7078FF)
+
+        /// page-hero/color/title/content/default
+        public static let colorTitleContentDefault = SwiftUI.Color(light: 0x0D0F16FF, dark: 0xF3F4F4FF)
+
+        /// page-hero/spacing/band-item/gap
+        public static let spacingBandItemGap: CGFloat = 4
+
+        /// page-hero/spacing/band-item/padding-y
+        public static let spacingBandItemPaddingY: CGFloat = 12
+
+        /// page-hero/spacing/band/gap-y
+        public static let spacingBandGapY: CGFloat = 24
+
+        /// page-hero/spacing/body/gap
+        public static let spacingBodyGap: CGFloat = 24
+
+        /// page-hero/spacing/gap
+        public static let spacingGap: CGFloat = 96
+
+        /// page-hero/spacing/heading/gap
+        public static let spacingHeadingGap: CGFloat = 168
+
+        /// page-hero/spacing/intro/gap
+        public static let spacingIntroGap: CGFloat = 48
+
+        /// page-hero/spacing/padding-y
+        public static let spacingPaddingY: CGFloat = 48
+
+        /// page-hero/spacing/specs/gap-y
+        public static let spacingSpecsGapY: CGFloat = 40
+
+        /// page-hero/spacing/summary/gap
+        public static let spacingSummaryGap: CGFloat = 8
+
+        /// page-hero/spacing/title/gap
+        public static let spacingTitleGap: CGFloat = 48
+
+        /// page-hero/spacing/title/padding-y
+        public static let spacingTitlePaddingY: CGFloat = 40
     }
 
     public enum Section {

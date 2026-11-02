@@ -692,6 +692,48 @@
       "bg": "button.color.solid.background.focus",
       "min": 4.5,
       "note": "solid button label on focus"
+    },
+    {
+      "fg": "page-hero.color.title.content.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "page hero title (display size)"
+    },
+    {
+      "fg": "page-hero.color.lead.content.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "page hero lead (headline size)"
+    },
+    {
+      "fg": "page-hero.color.brief.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "page hero brief"
+    },
+    {
+      "fg": "page-hero.color.meta.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "page hero band values"
+    },
+    {
+      "fg": "page-hero.color.number.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "page hero study number"
+    },
+    {
+      "fg": "content-section.color.heading.content.default",
+      "bg": "color.background.default",
+      "min": 3,
+      "note": "content section headings (headline and title sizes)"
+    },
+    {
+      "fg": "content-section.color.body.content.default",
+      "bg": "color.background.default",
+      "min": 4.5,
+      "note": "content section body text"
     }
   ]
 }

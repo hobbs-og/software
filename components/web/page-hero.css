@@ -1,0 +1,189 @@
+/* page-hero: the top of a page. A band of facts, the title, then a lead
+   and a body side by side, then optional media.
+
+   <div class="page-hero">
+     <div class="page-hero__inner grid">
+       <div class="page-hero__intro subgrid span-12">
+         <div class="page-hero__heading span-12">
+           <dl class="page-hero__band">
+             <div><dt>Study</dt><dd class="page-hero__number">Case study 01</dd></div>
+             <div><dt>Client</dt><dd>Bullhorn</dd></div>
+           </dl>
+           <h1 class="page-hero__title">Bullhorn<svg class="page-hero__title-icon" aria-hidden="true">…</svg></h1>
+         </div>
+         <div class="page-hero__summary subgrid span-12">
+           <p class="page-hero__lead span-6">One sentence on the work.</p>
+           <div class="page-hero__body span-6">
+             <p class="page-hero__brief-text">A short paragraph.</p>
+             <dl class="feature-row__specs page-hero__specs">…</dl>
+           </div>
+         </div>
+       </div>
+       <div class="feature-row__media page-hero__media span-12">…</div>
+     </div>
+   </div>
+
+   Each group has one gap: inner (intro, media), intro (heading, summary),
+   heading (band, title), summary (lead, body). Intro and summary are
+   subgrids, so the lead and body sit on the page columns.
+
+   Band labels are for assistive tech only; the values read as a meta
+   line. The title icon is optional and sits on the title's last line.
+   Specs and media reuse feature-row's fact lists and device presets.
+
+   Needs: tokens.css, grid.css, feature-row.css */
+
+.page-hero {
+  padding-block-start: var(--page-hero-spacing-padding-y);
+}
+
+.page-hero__inner {
+  container-type: inline-size;
+  row-gap: var(--page-hero-spacing-gap);
+}
+
+.page-hero__intro {
+  row-gap: var(--page-hero-spacing-intro-gap);
+}
+
+.page-hero__heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-hero-spacing-heading-gap);
+}
+
+.page-hero__summary {
+  row-gap: var(--page-hero-spacing-summary-gap);
+}
+
+.page-hero__band {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--page-hero-spacing-band-gap-y) var(--container-gutter);
+  margin: 0;
+}
+
+.page-hero__band > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-hero-spacing-band-item-gap);
+  padding-block-start: var(--page-hero-spacing-band-item-padding-y);
+  border-block-start: var(--page-hero-border-width-band) solid var(--page-hero-color-band-border-default);
+}
+
+@media (min-width: 60em) {
+  .page-hero__band {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.page-hero__band dt {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.page-hero__band dd {
+  margin: 0;
+  font-family: var(--typography-meta-sm-font-family);
+  font-size: var(--typography-meta-sm-font-size);
+  line-height: var(--typography-meta-sm-line-height);
+  font-weight: var(--typography-meta-sm-font-weight);
+  letter-spacing: var(--typography-meta-sm-letter-spacing);
+  text-transform: var(--typography-meta-sm-text-transform);
+  color: var(--page-hero-color-meta-content-default);
+}
+
+.page-hero__band .page-hero__number {
+  color: var(--page-hero-color-number-content-default);
+}
+
+/* The title closes on a rule. The icon sits on the last line, so a
+   wrapped title ends on it. */
+.page-hero__title {
+  display: flex;
+  align-items: last baseline;
+  gap: var(--page-hero-spacing-title-gap);
+  margin: 0;
+  padding-block-end: var(--page-hero-spacing-title-padding-y);
+  border-block-end: var(--page-hero-border-width-title) solid var(--page-hero-color-title-border-default);
+  font-family: var(--typography-display-default-font-family);
+  font-size: var(--typography-display-default-font-size);
+  line-height: var(--typography-display-default-line-height);
+  font-weight: var(--typography-display-default-font-weight);
+  letter-spacing: var(--typography-display-default-letter-spacing);
+  text-transform: var(--typography-display-default-text-transform);
+  color: var(--page-hero-color-title-content-default);
+  text-wrap: balance;
+}
+
+/* Inter's cap height is 0.727em; 1cap where supported. */
+.page-hero__title-icon {
+  flex: none;
+  inline-size: 0.727em;
+  inline-size: 1cap;
+  block-size: auto;
+  aspect-ratio: 1;
+  margin-inline-start: auto;
+  color: var(--page-hero-color-icon-content-default);
+}
+
+.page-hero__lead {
+  margin: 0;
+  font-family: var(--typography-headline-default-font-family);
+  font-size: var(--typography-headline-default-font-size);
+  line-height: var(--typography-headline-default-line-height);
+  font-weight: var(--typography-headline-default-font-weight);
+  letter-spacing: var(--typography-headline-default-letter-spacing);
+  text-transform: var(--typography-headline-default-text-transform);
+  color: var(--page-hero-color-lead-content-default);
+  text-wrap: balance;
+}
+
+/* The first lines of the lead and the body share one baseline. */
+.page-hero__summary > :is(.page-hero__lead, .page-hero__body) {
+  align-self: first baseline;
+}
+
+.page-hero__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-hero-spacing-body-gap);
+}
+
+.page-hero__brief-text {
+  margin: 0;
+  font-family: var(--typography-body-sm-font-family);
+  font-size: var(--typography-body-sm-font-size);
+  line-height: var(--typography-body-sm-line-height);
+  font-weight: var(--typography-body-sm-font-weight);
+  letter-spacing: var(--typography-body-sm-letter-spacing);
+  color: var(--page-hero-color-brief-content-default);
+  text-wrap: pretty;
+}
+
+/* Fact lists stack in one column, then pair up with the first list
+   standing on its own down the left. */
+.page-hero__specs {
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--page-hero-spacing-specs-gap-y);
+}
+
+@media (min-width: 60em) {
+  .page-hero__specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--container-gutter);
+  }
+
+  .page-hero__specs > .feature-row__spec--tall {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+}
+
+.page-hero__media {
+  grid-column: 1 / -1;
+}

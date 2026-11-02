@@ -1,0 +1,169 @@
+/* content-section: one section of a long read. A head with its heading
+   and supporting text, then media, then a body of text parts, notes and
+   figures.
+
+   <section class="content-section" aria-labelledby="s1">
+     <div class="content-section__head">
+       <h2 id="s1"><span class="content-section__title-text">Heading</span><svg class="content-section__title-icon" aria-hidden="true">…</svg></h2>
+       <div class="content-section__support"><p>…</p><p>…</p></div>
+     </div>
+     <div class="content-section__media"><figure>…</figure></div>
+     <div class="content-section__body">
+       <div class="content-section__part"><h3>Subheading</h3><p>…</p><p>…</p></div>
+       <div class="content-section__notes">
+         <div class="content-section__note">
+           <h4><svg class="content-section__note-icon" aria-hidden="true">…</svg>Note</h4>
+           <p>…</p>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   The head opens on a rule and its heading closes on a heavier one.
+   Supporting text, parts and notes set their paragraphs in columns at
+   least the column width wide. Media and body hide when they're empty.
+   The heading icon is optional and sits on the heading's last line; the
+   note icon hangs in the margin from 35em.
+
+   Needs: tokens.css */
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-section-spacing-gap);
+}
+
+.content-section__head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-section-spacing-head-gap);
+  padding-block-start: var(--content-section-spacing-head-padding-y);
+  border-block-start: var(--content-section-border-width-rule) solid var(--content-section-color-rule-border-default);
+}
+
+.content-section__head > h2 {
+  display: flex;
+  align-items: last baseline;
+  gap: var(--content-section-spacing-title-gap);
+  margin: 0;
+  padding-block-end: var(--content-section-spacing-heading-padding-y);
+  border-block-end: var(--content-section-border-width-heading) solid var(--content-section-color-heading-border-default);
+  font-family: var(--typography-headline-default-font-family);
+  font-size: var(--typography-headline-default-font-size);
+  line-height: var(--typography-headline-default-line-height);
+  font-weight: var(--typography-headline-default-font-weight);
+  letter-spacing: var(--typography-headline-default-letter-spacing);
+  text-transform: var(--typography-headline-default-text-transform);
+  color: var(--content-section-color-heading-content-default);
+  text-wrap: balance;
+}
+
+.content-section__title-text {
+  min-inline-size: 0;
+}
+
+/* Inter's cap height is 0.727em; 1cap where supported. */
+.content-section__title-icon {
+  flex: none;
+  inline-size: 0.727em;
+  inline-size: 1cap;
+  block-size: auto;
+  aspect-ratio: 1;
+  margin-inline-start: auto;
+  color: var(--content-section-color-icon-content-default);
+}
+
+:is(.content-section__media, .content-section__body) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-section-spacing-gap);
+}
+
+.content-section__media:not(:has(> :not([hidden]))),
+.content-section__body:not(:has(> *)) {
+  display: none;
+}
+
+/* Paragraphs fill as many columns as fit at the column width. */
+:is(.content-section__support, .content-section__part) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--content-section-spacing-columns-width)), 1fr));
+  gap: var(--content-section-spacing-columns-gap-y) var(--container-gutter);
+  color: var(--content-section-color-body-content-default);
+}
+
+.content-section__part > h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--typography-title-default-font-family);
+  font-size: var(--typography-title-default-font-size);
+  line-height: var(--typography-title-default-line-height);
+  font-weight: var(--typography-title-default-font-weight);
+  letter-spacing: var(--typography-title-default-letter-spacing);
+  text-transform: var(--typography-title-default-text-transform);
+  color: var(--content-section-color-heading-content-default);
+  text-wrap: balance;
+}
+
+:is(.content-section__support, .content-section__part, .content-section__notes) p {
+  text-wrap: pretty;
+}
+
+.content-section__notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--content-section-spacing-columns-gap-y) var(--container-gutter);
+}
+
+@media (max-width: 34.9375em) {
+  .content-section__notes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.content-section__note {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-section-spacing-note-gap);
+}
+
+.content-section__note > h4 {
+  display: flex;
+  align-items: first baseline;
+  gap: var(--content-section-spacing-note-icon-gap);
+  margin: 0;
+  font-family: var(--typography-label-lg-font-family);
+  font-size: var(--typography-label-lg-font-size);
+  line-height: var(--typography-label-lg-line-height);
+  font-weight: var(--typography-label-lg-font-weight);
+  letter-spacing: var(--typography-label-lg-letter-spacing);
+  text-transform: var(--typography-label-lg-text-transform);
+  color: var(--content-section-color-heading-content-default);
+}
+
+.content-section__note-icon {
+  flex: none;
+  align-self: baseline;
+  inline-size: var(--content-section-spacing-note-icon-width);
+  aspect-ratio: 1;
+  color: var(--content-section-color-icon-content-default);
+}
+
+/* From 35em the icon hangs in the margin, so note text lines up with the
+   text around it. */
+@media (min-width: 35em) {
+  .content-section__note-icon {
+    margin-inline-start: calc(-1 * (var(--content-section-spacing-note-icon-width) + var(--content-section-spacing-note-icon-gap)));
+  }
+}
+
+.content-section__note > p {
+  margin: 0;
+  font-family: var(--typography-body-default-font-family);
+  font-size: var(--typography-body-default-font-size);
+  line-height: var(--typography-body-default-line-height);
+  font-weight: var(--typography-body-default-font-weight);
+  letter-spacing: var(--typography-body-default-letter-spacing);
+  color: var(--content-section-color-body-content-default);
+  text-wrap: pretty;
+}
