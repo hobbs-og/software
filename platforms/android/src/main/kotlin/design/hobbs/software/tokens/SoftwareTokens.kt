@@ -1043,7 +1043,7 @@ object SoftwareTokens {
 
     object ContentSection {
         /** content-section/border/width/heading */
-        val borderWidthHeading = 4.dp
+        val borderWidthHeading = 2.dp
 
         /** content-section/border/width/rule */
         val borderWidthRule = 1.dp
@@ -1087,7 +1087,7 @@ object SoftwareTokens {
         val spacingHeadPaddingY = 64.dp
 
         /** content-section/spacing/heading/padding-y */
-        val spacingHeadingPaddingY = 64.dp
+        val spacingHeadingPaddingY = 24.dp
 
         /** content-section/spacing/note-icon/gap */
         val spacingNoteIconGap = 8.dp

@@ -251,7 +251,7 @@
   --contact-spacing-link-gap: var(--spacing-gap-sm);
   --contact-spacing-links-padding-y: var(--spacing-48);
   --contact-spacing-padding-y: var(--spacing-64);
-  --content-section-border-width-heading: var(--border-width-md);
+  --content-section-border-width-heading: var(--border-width-sm);
   --content-section-border-width-rule: var(--border-width-default);
   --content-section-color-body-content-default: var(--color-content-default);
   --content-section-color-heading-border-default: var(--color-border-strong);
@@ -263,7 +263,7 @@
   --content-section-spacing-gap: var(--spacing-48);
   --content-section-spacing-head-gap: var(--spacing-64);
   --content-section-spacing-head-padding-y: var(--spacing-64);
-  --content-section-spacing-heading-padding-y: var(--spacing-64);
+  --content-section-spacing-heading-padding-y: var(--spacing-24);
   --content-section-spacing-note-icon-gap: var(--spacing-8);
   --content-section-spacing-note-icon-width: var(--spacing-12);
   --content-section-spacing-note-gap: var(--spacing-8);

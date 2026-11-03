@@ -2426,7 +2426,7 @@
       "width": {
         "heading": {
           "$type": "dimension",
-          "$value": "{border.width.md}",
+          "$value": "{border.width.sm}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:37",
@@ -2613,7 +2613,7 @@
       "heading": {
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.64}",
+          "$value": "{spacing.24}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:29",

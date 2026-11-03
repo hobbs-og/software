@@ -772,7 +772,7 @@ public enum SoftwareTokens {
 
     public enum ContentSection {
         /// content-section/border/width/heading
-        public static let borderWidthHeading: CGFloat = 4
+        public static let borderWidthHeading: CGFloat = 2
 
         /// content-section/border/width/rule
         public static let borderWidthRule: CGFloat = 1
@@ -808,7 +808,7 @@ public enum SoftwareTokens {
         public static let spacingHeadPaddingY: CGFloat = 64
 
         /// content-section/spacing/heading/padding-y
-        public static let spacingHeadingPaddingY: CGFloat = 64
+        public static let spacingHeadingPaddingY: CGFloat = 24
 
         /// content-section/spacing/note-icon/gap
         public static let spacingNoteIconGap: CGFloat = 8
