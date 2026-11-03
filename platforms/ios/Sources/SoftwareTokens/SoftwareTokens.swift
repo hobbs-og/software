@@ -2182,6 +2182,36 @@ public enum SoftwareTokens {
         /// typography/meta-sm/text-transform
         public static let metaSmTextTransform = "uppercase"
 
+        /// typography/subheading-mobile/font-size
+        public static let subheadingMobileFontSize: CGFloat = 28
+
+        /// typography/subheading-mobile/font-weight
+        public static let subheadingMobileFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/subheading-mobile/letter-spacing
+        public static let subheadingMobileLetterSpacing: CGFloat = -0.5
+
+        /// typography/subheading-mobile/line-height
+        public static let subheadingMobileLineHeight: CGFloat = 36
+
+        /// typography/subheading-mobile/text-transform
+        public static let subheadingMobileTextTransform = "none"
+
+        /// typography/subheading/font-size
+        public static let subheadingFontSize: CGFloat = 28
+
+        /// typography/subheading/font-weight
+        public static let subheadingFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/subheading/letter-spacing
+        public static let subheadingLetterSpacing: CGFloat = -0.5
+
+        /// typography/subheading/line-height
+        public static let subheadingLineHeight: CGFloat = 36
+
+        /// typography/subheading/text-transform
+        public static let subheadingTextTransform = "none"
+
         /// typography/text-transform/capitalize
         public static let textTransformCapitalize = "capitalize"
 

@@ -2599,6 +2599,36 @@ object SoftwareTokens {
         /** typography/meta-sm/text-transform */
         const val metaSmTextTransform = "uppercase"
 
+        /** typography/subheading-mobile/font-size */
+        val subheadingMobileFontSize = 28.sp
+
+        /** typography/subheading-mobile/font-weight */
+        val subheadingMobileFontWeight = FontWeight(700)
+
+        /** typography/subheading-mobile/letter-spacing */
+        val subheadingMobileLetterSpacing = (-0.5).sp
+
+        /** typography/subheading-mobile/line-height */
+        val subheadingMobileLineHeight = 36.sp
+
+        /** typography/subheading-mobile/text-transform */
+        const val subheadingMobileTextTransform = "none"
+
+        /** typography/subheading/font-size */
+        val subheadingFontSize = 28.sp
+
+        /** typography/subheading/font-weight */
+        val subheadingFontWeight = FontWeight(700)
+
+        /** typography/subheading/letter-spacing */
+        val subheadingLetterSpacing = (-0.5).sp
+
+        /** typography/subheading/line-height */
+        val subheadingLineHeight = 36.sp
+
+        /** typography/subheading/text-transform */
+        const val subheadingTextTransform = "none"
+
         /** typography/text-transform/capitalize */
         const val textTransformCapitalize = "capitalize"
 

@@ -37,7 +37,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--content-section-spacing-head-gap);
-  padding-block-start: var(--content-section-spacing-head-padding-y);
+  /* The rule sits inside the head's top padding, so the heading starts the
+     padding's distance below the line, not the padding plus the rule. */
+  padding-block-start: calc(var(--content-section-spacing-head-padding-y) - var(--content-section-border-width-rule));
   border-block-start: var(--content-section-border-width-rule) solid var(--content-section-color-rule-border-default);
 }
 
@@ -95,17 +97,18 @@
 .content-section__part > h3 {
   grid-column: 1 / -1;
   margin: 0;
-  font-family: var(--typography-title-default-font-family);
-  font-size: var(--typography-title-default-font-size);
-  line-height: var(--typography-title-default-line-height);
-  font-weight: var(--typography-title-default-font-weight);
-  letter-spacing: var(--typography-title-default-letter-spacing);
-  text-transform: var(--typography-title-default-text-transform);
+  font-family: var(--typography-subheading-font-family);
+  font-size: var(--typography-subheading-font-size);
+  line-height: var(--typography-subheading-line-height);
+  font-weight: var(--typography-subheading-font-weight);
+  letter-spacing: var(--typography-subheading-letter-spacing);
+  text-transform: var(--typography-subheading-text-transform);
   color: var(--content-section-color-heading-content-default);
   text-wrap: balance;
 }
 
 :is(.content-section__support, .content-section__part, .content-section__notes) p {
+  margin: 0;
   text-wrap: pretty;
 }
 
@@ -132,12 +135,12 @@
   align-items: first baseline;
   gap: var(--content-section-spacing-note-icon-gap);
   margin: 0;
-  font-family: var(--typography-label-lg-font-family);
-  font-size: var(--typography-label-lg-font-size);
-  line-height: var(--typography-label-lg-line-height);
-  font-weight: var(--typography-label-lg-font-weight);
-  letter-spacing: var(--typography-label-lg-letter-spacing);
-  text-transform: var(--typography-label-lg-text-transform);
+  font-family: var(--typography-title-sm-font-family);
+  font-size: var(--typography-title-sm-font-size);
+  line-height: var(--typography-title-sm-line-height);
+  font-weight: var(--typography-title-sm-font-weight);
+  letter-spacing: var(--typography-title-sm-letter-spacing);
+  text-transform: var(--typography-title-sm-text-transform);
   color: var(--content-section-color-heading-content-default);
 }
 
