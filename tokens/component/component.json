@@ -2392,7 +2392,7 @@
       "links": {
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xlg}",
+          "$value": "{spacing.padding.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:273:24",
@@ -2407,7 +2407,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.64}",
+        "$value": "{spacing.padding.4xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:273:22",
@@ -2571,7 +2571,7 @@
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xlg}",
+        "$value": "{spacing.gap.3xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:298:26",
@@ -2585,7 +2585,7 @@
       "head": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.64}",
+          "$value": "{spacing.gap.4xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:27",
@@ -2598,7 +2598,7 @@
         },
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.64}",
+          "$value": "{spacing.padding.4xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:28",
@@ -2671,7 +2671,7 @@
       "title": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xlg}",
+          "$value": "{spacing.gap.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:30",
@@ -2689,7 +2689,7 @@
     "spacing": {
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.120}",
+        "$value": "{spacing.gap.6xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:279:32",
@@ -2703,7 +2703,7 @@
       "items": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.240}",
+          "$value": "{spacing.gap.8xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:279:33",
@@ -2717,7 +2717,7 @@
         "large": {
           "gap": {
             "$type": "dimension",
-            "$value": "{spacing.168}",
+            "$value": "{spacing.gap.7xlg}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:279:34",
@@ -2733,7 +2733,7 @@
       "list": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.240}",
+          "$value": "{spacing.gap.8xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:279:35",
@@ -2747,7 +2747,7 @@
         "large": {
           "gap": {
             "$type": "dimension",
-            "$value": "{spacing.gap.xlg}",
+            "$value": "{spacing.gap.3xlg}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:279:36",
@@ -3000,7 +3000,7 @@
         "body": {
           "padding-y": {
             "$type": "dimension",
-            "$value": "{spacing.32}",
+            "$value": "{spacing.padding.xlg}",
             "$extensions": {
               "com.figma": {
                 "variableId": "VariableID:279:30",
@@ -3812,7 +3812,7 @@
       "content": {
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.64}",
+          "$value": "{spacing.padding.4xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:261:20",
@@ -3870,7 +3870,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.64}",
+        "$value": "{spacing.padding.4xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:261:17",
@@ -3966,7 +3966,7 @@
       "cta": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.12}",
+          "$value": "{spacing.gap.md}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:263:30",
@@ -4285,7 +4285,7 @@
       "nav-links": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xlg}",
+          "$value": "{spacing.gap.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:15:855",
@@ -4543,7 +4543,7 @@
         },
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.12}",
+          "$value": "{spacing.padding.md}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:12",
@@ -4587,7 +4587,7 @@
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.96}",
+        "$value": "{spacing.gap.5xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:298:4",
@@ -4601,7 +4601,7 @@
       "heading": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.168}",
+          "$value": "{spacing.gap.7xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:6",
@@ -4616,7 +4616,7 @@
       "intro": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xlg}",
+          "$value": "{spacing.gap.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:5",
@@ -4630,7 +4630,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.padding.xlg}",
+        "$value": "{spacing.padding.3xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:298:2",
@@ -4644,7 +4644,7 @@
       "specs": {
         "gap-y": {
           "$type": "dimension",
-          "$value": "{spacing.40}",
+          "$value": "{spacing.gap.2xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:9",
@@ -4674,7 +4674,7 @@
       "title": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xlg}",
+          "$value": "{spacing.gap.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:13",
@@ -4687,7 +4687,7 @@
         },
         "padding-y": {
           "$type": "dimension",
-          "$value": "{spacing.40}",
+          "$value": "{spacing.padding.2xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:298:14",
@@ -4738,7 +4738,7 @@
       },
       "padding-x": {
         "$type": "dimension",
-        "$value": "{spacing.padding.xlg}",
+        "$value": "{spacing.padding.3xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:20:1584",
@@ -4751,7 +4751,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.padding.xlg}",
+        "$value": "{spacing.padding.3xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:20:1585",
@@ -4988,7 +4988,7 @@
         },
         "padding-x": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xlg}",
+          "$value": "{spacing.padding.3xlg}",
           "$extensions": {
             "com.figma": {
               "variableId": "VariableID:270:29",
@@ -5276,7 +5276,7 @@
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xlg}",
+        "$value": "{spacing.gap.3xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:273:12",
@@ -5289,7 +5289,7 @@
       },
       "padding-y": {
         "$type": "dimension",
-        "$value": "{spacing.64}",
+        "$value": "{spacing.padding.4xlg}",
         "$extensions": {
           "com.figma": {
             "variableId": "VariableID:273:10",

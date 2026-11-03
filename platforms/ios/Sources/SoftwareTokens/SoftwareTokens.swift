@@ -1195,7 +1195,7 @@ public enum SoftwareTokens {
         public static let colorHover = SwiftUI.Color(light: 0x102693FF, dark: 0x84A9FFFF)
 
         /// hyperlink/spacing/cta/gap
-        public static let spacingCtaGap: CGFloat = 12
+        public static let spacingCtaGap: CGFloat = 16
 
         /// hyperlink/spacing/cta/icon/offset
         public static let spacingCtaIconOffset: CGFloat = 4
@@ -1344,7 +1344,7 @@ public enum SoftwareTokens {
         public static let spacingBandItemGap: CGFloat = 4
 
         /// page-hero/spacing/band-item/padding-y
-        public static let spacingBandItemPaddingY: CGFloat = 12
+        public static let spacingBandItemPaddingY: CGFloat = 16
 
         /// page-hero/spacing/band/gap-y
         public static let spacingBandGapY: CGFloat = 24
@@ -1531,6 +1531,27 @@ public enum SoftwareTokens {
         /// spacing/96
         public static let _96: CGFloat = 96
 
+        /// spacing/gap/2xlg
+        public static let gap2xlg: CGFloat = 40
+
+        /// spacing/gap/3xlg
+        public static let gap3xlg: CGFloat = 48
+
+        /// spacing/gap/4xlg
+        public static let gap4xlg: CGFloat = 64
+
+        /// spacing/gap/5xlg
+        public static let gap5xlg: CGFloat = 96
+
+        /// spacing/gap/6xlg
+        public static let gap6xlg: CGFloat = 120
+
+        /// spacing/gap/7xlg
+        public static let gap7xlg: CGFloat = 168
+
+        /// spacing/gap/8xlg
+        public static let gap8xlg: CGFloat = 240
+
         /// spacing/gap/lg
         public static let gapLg: CGFloat = 24
 
@@ -1544,13 +1565,34 @@ public enum SoftwareTokens {
         public static let gapSm: CGFloat = 8
 
         /// spacing/gap/xlg
-        public static let gapXlg: CGFloat = 48
+        public static let gapXlg: CGFloat = 32
 
         /// spacing/gap/xsm
         public static let gapXsm: CGFloat = 4
 
         /// spacing/gap/xxsm
         public static let gapXxsm: CGFloat = 2
+
+        /// spacing/padding/2xlg
+        public static let padding2xlg: CGFloat = 40
+
+        /// spacing/padding/3xlg
+        public static let padding3xlg: CGFloat = 48
+
+        /// spacing/padding/4xlg
+        public static let padding4xlg: CGFloat = 64
+
+        /// spacing/padding/5xlg
+        public static let padding5xlg: CGFloat = 96
+
+        /// spacing/padding/6xlg
+        public static let padding6xlg: CGFloat = 120
+
+        /// spacing/padding/7xlg
+        public static let padding7xlg: CGFloat = 168
+
+        /// spacing/padding/8xlg
+        public static let padding8xlg: CGFloat = 240
 
         /// spacing/padding/lg
         public static let paddingLg: CGFloat = 24
@@ -1565,7 +1607,7 @@ public enum SoftwareTokens {
         public static let paddingSm: CGFloat = 8
 
         /// spacing/padding/xlg
-        public static let paddingXlg: CGFloat = 48
+        public static let paddingXlg: CGFloat = 32
 
         /// spacing/padding/xsm
         public static let paddingXsm: CGFloat = 4

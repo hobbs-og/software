@@ -8552,6 +8552,119 @@
   },
   "spacing": {
     "gap": {
+      "2xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.40}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:11",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "3xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.48}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:14016:4343",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "FONT_VARIATIONS",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "4xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.64}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:12",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "5xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.96}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:13",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "6xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.120}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:14",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "7xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.168}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:15",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "8xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.240}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:16",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
       "lg": {
         "$type": "dimension",
         "$value": "{spacing.24}",
@@ -8622,14 +8735,13 @@
       },
       "xlg": {
         "$type": "dimension",
-        "$value": "{spacing.48}",
+        "$value": "{spacing.32}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14016:4343",
+            "variableId": "VariableID:16111:10",
             "collection": "Tier 1  |  base values",
             "scopes": [
               "EFFECT_FLOAT",
-              "FONT_VARIATIONS",
               "GAP",
               "PARAGRAPH_SPACING",
               "WIDTH_HEIGHT"
@@ -8673,6 +8785,119 @@
       }
     },
     "padding": {
+      "2xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.40}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:4",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "3xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.48}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:14060:1949",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "FONT_VARIATIONS",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "4xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.64}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:5",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "5xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.96}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:6",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "6xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.120}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:7",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "7xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.168}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:8",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
+      "8xlg": {
+        "$type": "dimension",
+        "$value": "{spacing.240}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:16111:9",
+            "collection": "Tier 1  |  base values",
+            "scopes": [
+              "EFFECT_FLOAT",
+              "GAP",
+              "PARAGRAPH_SPACING",
+              "WIDTH_HEIGHT"
+            ]
+          }
+        }
+      },
       "lg": {
         "$type": "dimension",
         "$value": "{spacing.24}",
@@ -8743,14 +8968,13 @@
       },
       "xlg": {
         "$type": "dimension",
-        "$value": "{spacing.48}",
+        "$value": "{spacing.32}",
         "$extensions": {
           "com.figma": {
-            "variableId": "VariableID:14060:1949",
+            "variableId": "VariableID:16111:3",
             "collection": "Tier 1  |  base values",
             "scopes": [
               "EFFECT_FLOAT",
-              "FONT_VARIATIONS",
               "GAP",
               "PARAGRAPH_SPACING",
               "WIDTH_HEIGHT"

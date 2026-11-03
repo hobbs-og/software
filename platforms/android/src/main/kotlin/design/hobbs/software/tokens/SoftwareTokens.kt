@@ -1558,7 +1558,7 @@ object SoftwareTokens {
             get() = if (isSoftwareDarkTheme()) ComposeColor(0xFF84A9FF) else ComposeColor(0xFF102693)
 
         /** hyperlink/spacing/cta/gap */
-        val spacingCtaGap = 12.dp
+        val spacingCtaGap = 16.dp
 
         /** hyperlink/spacing/cta/icon/offset */
         val spacingCtaIconOffset = 4.dp
@@ -1737,7 +1737,7 @@ object SoftwareTokens {
         val spacingBandItemGap = 4.dp
 
         /** page-hero/spacing/band-item/padding-y */
-        val spacingBandItemPaddingY = 12.dp
+        val spacingBandItemPaddingY = 16.dp
 
         /** page-hero/spacing/band/gap-y */
         val spacingBandGapY = 24.dp
@@ -1936,6 +1936,27 @@ object SoftwareTokens {
         /** spacing/96 */
         val _96 = 96.dp
 
+        /** spacing/gap/2xlg */
+        val gap2xlg = 40.dp
+
+        /** spacing/gap/3xlg */
+        val gap3xlg = 48.dp
+
+        /** spacing/gap/4xlg */
+        val gap4xlg = 64.dp
+
+        /** spacing/gap/5xlg */
+        val gap5xlg = 96.dp
+
+        /** spacing/gap/6xlg */
+        val gap6xlg = 120.dp
+
+        /** spacing/gap/7xlg */
+        val gap7xlg = 168.dp
+
+        /** spacing/gap/8xlg */
+        val gap8xlg = 240.dp
+
         /** spacing/gap/lg */
         val gapLg = 24.dp
 
@@ -1949,13 +1970,34 @@ object SoftwareTokens {
         val gapSm = 8.dp
 
         /** spacing/gap/xlg */
-        val gapXlg = 48.dp
+        val gapXlg = 32.dp
 
         /** spacing/gap/xsm */
         val gapXsm = 4.dp
 
         /** spacing/gap/xxsm */
         val gapXxsm = 2.dp
+
+        /** spacing/padding/2xlg */
+        val padding2xlg = 40.dp
+
+        /** spacing/padding/3xlg */
+        val padding3xlg = 48.dp
+
+        /** spacing/padding/4xlg */
+        val padding4xlg = 64.dp
+
+        /** spacing/padding/5xlg */
+        val padding5xlg = 96.dp
+
+        /** spacing/padding/6xlg */
+        val padding6xlg = 120.dp
+
+        /** spacing/padding/7xlg */
+        val padding7xlg = 168.dp
+
+        /** spacing/padding/8xlg */
+        val padding8xlg = 240.dp
 
         /** spacing/padding/lg */
         val paddingLg = 24.dp
@@ -1970,7 +2012,7 @@ object SoftwareTokens {
         val paddingSm = 8.dp
 
         /** spacing/padding/xlg */
-        val paddingXlg = 48.dp
+        val paddingXlg = 32.dp
 
         /** spacing/padding/xsm */
         val paddingXsm = 4.dp

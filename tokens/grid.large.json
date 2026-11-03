@@ -83,7 +83,7 @@
   "section": {
     "gap": {
       "$type": "dimension",
-      "$value": "{spacing.gap.xlg}",
+      "$value": "{spacing.gap.3xlg}",
       "$extensions": {
         "com.figma": {
           "variableId": "VariableID:14548:915",
