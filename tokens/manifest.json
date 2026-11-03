@@ -14,10 +14,6 @@
           "file": "tokens/typography.rhinestone.json"
         },
         {
-          "name": "portfolio",
-          "file": "tokens/typography.portfolio.json"
-        },
-        {
           "name": "swiss",
           "file": "tokens/typography.swiss.json"
         }
@@ -52,10 +48,6 @@
         {
           "name": "rhinestone",
           "file": "tokens/primitives.rhinestone.json"
-        },
-        {
-          "name": "portfolio",
-          "file": "tokens/primitives.portfolio.json"
         },
         {
           "name": "swiss",
