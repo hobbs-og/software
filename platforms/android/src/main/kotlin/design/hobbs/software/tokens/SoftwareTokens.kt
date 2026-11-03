@@ -2155,6 +2155,36 @@ object SoftwareTokens {
         /** typography/display-default/text-transform */
         const val displayDefaultTextTransform = "none"
 
+        /** typography/display-emphasized-mobile/font-size */
+        val displayEmphasizedMobileFontSize = 48.sp
+
+        /** typography/display-emphasized-mobile/font-weight */
+        val displayEmphasizedMobileFontWeight = FontWeight(900)
+
+        /** typography/display-emphasized-mobile/letter-spacing */
+        val displayEmphasizedMobileLetterSpacing = (-1.5).sp
+
+        /** typography/display-emphasized-mobile/line-height */
+        val displayEmphasizedMobileLineHeight = 56.sp
+
+        /** typography/display-emphasized-mobile/text-transform */
+        const val displayEmphasizedMobileTextTransform = "none"
+
+        /** typography/display-emphasized/font-size */
+        val displayEmphasizedFontSize = 72.sp
+
+        /** typography/display-emphasized/font-weight */
+        val displayEmphasizedFontWeight = FontWeight(900)
+
+        /** typography/display-emphasized/letter-spacing */
+        val displayEmphasizedLetterSpacing = (-0.5).sp
+
+        /** typography/display-emphasized/line-height */
+        val displayEmphasizedLineHeight = 80.sp
+
+        /** typography/display-emphasized/text-transform */
+        const val displayEmphasizedTextTransform = "none"
+
         /** typography/display-sm-mobile/font-size */
         val displaySmMobileFontSize = 32.sp
 
@@ -2299,6 +2329,36 @@ object SoftwareTokens {
         /** typography/headline-default/text-transform */
         const val headlineDefaultTextTransform = "none"
 
+        /** typography/headline-emphasized-mobile/font-size */
+        val headlineEmphasizedMobileFontSize = 32.sp
+
+        /** typography/headline-emphasized-mobile/font-weight */
+        val headlineEmphasizedMobileFontWeight = FontWeight(700)
+
+        /** typography/headline-emphasized-mobile/letter-spacing */
+        val headlineEmphasizedMobileLetterSpacing = 0.5.sp
+
+        /** typography/headline-emphasized-mobile/line-height */
+        val headlineEmphasizedMobileLineHeight = 40.sp
+
+        /** typography/headline-emphasized-mobile/text-transform */
+        const val headlineEmphasizedMobileTextTransform = "none"
+
+        /** typography/headline-emphasized/font-size */
+        val headlineEmphasizedFontSize = 40.sp
+
+        /** typography/headline-emphasized/font-weight */
+        val headlineEmphasizedFontWeight = FontWeight(700)
+
+        /** typography/headline-emphasized/letter-spacing */
+        val headlineEmphasizedLetterSpacing = 0.5.sp
+
+        /** typography/headline-emphasized/line-height */
+        val headlineEmphasizedLineHeight = 48.sp
+
+        /** typography/headline-emphasized/text-transform */
+        const val headlineEmphasizedTextTransform = "none"
+
         /** typography/headline-lg-mobile/font-size */
         val headlineLgMobileFontSize = 40.sp
 
@@ -2403,6 +2463,36 @@ object SoftwareTokens {
 
         /** typography/label-sm/text-transform */
         const val labelSmTextTransform = "none"
+
+        /** typography/lead-mobile/font-size */
+        val leadMobileFontSize = 32.sp
+
+        /** typography/lead-mobile/font-weight */
+        val leadMobileFontWeight = FontWeight(700)
+
+        /** typography/lead-mobile/letter-spacing */
+        val leadMobileLetterSpacing = 0.5.sp
+
+        /** typography/lead-mobile/line-height */
+        val leadMobileLineHeight = 40.sp
+
+        /** typography/lead-mobile/text-transform */
+        const val leadMobileTextTransform = "none"
+
+        /** typography/lead/font-size */
+        val leadFontSize = 40.sp
+
+        /** typography/lead/font-weight */
+        val leadFontWeight = FontWeight(700)
+
+        /** typography/lead/letter-spacing */
+        val leadLetterSpacing = 0.5.sp
+
+        /** typography/lead/line-height */
+        val leadLineHeight = 48.sp
+
+        /** typography/lead/text-transform */
+        const val leadTextTransform = "none"
 
         /** typography/letter-spacing/0 */
         val letterSpacing0 = 0.sp
@@ -2535,6 +2625,36 @@ object SoftwareTokens {
 
         /** typography/title-default/text-transform */
         const val titleDefaultTextTransform = "none"
+
+        /** typography/title-emphasized-mobile/font-size */
+        val titleEmphasizedMobileFontSize = 32.sp
+
+        /** typography/title-emphasized-mobile/font-weight */
+        val titleEmphasizedMobileFontWeight = FontWeight(700)
+
+        /** typography/title-emphasized-mobile/letter-spacing */
+        val titleEmphasizedMobileLetterSpacing = 0.5.sp
+
+        /** typography/title-emphasized-mobile/line-height */
+        val titleEmphasizedMobileLineHeight = 40.sp
+
+        /** typography/title-emphasized-mobile/text-transform */
+        const val titleEmphasizedMobileTextTransform = "none"
+
+        /** typography/title-emphasized/font-size */
+        val titleEmphasizedFontSize = 40.sp
+
+        /** typography/title-emphasized/font-weight */
+        val titleEmphasizedFontWeight = FontWeight(700)
+
+        /** typography/title-emphasized/letter-spacing */
+        val titleEmphasizedLetterSpacing = 0.5.sp
+
+        /** typography/title-emphasized/line-height */
+        val titleEmphasizedLineHeight = 48.sp
+
+        /** typography/title-emphasized/text-transform */
+        const val titleEmphasizedTextTransform = "none"
 
         /** typography/title-lg-mobile/font-size */
         val titleLgMobileFontSize = 28.sp

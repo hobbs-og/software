@@ -135,12 +135,12 @@
 }
 
 .feature-row__title {
-  font-family: var(--typography-headline-default-font-family);
-  font-size: var(--typography-headline-default-font-size);
-  line-height: var(--typography-headline-default-line-height);
-  font-weight: var(--typography-headline-default-font-weight);
-  letter-spacing: var(--typography-headline-default-letter-spacing);
-  text-transform: var(--typography-headline-default-text-transform);
+  font-family: var(--typography-title-emphasized-font-family);
+  font-size: var(--typography-title-emphasized-font-size);
+  line-height: var(--typography-title-emphasized-line-height);
+  font-weight: var(--typography-title-emphasized-font-weight);
+  letter-spacing: var(--typography-title-emphasized-letter-spacing);
+  text-transform: var(--typography-title-emphasized-text-transform);
   text-wrap: balance;
   color: var(--feature-row-color-title-content-default);
 }

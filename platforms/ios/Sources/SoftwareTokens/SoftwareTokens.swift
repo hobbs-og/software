@@ -1738,6 +1738,36 @@ public enum SoftwareTokens {
         /// typography/display-default/text-transform
         public static let displayDefaultTextTransform = "none"
 
+        /// typography/display-emphasized-mobile/font-size
+        public static let displayEmphasizedMobileFontSize: CGFloat = 48
+
+        /// typography/display-emphasized-mobile/font-weight
+        public static let displayEmphasizedMobileFontWeight = SwiftUI.Font.Weight.black
+
+        /// typography/display-emphasized-mobile/letter-spacing
+        public static let displayEmphasizedMobileLetterSpacing: CGFloat = -1.5
+
+        /// typography/display-emphasized-mobile/line-height
+        public static let displayEmphasizedMobileLineHeight: CGFloat = 56
+
+        /// typography/display-emphasized-mobile/text-transform
+        public static let displayEmphasizedMobileTextTransform = "none"
+
+        /// typography/display-emphasized/font-size
+        public static let displayEmphasizedFontSize: CGFloat = 72
+
+        /// typography/display-emphasized/font-weight
+        public static let displayEmphasizedFontWeight = SwiftUI.Font.Weight.black
+
+        /// typography/display-emphasized/letter-spacing
+        public static let displayEmphasizedLetterSpacing: CGFloat = -0.5
+
+        /// typography/display-emphasized/line-height
+        public static let displayEmphasizedLineHeight: CGFloat = 80
+
+        /// typography/display-emphasized/text-transform
+        public static let displayEmphasizedTextTransform = "none"
+
         /// typography/display-sm-mobile/font-size
         public static let displaySmMobileFontSize: CGFloat = 32
 
@@ -1882,6 +1912,36 @@ public enum SoftwareTokens {
         /// typography/headline-default/text-transform
         public static let headlineDefaultTextTransform = "none"
 
+        /// typography/headline-emphasized-mobile/font-size
+        public static let headlineEmphasizedMobileFontSize: CGFloat = 32
+
+        /// typography/headline-emphasized-mobile/font-weight
+        public static let headlineEmphasizedMobileFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/headline-emphasized-mobile/letter-spacing
+        public static let headlineEmphasizedMobileLetterSpacing: CGFloat = 0.5
+
+        /// typography/headline-emphasized-mobile/line-height
+        public static let headlineEmphasizedMobileLineHeight: CGFloat = 40
+
+        /// typography/headline-emphasized-mobile/text-transform
+        public static let headlineEmphasizedMobileTextTransform = "none"
+
+        /// typography/headline-emphasized/font-size
+        public static let headlineEmphasizedFontSize: CGFloat = 40
+
+        /// typography/headline-emphasized/font-weight
+        public static let headlineEmphasizedFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/headline-emphasized/letter-spacing
+        public static let headlineEmphasizedLetterSpacing: CGFloat = 0.5
+
+        /// typography/headline-emphasized/line-height
+        public static let headlineEmphasizedLineHeight: CGFloat = 48
+
+        /// typography/headline-emphasized/text-transform
+        public static let headlineEmphasizedTextTransform = "none"
+
         /// typography/headline-lg-mobile/font-size
         public static let headlineLgMobileFontSize: CGFloat = 40
 
@@ -1986,6 +2046,36 @@ public enum SoftwareTokens {
 
         /// typography/label-sm/text-transform
         public static let labelSmTextTransform = "none"
+
+        /// typography/lead-mobile/font-size
+        public static let leadMobileFontSize: CGFloat = 32
+
+        /// typography/lead-mobile/font-weight
+        public static let leadMobileFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/lead-mobile/letter-spacing
+        public static let leadMobileLetterSpacing: CGFloat = 0.5
+
+        /// typography/lead-mobile/line-height
+        public static let leadMobileLineHeight: CGFloat = 40
+
+        /// typography/lead-mobile/text-transform
+        public static let leadMobileTextTransform = "none"
+
+        /// typography/lead/font-size
+        public static let leadFontSize: CGFloat = 40
+
+        /// typography/lead/font-weight
+        public static let leadFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/lead/letter-spacing
+        public static let leadLetterSpacing: CGFloat = 0.5
+
+        /// typography/lead/line-height
+        public static let leadLineHeight: CGFloat = 48
+
+        /// typography/lead/text-transform
+        public static let leadTextTransform = "none"
 
         /// typography/letter-spacing/0
         public static let letterSpacing0: CGFloat = 0
@@ -2118,6 +2208,36 @@ public enum SoftwareTokens {
 
         /// typography/title-default/text-transform
         public static let titleDefaultTextTransform = "none"
+
+        /// typography/title-emphasized-mobile/font-size
+        public static let titleEmphasizedMobileFontSize: CGFloat = 32
+
+        /// typography/title-emphasized-mobile/font-weight
+        public static let titleEmphasizedMobileFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/title-emphasized-mobile/letter-spacing
+        public static let titleEmphasizedMobileLetterSpacing: CGFloat = 0.5
+
+        /// typography/title-emphasized-mobile/line-height
+        public static let titleEmphasizedMobileLineHeight: CGFloat = 40
+
+        /// typography/title-emphasized-mobile/text-transform
+        public static let titleEmphasizedMobileTextTransform = "none"
+
+        /// typography/title-emphasized/font-size
+        public static let titleEmphasizedFontSize: CGFloat = 40
+
+        /// typography/title-emphasized/font-weight
+        public static let titleEmphasizedFontWeight = SwiftUI.Font.Weight.bold
+
+        /// typography/title-emphasized/letter-spacing
+        public static let titleEmphasizedLetterSpacing: CGFloat = 0.5
+
+        /// typography/title-emphasized/line-height
+        public static let titleEmphasizedLineHeight: CGFloat = 48
+
+        /// typography/title-emphasized/text-transform
+        public static let titleEmphasizedTextTransform = "none"
 
         /// typography/title-lg-mobile/font-size
         public static let titleLgMobileFontSize: CGFloat = 28
