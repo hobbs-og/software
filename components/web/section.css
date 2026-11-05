@@ -1,8 +1,11 @@
-/* section: a block of a page, and the small label that names it. Children
-   stack with gap.
+/* section: a block of a page. Children stack with gap.
 
-   <section class="section">
-     <p class="section-label">Work</p>
+   A section opens with an h2, but it doesn't style it. The component
+   inside the section owns its heading's style, and a block with no
+   visible title uses a visually hidden h2 so the section still has a name.
+
+   <section class="section" aria-labelledby="next-project">
+     <h2 class="visually-hidden" id="next-project">Next project</h2>
      …
    </section>
 
@@ -13,12 +16,4 @@
   flex-direction: column;
   gap: var(--section-spacing-gap);
   padding: var(--section-spacing-padding-y) var(--section-spacing-padding-x);
-}
-
-.section-label {
-  font-family: var(--typography-label-sm-font-family);
-  font-size: var(--typography-label-sm-font-size);
-  line-height: var(--typography-label-sm-line-height);
-  font-weight: var(--typography-label-sm-font-weight);
-  color: var(--section-color-label-content-default);
 }
