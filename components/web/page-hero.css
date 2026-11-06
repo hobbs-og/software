@@ -14,7 +14,7 @@
          <div class="page-hero__summary subgrid span-12">
            <p class="page-hero__lead span-6">One sentence on the work.</p>
            <div class="page-hero__body span-6">
-             <p class="page-hero__brief-text">A short paragraph.</p>
+             <p>A short paragraph.</p>
              <dl class="feature-row__specs page-hero__specs">…</dl>
            </div>
          </div>
@@ -154,13 +154,11 @@
   gap: var(--page-hero-spacing-body-gap);
 }
 
-.page-hero__brief-text {
+/* The brief is a plain paragraph at the product's body type, like every
+   other paragraph of content. The body sets only its color and how it
+   wraps, the same way content-section does for its paragraphs. */
+.page-hero__body > p {
   margin: 0;
-  font-family: var(--typography-body-sm-font-family);
-  font-size: var(--typography-body-sm-font-size);
-  line-height: var(--typography-body-sm-line-height);
-  font-weight: var(--typography-body-sm-font-weight);
-  letter-spacing: var(--typography-body-sm-letter-spacing);
   color: var(--page-hero-color-brief-content-default);
   text-wrap: pretty;
 }
